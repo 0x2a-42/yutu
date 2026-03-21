@@ -1,0 +1,1035 @@
+<svg width="793px" height="9092px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-cyan { fill: #55FFFF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-red { fill: #FF5555 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:107:5</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">107</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> for k,v in ipairs{true,false,true,false} do</tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="118px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="154px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="172px"><tspan class="fg-bright-blue bold">107</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>for </tspan><tspan class="fg-bright-green">_</tspan><tspan>k,v in ipairs{true,false,true,false} do</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="208px">
+</tspan>
+    <tspan x="10px" y="226px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#next-line-args">next-line-args</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: arguments of called function start in next line</tspan>
+</tspan>
+    <tspan x="10px" y="244px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:146:5</tspan>
+</tspan>
+    <tspan x="10px" y="262px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="280px"><tspan class="fg-bright-blue bold">145</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   (Message or print)</tspan>
+</tspan>
+    <tspan x="10px" y="298px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-blue bold">------------------</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for call to this function</tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan class="fg-bright-blue bold">146</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     ('/n &gt;&gt;&gt; testC not active: skipping tests for table sizes &lt;&lt;&lt;/n')</tspan>
+</tspan>
+    <tspan x="10px" y="334px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="352px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: add a semicolon if this was not intended to be a function call</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="406px"><tspan class="fg-bright-blue bold">146</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    </tspan><tspan class="fg-bright-green">;</tspan><tspan>('/n &gt;&gt;&gt; testC not active: skipping tests for table sizes &lt;&lt;&lt;/n')</tspan>
+</tspan>
+    <tspan x="10px" y="424px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="442px">
+</tspan>
+    <tspan x="10px" y="460px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:243:11</tspan>
+</tspan>
+    <tspan x="10px" y="496px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="514px"><tspan class="fg-bright-blue bold">243</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local nna, nnh = T.querytab(t)</tspan>
+</tspan>
+    <tspan x="10px" y="532px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="550px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="568px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="604px"><tspan class="fg-bright-blue bold">243</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local </tspan><tspan class="fg-bright-green">_</tspan><tspan>nna, nnh = T.querytab(t)</tspan>
+</tspan>
+    <tspan x="10px" y="622px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="640px">
+</tspan>
+    <tspan x="10px" y="658px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="676px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:243:16</tspan>
+</tspan>
+    <tspan x="10px" y="694px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan class="fg-bright-blue bold">243</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local nna, nnh = T.querytab(t)</tspan>
+</tspan>
+    <tspan x="10px" y="730px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="748px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="766px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="784px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="802px"><tspan class="fg-bright-blue bold">243</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local nna, </tspan><tspan class="fg-bright-green">_</tspan><tspan>nnh = T.querytab(t)</tspan>
+</tspan>
+    <tspan x="10px" y="820px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="838px">
+</tspan>
+    <tspan x="10px" y="856px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="874px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:341:9</tspan>
+</tspan>
+    <tspan x="10px" y="892px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="910px"><tspan class="fg-bright-blue bold">341</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     for j = 1, math.random(N) do   -- add random number of random entries</tspan>
+</tspan>
+    <tspan x="10px" y="928px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="946px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="964px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="982px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1000px"><tspan class="fg-bright-blue bold">341</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    for </tspan><tspan class="fg-bright-green">_</tspan><tspan>j = 1, math.random(N) do   -- add random number of random entries</tspan>
+</tspan>
+    <tspan x="10px" y="1018px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1036px">
+</tspan>
+    <tspan x="10px" y="1054px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="1072px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:339:7</tspan>
+</tspan>
+    <tspan x="10px" y="1090px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1108px"><tspan class="fg-bright-blue bold">339</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1, 1e3 do   -- create that many random tables</tspan>
+</tspan>
+    <tspan x="10px" y="1126px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1144px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1162px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1180px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1198px"><tspan class="fg-bright-blue bold">339</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = 1, 1e3 do   -- create that many random tables</tspan>
+</tspan>
+    <tspan x="10px" y="1216px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1234px">
+</tspan>
+    <tspan x="10px" y="1252px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#empty-block">empty-block</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: empty block in control flow statement</tspan>
+</tspan>
+    <tspan x="10px" y="1270px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:357:3</tspan>
+</tspan>
+    <tspan x="10px" y="1288px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1306px"><tspan class="fg-bright-blue bold">357</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1, #t do end</tspan>
+</tspan>
+    <tspan x="10px" y="1324px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="1342px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1360px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: add a comment inside the block to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1378px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1396px"><tspan class="fg-bright-blue bold">357</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for i = 1, #t do </tspan><tspan class="fg-bright-green">--[[ TODO: explain why this block is empty ]] </tspan><tspan>end</tspan>
+</tspan>
+    <tspan x="10px" y="1414px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                    </tspan><tspan class="fg-bright-green">+++++++++++++++++++++++++++++++++++++++++++++</tspan>
+</tspan>
+    <tspan x="10px" y="1432px">
+</tspan>
+    <tspan x="10px" y="1450px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="1468px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:357:7</tspan>
+</tspan>
+    <tspan x="10px" y="1486px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1504px"><tspan class="fg-bright-blue bold">357</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1, #t do end</tspan>
+</tspan>
+    <tspan x="10px" y="1522px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1540px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1558px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1576px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1594px"><tspan class="fg-bright-blue bold">357</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = 1, #t do end</tspan>
+</tspan>
+    <tspan x="10px" y="1612px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1630px">
+</tspan>
+    <tspan x="10px" y="1648px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="1666px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:493:7</tspan>
+</tspan>
+    <tspan x="10px" y="1684px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1702px"><tspan class="fg-bright-blue bold">493</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for k, v in pairs(a) do</tspan>
+</tspan>
+    <tspan x="10px" y="1720px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1738px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1756px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1774px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1792px"><tspan class="fg-bright-blue bold">493</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>k, v in pairs(a) do</tspan>
+</tspan>
+    <tspan x="10px" y="1810px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1828px">
+</tspan>
+    <tspan x="10px" y="1846px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#next-line-args">next-line-args</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: arguments of called function start in next line</tspan>
+</tspan>
+    <tspan x="10px" y="1864px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:666:5</tspan>
+</tspan>
+    <tspan x="10px" y="1882px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1900px"><tspan class="fg-bright-blue bold">665</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   (Message or print)</tspan>
+</tspan>
+    <tspan x="10px" y="1918px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-blue bold">------------------</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for call to this function</tspan>
+</tspan>
+    <tspan x="10px" y="1936px"><tspan class="fg-bright-blue bold">666</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     ('/n &gt;&gt;&gt; testC not active: skipping tests for table library on non-tables &lt;&lt;&lt;/n')</tspan>
+</tspan>
+    <tspan x="10px" y="1954px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="1972px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1990px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: add a semicolon if this was not intended to be a function call</tspan>
+</tspan>
+    <tspan x="10px" y="2008px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2026px"><tspan class="fg-bright-blue bold">666</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    </tspan><tspan class="fg-bright-green">;</tspan><tspan>('/n &gt;&gt;&gt; testC not active: skipping tests for table library on non-tables &lt;&lt;&lt;/n')</tspan>
+</tspan>
+    <tspan x="10px" y="2044px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2062px">
+</tspan>
+    <tspan x="10px" y="2080px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="2098px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:711:5</tspan>
+</tspan>
+    <tspan x="10px" y="2116px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2134px"><tspan class="fg-bright-blue bold">711</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> for a,b in pairs{} do error"not here" end</tspan>
+</tspan>
+    <tspan x="10px" y="2152px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="2170px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2188px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="2206px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2224px"><tspan class="fg-bright-blue bold">711</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>for </tspan><tspan class="fg-bright-green">_</tspan><tspan>a,b in pairs{} do error"not here" end</tspan>
+</tspan>
+    <tspan x="10px" y="2242px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2260px">
+</tspan>
+    <tspan x="10px" y="2278px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="2296px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:711:7</tspan>
+</tspan>
+    <tspan x="10px" y="2314px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2332px"><tspan class="fg-bright-blue bold">711</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> for a,b in pairs{} do error"not here" end</tspan>
+</tspan>
+    <tspan x="10px" y="2350px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="2368px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2386px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="2404px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2422px"><tspan class="fg-bright-blue bold">711</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>for a,</tspan><tspan class="fg-bright-green">_</tspan><tspan>b in pairs{} do error"not here" end</tspan>
+</tspan>
+    <tspan x="10px" y="2440px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2458px">
+</tspan>
+    <tspan x="10px" y="2476px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="2494px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:712:5</tspan>
+</tspan>
+    <tspan x="10px" y="2512px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2530px"><tspan class="fg-bright-blue bold">712</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> for i=1,0 do error'not here' end</tspan>
+</tspan>
+    <tspan x="10px" y="2548px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="2566px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2584px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="2602px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2620px"><tspan class="fg-bright-blue bold">712</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1,0 do error'not here' end</tspan>
+</tspan>
+    <tspan x="10px" y="2638px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2656px">
+</tspan>
+    <tspan x="10px" y="2674px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="2692px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:713:5</tspan>
+</tspan>
+    <tspan x="10px" y="2710px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2728px"><tspan class="fg-bright-blue bold">713</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> for i=0,1,-1 do error'not here' end</tspan>
+</tspan>
+    <tspan x="10px" y="2746px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="2764px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2782px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="2800px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2818px"><tspan class="fg-bright-blue bold">713</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=0,1,-1 do error'not here' end</tspan>
+</tspan>
+    <tspan x="10px" y="2836px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2854px">
+</tspan>
+    <tspan x="10px" y="2872px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="2890px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:714:14</tspan>
+</tspan>
+    <tspan x="10px" y="2908px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2926px"><tspan class="fg-bright-blue bold">714</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> a = nil; for i=1,1 do assert(not a); a=1 end; assert(a)</tspan>
+</tspan>
+    <tspan x="10px" y="2944px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="2962px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2980px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="2998px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3016px"><tspan class="fg-bright-blue bold">714</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>a = nil; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1,1 do assert(not a); a=1 end; assert(a)</tspan>
+</tspan>
+    <tspan x="10px" y="3034px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3052px">
+</tspan>
+    <tspan x="10px" y="3070px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="3088px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:715:14</tspan>
+</tspan>
+    <tspan x="10px" y="3106px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3124px"><tspan class="fg-bright-blue bold">715</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> a = nil; for i=1,1,-1 do assert(not a); a=1 end; assert(a)</tspan>
+</tspan>
+    <tspan x="10px" y="3142px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="3160px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3178px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3196px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3214px"><tspan class="fg-bright-blue bold">715</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>a = nil; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1,1,-1 do assert(not a); a=1 end; assert(a)</tspan>
+</tspan>
+    <tspan x="10px" y="3232px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3250px">
+</tspan>
+    <tspan x="10px" y="3268px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="3286px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:721:14</tspan>
+</tspan>
+    <tspan x="10px" y="3304px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3322px"><tspan class="fg-bright-blue bold">721</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   a = 0; for i=1, 1, 1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="3340px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="3358px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3376px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3394px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3412px"><tspan class="fg-bright-blue bold">721</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  a = 0; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1, 1, 1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="3430px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3448px">
+</tspan>
+    <tspan x="10px" y="3466px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="3484px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:722:14</tspan>
+</tspan>
+    <tspan x="10px" y="3502px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3520px"><tspan class="fg-bright-blue bold">722</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   a = 0; for i=10000, 1e4, -1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="3538px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="3556px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3574px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3592px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3610px"><tspan class="fg-bright-blue bold">722</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  a = 0; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=10000, 1e4, -1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="3628px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3646px">
+</tspan>
+    <tspan x="10px" y="3664px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="3682px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:723:14</tspan>
+</tspan>
+    <tspan x="10px" y="3700px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3718px"><tspan class="fg-bright-blue bold">723</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   a = 0; for i=1, 0.99999, 1 do a=a+1 end; assert(a==0)</tspan>
+</tspan>
+    <tspan x="10px" y="3736px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="3754px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3772px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3790px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3808px"><tspan class="fg-bright-blue bold">723</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  a = 0; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1, 0.99999, 1 do a=a+1 end; assert(a==0)</tspan>
+</tspan>
+    <tspan x="10px" y="3826px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3844px">
+</tspan>
+    <tspan x="10px" y="3862px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="3880px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:724:14</tspan>
+</tspan>
+    <tspan x="10px" y="3898px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3916px"><tspan class="fg-bright-blue bold">724</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   a = 0; for i=9999, 1e4, -1 do a=a+1 end; assert(a==0)</tspan>
+</tspan>
+    <tspan x="10px" y="3934px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="3952px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3970px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3988px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4006px"><tspan class="fg-bright-blue bold">724</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  a = 0; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=9999, 1e4, -1 do a=a+1 end; assert(a==0)</tspan>
+</tspan>
+    <tspan x="10px" y="4024px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="4042px">
+</tspan>
+    <tspan x="10px" y="4060px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="4078px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:725:14</tspan>
+</tspan>
+    <tspan x="10px" y="4096px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4114px"><tspan class="fg-bright-blue bold">725</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   a = 0; for i=1, 0.99999, -1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="4132px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4150px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4168px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="4186px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4204px"><tspan class="fg-bright-blue bold">725</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  a = 0; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1, 0.99999, -1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="4222px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="4240px">
+</tspan>
+    <tspan x="10px" y="4258px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="4276px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:728:14</tspan>
+</tspan>
+    <tspan x="10px" y="4294px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4312px"><tspan class="fg-bright-blue bold">728</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   a = 0; for i=0, 0.999999999, 0.1 do a=a+1 end; assert(a==10)</tspan>
+</tspan>
+    <tspan x="10px" y="4330px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4348px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4366px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="4384px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4402px"><tspan class="fg-bright-blue bold">728</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  a = 0; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=0, 0.999999999, 0.1 do a=a+1 end; assert(a==10)</tspan>
+</tspan>
+    <tspan x="10px" y="4420px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="4438px">
+</tspan>
+    <tspan x="10px" y="4456px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="4474px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:729:14</tspan>
+</tspan>
+    <tspan x="10px" y="4492px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4510px"><tspan class="fg-bright-blue bold">729</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   a = 0; for i=1.0, 1, 1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="4528px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4546px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4564px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="4582px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4600px"><tspan class="fg-bright-blue bold">729</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  a = 0; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1.0, 1, 1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="4618px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="4636px">
+</tspan>
+    <tspan x="10px" y="4654px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="4672px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:730:14</tspan>
+</tspan>
+    <tspan x="10px" y="4690px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4708px"><tspan class="fg-bright-blue bold">730</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   a = 0; for i=-1.5, -1.5, 1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="4726px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4744px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4762px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="4780px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4798px"><tspan class="fg-bright-blue bold">730</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  a = 0; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=-1.5, -1.5, 1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="4816px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="4834px">
+</tspan>
+    <tspan x="10px" y="4852px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="4870px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:731:14</tspan>
+</tspan>
+    <tspan x="10px" y="4888px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4906px"><tspan class="fg-bright-blue bold">731</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   a = 0; for i=1e6, 1e6, -1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="4924px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4942px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4960px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="4978px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4996px"><tspan class="fg-bright-blue bold">731</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  a = 0; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1e6, 1e6, -1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="5014px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="5032px">
+</tspan>
+    <tspan x="10px" y="5050px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="5068px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:732:14</tspan>
+</tspan>
+    <tspan x="10px" y="5086px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5104px"><tspan class="fg-bright-blue bold">732</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   a = 0; for i=1.0, 0.99999, 1 do a=a+1 end; assert(a==0)</tspan>
+</tspan>
+    <tspan x="10px" y="5122px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="5140px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5158px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="5176px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5194px"><tspan class="fg-bright-blue bold">732</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  a = 0; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1.0, 0.99999, 1 do a=a+1 end; assert(a==0)</tspan>
+</tspan>
+    <tspan x="10px" y="5212px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="5230px">
+</tspan>
+    <tspan x="10px" y="5248px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="5266px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:733:14</tspan>
+</tspan>
+    <tspan x="10px" y="5284px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5302px"><tspan class="fg-bright-blue bold">733</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   a = 0; for i=99999, 1e5, -1.0 do a=a+1 end; assert(a==0)</tspan>
+</tspan>
+    <tspan x="10px" y="5320px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="5338px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5356px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="5374px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5392px"><tspan class="fg-bright-blue bold">733</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  a = 0; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=99999, 1e5, -1.0 do a=a+1 end; assert(a==0)</tspan>
+</tspan>
+    <tspan x="10px" y="5410px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="5428px">
+</tspan>
+    <tspan x="10px" y="5446px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="5464px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:734:14</tspan>
+</tspan>
+    <tspan x="10px" y="5482px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5500px"><tspan class="fg-bright-blue bold">734</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   a = 0; for i=1.0, 0.99999, -1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="5518px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="5536px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5554px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="5572px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5590px"><tspan class="fg-bright-blue bold">734</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  a = 0; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1.0, 0.99999, -1 do a=a+1 end; assert(a==1)</tspan>
+</tspan>
+    <tspan x="10px" y="5608px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="5626px">
+</tspan>
+    <tspan x="10px" y="5644px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="5662px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:746:12</tspan>
+</tspan>
+    <tspan x="10px" y="5680px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5698px"><tspan class="fg-bright-blue bold">746</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> a = 0; for i="10","1","-2" do a=a+1 end; assert(a==5)</tspan>
+</tspan>
+    <tspan x="10px" y="5716px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="5734px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5752px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="5770px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5788px"><tspan class="fg-bright-blue bold">746</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>a = 0; for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i="10","1","-2" do a=a+1 end; assert(a==5)</tspan>
+</tspan>
+    <tspan x="10px" y="5806px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="5824px">
+</tspan>
+    <tspan x="10px" y="5842px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="5860px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:797:7</tspan>
+</tspan>
+    <tspan x="10px" y="5878px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5896px"><tspan class="fg-bright-blue bold">797</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = math.mininteger, -10e100 do assert(false) end</tspan>
+</tspan>
+    <tspan x="10px" y="5914px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="5932px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5950px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="5968px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5986px"><tspan class="fg-bright-blue bold">797</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = math.mininteger, -10e100 do assert(false) end</tspan>
+</tspan>
+    <tspan x="10px" y="6004px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="6022px">
+</tspan>
+    <tspan x="10px" y="6040px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="6058px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:798:7</tspan>
+</tspan>
+    <tspan x="10px" y="6076px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6094px"><tspan class="fg-bright-blue bold">798</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = math.maxinteger, 10e100, -1 do assert(false) end</tspan>
+</tspan>
+    <tspan x="10px" y="6112px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="6130px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6148px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="6166px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6184px"><tspan class="fg-bright-blue bold">798</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = math.maxinteger, 10e100, -1 do assert(false) end</tspan>
+</tspan>
+    <tspan x="10px" y="6202px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="6220px">
+</tspan>
+    <tspan x="10px" y="6238px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#empty-block">empty-block</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: empty block in control flow statement</tspan>
+</tspan>
+    <tspan x="10px" y="6256px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:854:3</tspan>
+</tspan>
+    <tspan x="10px" y="6274px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6292px"><tspan class="fg-bright-blue bold">854</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1, 10, 0 do end</tspan>
+</tspan>
+    <tspan x="10px" y="6310px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6328px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6346px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: add a comment inside the block to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="6364px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6382px"><tspan class="fg-bright-blue bold">854</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for i = 1, 10, 0 do </tspan><tspan class="fg-bright-green">--[[ TODO: explain why this block is empty ]] </tspan><tspan>end</tspan>
+</tspan>
+    <tspan x="10px" y="6400px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                       </tspan><tspan class="fg-bright-green">+++++++++++++++++++++++++++++++++++++++++++++</tspan>
+</tspan>
+    <tspan x="10px" y="6418px">
+</tspan>
+    <tspan x="10px" y="6436px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="6454px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:854:7</tspan>
+</tspan>
+    <tspan x="10px" y="6472px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6490px"><tspan class="fg-bright-blue bold">854</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1, 10, 0 do end</tspan>
+</tspan>
+    <tspan x="10px" y="6508px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="6526px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6544px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="6562px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6580px"><tspan class="fg-bright-blue bold">854</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = 1, 10, 0 do end</tspan>
+</tspan>
+    <tspan x="10px" y="6598px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="6616px">
+</tspan>
+    <tspan x="10px" y="6634px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#empty-block">empty-block</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: empty block in control flow statement</tspan>
+</tspan>
+    <tspan x="10px" y="6652px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:858:3</tspan>
+</tspan>
+    <tspan x="10px" y="6670px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6688px"><tspan class="fg-bright-blue bold">858</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1, -10, 0 do end</tspan>
+</tspan>
+    <tspan x="10px" y="6706px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6724px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6742px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: add a comment inside the block to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="6760px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6778px"><tspan class="fg-bright-blue bold">858</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for i = 1, -10, 0 do </tspan><tspan class="fg-bright-green">--[[ TODO: explain why this block is empty ]] </tspan><tspan>end</tspan>
+</tspan>
+    <tspan x="10px" y="6796px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                        </tspan><tspan class="fg-bright-green">+++++++++++++++++++++++++++++++++++++++++++++</tspan>
+</tspan>
+    <tspan x="10px" y="6814px">
+</tspan>
+    <tspan x="10px" y="6832px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="6850px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:858:7</tspan>
+</tspan>
+    <tspan x="10px" y="6868px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6886px"><tspan class="fg-bright-blue bold">858</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1, -10, 0 do end</tspan>
+</tspan>
+    <tspan x="10px" y="6904px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="6922px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6940px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="6958px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6976px"><tspan class="fg-bright-blue bold">858</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = 1, -10, 0 do end</tspan>
+</tspan>
+    <tspan x="10px" y="6994px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="7012px">
+</tspan>
+    <tspan x="10px" y="7030px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#empty-block">empty-block</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: empty block in control flow statement</tspan>
+</tspan>
+    <tspan x="10px" y="7048px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:862:3</tspan>
+</tspan>
+    <tspan x="10px" y="7066px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7084px"><tspan class="fg-bright-blue bold">862</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1.0, -10, 0.0 do end</tspan>
+</tspan>
+    <tspan x="10px" y="7102px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="7120px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7138px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: add a comment inside the block to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="7156px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7174px"><tspan class="fg-bright-blue bold">862</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for i = 1.0, -10, 0.0 do </tspan><tspan class="fg-bright-green">--[[ TODO: explain why this block is empty ]] </tspan><tspan>end</tspan>
+</tspan>
+    <tspan x="10px" y="7192px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-green">+++++++++++++++++++++++++++++++++++++++++++++</tspan>
+</tspan>
+    <tspan x="10px" y="7210px">
+</tspan>
+    <tspan x="10px" y="7228px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="7246px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:862:7</tspan>
+</tspan>
+    <tspan x="10px" y="7264px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7282px"><tspan class="fg-bright-blue bold">862</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1.0, -10, 0.0 do end</tspan>
+</tspan>
+    <tspan x="10px" y="7300px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="7318px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7336px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="7354px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7372px"><tspan class="fg-bright-blue bold">862</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = 1.0, -10, 0.0 do end</tspan>
+</tspan>
+    <tspan x="10px" y="7390px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="7408px">
+</tspan>
+    <tspan x="10px" y="7426px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="7444px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:882:5</tspan>
+</tspan>
+    <tspan x="10px" y="7462px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7480px"><tspan class="fg-bright-blue bold">882</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> for n,a,b,c,d in f(5,3) do</tspan>
+</tspan>
+    <tspan x="10px" y="7498px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="7516px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7534px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="7552px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7570px"><tspan class="fg-bright-blue bold">882</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>for </tspan><tspan class="fg-bright-green">_</tspan><tspan>n,a,b,c,d in f(5,3) do</tspan>
+</tspan>
+    <tspan x="10px" y="7588px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="7606px">
+</tspan>
+    <tspan x="10px" y="7624px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="7642px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:948:9</tspan>
+</tspan>
+    <tspan x="10px" y="7660px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7678px"><tspan class="fg-bright-blue bold">948</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     for i,p in pairs(t) do res[#res + 1] = p end</tspan>
+</tspan>
+    <tspan x="10px" y="7696px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="7714px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7732px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="7750px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7768px"><tspan class="fg-bright-blue bold">948</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i,p in pairs(t) do res[#res + 1] = p end</tspan>
+</tspan>
+    <tspan x="10px" y="7786px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="7804px">
+</tspan>
+    <tspan x="10px" y="7822px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="7840px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:902:16</tspan>
+</tspan>
+    <tspan x="10px" y="7858px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7876px"><tspan class="fg-bright-blue bold">902</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local function foo1 (e,i)</tspan>
+</tspan>
+    <tspan x="10px" y="7894px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="7912px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7930px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: delete the definition</tspan>
+</tspan>
+    <tspan x="10px" y="7948px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7966px"><tspan class="fg-bright-blue bold">902</tspan><tspan> </tspan><tspan class="fg-bright-red">- local function foo1 (e,i)</tspan>
+</tspan>
+    <tspan x="10px" y="7984px"><tspan class="fg-bright-blue bold">903</tspan><tspan> </tspan><tspan class="fg-bright-red">-   i = i + 1</tspan>
+</tspan>
+    <tspan x="10px" y="8002px"><tspan class="fg-bright-blue bold">904</tspan><tspan> </tspan><tspan class="fg-bright-red">-   assert(e == a)</tspan>
+</tspan>
+    <tspan x="10px" y="8020px"><tspan class="fg-bright-blue bold">905</tspan><tspan> </tspan><tspan class="fg-bright-red">-   if i &lt;= e.n then return i,a[i] end</tspan>
+</tspan>
+    <tspan x="10px" y="8038px"><tspan class="fg-bright-blue bold">906</tspan><tspan> </tspan><tspan class="fg-bright-red">- end</tspan>
+</tspan>
+    <tspan x="10px" y="8056px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8074px">
+</tspan>
+    <tspan x="10px" y="8092px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="8110px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:16:16</tspan>
+</tspan>
+    <tspan x="10px" y="8128px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8146px"><tspan class="fg-bright-blue bold">16</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local function printTable (t)</tspan>
+</tspan>
+    <tspan x="10px" y="8164px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="8182px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8200px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: delete the definition</tspan>
+</tspan>
+    <tspan x="10px" y="8218px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8236px"><tspan class="fg-bright-blue bold">16</tspan><tspan> </tspan><tspan class="fg-bright-red">- local function printTable (t)</tspan>
+</tspan>
+    <tspan x="10px" y="8254px"><tspan class="fg-bright-blue bold">17</tspan><tspan> </tspan><tspan class="fg-bright-red">-   local a, h = T.querytab(t)</tspan>
+</tspan>
+    <tspan x="10px" y="8272px"><tspan class="fg-bright-blue bold">18</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print("array:")</tspan>
+</tspan>
+    <tspan x="10px" y="8290px"><tspan class="fg-bright-blue bold">19</tspan><tspan> </tspan><tspan class="fg-bright-red">-   for i = 1, a do</tspan>
+</tspan>
+    <tspan x="10px" y="8308px"><tspan class="fg-bright-blue bold">20</tspan><tspan> </tspan><tspan class="fg-bright-red">-     print("", T.querytab(t, i - 1))</tspan>
+</tspan>
+    <tspan x="10px" y="8326px"><tspan class="fg-bright-blue bold">21</tspan><tspan> </tspan><tspan class="fg-bright-red">-   end</tspan>
+</tspan>
+    <tspan x="10px" y="8344px"><tspan class="fg-bright-blue bold">22</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print("hash:")</tspan>
+</tspan>
+    <tspan x="10px" y="8362px"><tspan class="fg-bright-blue bold">23</tspan><tspan> </tspan><tspan class="fg-bright-red">-   for i = 1, h do</tspan>
+</tspan>
+    <tspan x="10px" y="8380px"><tspan class="fg-bright-blue bold">24</tspan><tspan> </tspan><tspan class="fg-bright-red">-     print("", T.querytab(t, a + i - 1))</tspan>
+</tspan>
+    <tspan x="10px" y="8398px"><tspan class="fg-bright-blue bold">25</tspan><tspan> </tspan><tspan class="fg-bright-red">-   end</tspan>
+</tspan>
+    <tspan x="10px" y="8416px"><tspan class="fg-bright-blue bold">26</tspan><tspan> </tspan><tspan class="fg-bright-red">- end</tspan>
+</tspan>
+    <tspan x="10px" y="8434px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8452px">
+</tspan>
+    <tspan x="10px" y="8470px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
+</tspan>
+    <tspan x="10px" y="8488px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:713:1</tspan>
+</tspan>
+    <tspan x="10px" y="8506px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8524px"><tspan class="fg-bright-blue bold">713</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i=0,1,-1 do error'not here' end</tspan>
+</tspan>
+    <tspan x="10px" y="8542px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="8560px"><tspan class="fg-bright-blue bold">714</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> a = nil; for i=1,1 do assert(not a); a=1 end; assert(a)</tspan>
+</tspan>
+    <tspan x="10px" y="8578px"><tspan class="fg-bright-blue bold">715</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> a = nil; for i=1,1,-1 do assert(not a); a=1 end; assert(a)</tspan>
+</tspan>
+    <tspan x="10px" y="8596px"><tspan class="fg-bright-blue bold">716</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan>
+</tspan>
+    <tspan x="10px" y="8614px"><tspan class="fg-bright-blue bold">717</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> do</tspan>
+</tspan>
+    <tspan x="10px" y="8632px"><tspan class="fg-bright-blue bold">...</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">|</tspan>
+</tspan>
+    <tspan x="10px" y="8650px"><tspan class="fg-bright-blue bold">884</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   assert(a == 10 and b == 20 and c == 30 and d == nil)</tspan>
+</tspan>
+    <tspan x="10px" y="8668px"><tspan class="fg-bright-blue bold">885</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> end</tspan>
+</tspan>
+    <tspan x="10px" y="8686px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|___^</tspan>
+</tspan>
+    <tspan x="10px" y="8704px"><tspan class="fg-bright-blue bold">886</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> assert(x == 5)</tspan>
+</tspan>
+    <tspan x="10px" y="8722px"><tspan class="fg-bright-blue bold">...</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">|</tspan>
+</tspan>
+    <tspan x="10px" y="8740px"><tspan class="fg-bright-blue bold">917</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   assert(k == i and v == k+1)</tspan>
+</tspan>
+    <tspan x="10px" y="8758px"><tspan class="fg-bright-blue bold">918</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> end</tspan>
+</tspan>
+    <tspan x="10px" y="8776px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|___^</tspan>
+</tspan>
+    <tspan x="10px" y="8794px"><tspan class="fg-bright-blue bold">919</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> assert(closed)   -- 'tbc' has been closed</tspan>
+</tspan>
+    <tspan x="10px" y="8812px"><tspan class="fg-bright-blue bold">920</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan>
+</tspan>
+    <tspan x="10px" y="8830px"><tspan class="fg-bright-blue bold">921</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> a.n = 5</tspan>
+</tspan>
+    <tspan x="10px" y="8848px"><tspan class="fg-bright-blue bold">922</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> a[3] = 30</tspan>
+</tspan>
+    <tspan x="10px" y="8866px"><tspan class="fg-bright-blue bold">...</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">|</tspan>
+</tspan>
+    <tspan x="10px" y="8884px"><tspan class="fg-bright-blue bold">932</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   assert(k == i and v == i * 10)</tspan>
+</tspan>
+    <tspan x="10px" y="8902px"><tspan class="fg-bright-blue bold">933</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> end</tspan>
+</tspan>
+    <tspan x="10px" y="8920px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|___^</tspan>
+</tspan>
+    <tspan x="10px" y="8938px"><tspan class="fg-bright-blue bold">934</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> assert(i == a.n)</tspan>
+</tspan>
+    <tspan x="10px" y="8956px"><tspan class="fg-bright-blue bold">935</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan>
+</tspan>
+    <tspan x="10px" y="8974px"><tspan class="fg-bright-blue bold">936</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan>
+</tspan>
+    <tspan x="10px" y="8992px"><tspan class="fg-bright-blue bold">937</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> -- testing yield inside __pairs</tspan>
+</tspan>
+    <tspan x="10px" y="9010px"><tspan class="fg-bright-blue bold">...</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">|</tspan>
+</tspan>
+    <tspan x="10px" y="9028px"><tspan class="fg-bright-blue bold">957</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> print"OK"</tspan>
+</tspan>
+    <tspan x="10px" y="9046px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|_________^</tspan>
+</tspan>
+    <tspan x="10px" y="9064px">
+</tspan>
+    <tspan x="10px" y="9082px">
+</tspan>
+  </text>
+
+</svg>

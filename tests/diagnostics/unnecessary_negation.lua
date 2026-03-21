@@ -1,0 +1,6 @@
+X = not (A >= B)
+X = not (A <= B)
+X = not (A > B)
+X = not (A < B)
+X = not (A == B)
+X = not (A ~= B)

@@ -1,0 +1,487 @@
+<svg width="740px" height="4160px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-cyan { fill: #55FFFF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-red { fill: #FF5555 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-blue bold">info[</tspan><tspan class="fg-bright-blue bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#trailing-whitespace">trailing-whitespace</a></tspan><tspan class="fg-bright-blue bold">]</tspan><tspan class="bold">: line contains trailing whitespace</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:79:20</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">79</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not st and </tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                    </tspan><tspan class="fg-bright-blue bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="118px">
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-blue bold">info[</tspan><tspan class="fg-bright-blue bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#only-whitespace">only-whitespace</a></tspan><tspan class="fg-bright-blue bold">]</tspan><tspan class="bold">: line contains only whitespace</tspan>
+</tspan>
+    <tspan x="10px" y="154px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:163:1</tspan>
+</tspan>
+    <tspan x="10px" y="172px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan class="fg-bright-blue bold">163</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan>
+</tspan>
+    <tspan x="10px" y="208px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">^^</tspan>
+</tspan>
+    <tspan x="10px" y="226px">
+</tspan>
+    <tspan x="10px" y="244px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="262px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:87:13</tspan>
+</tspan>
+    <tspan x="10px" y="280px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="298px"><tspan class="fg-bright-blue bold">87</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local st, msg = loadrep("a = 10; ", "instructions")</tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>             </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="334px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="352px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan class="fg-bright-blue bold">87</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local st, </tspan><tspan class="fg-bright-green">_</tspan><tspan>msg = loadrep("a = 10; ", "instructions")</tspan>
+</tspan>
+    <tspan x="10px" y="406px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>             </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="424px">
+</tspan>
+    <tspan x="10px" y="442px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="460px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:87:9</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="496px"><tspan class="fg-bright-blue bold">87</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local st, msg = loadrep("a = 10; ", "instructions")</tspan>
+</tspan>
+    <tspan x="10px" y="514px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="532px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="550px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="568px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan class="fg-bright-blue bold">87</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>st, msg = loadrep("a = 10; ", "instructions")</tspan>
+</tspan>
+    <tspan x="10px" y="604px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="622px">
+</tspan>
+    <tspan x="10px" y="640px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="658px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:105:9</tspan>
+</tspan>
+    <tspan x="10px" y="676px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="694px"><tspan class="fg-bright-blue bold">105</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local st, msg = load(aux, "k")</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="730px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="748px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="766px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="784px"><tspan class="fg-bright-blue bold">105</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>st, msg = load(aux, "k")</tspan>
+</tspan>
+    <tspan x="10px" y="802px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="820px">
+</tspan>
+    <tspan x="10px" y="838px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="856px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:133:9</tspan>
+</tspan>
+    <tspan x="10px" y="874px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="892px"><tspan class="fg-bright-blue bold">133</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local st, msg = pcall(function ()</tspan>
+</tspan>
+    <tspan x="10px" y="910px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="928px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="946px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="964px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="982px"><tspan class="fg-bright-blue bold">133</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>st, msg = pcall(function ()</tspan>
+</tspan>
+    <tspan x="10px" y="1000px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1018px">
+</tspan>
+    <tspan x="10px" y="1036px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="1054px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:151:9</tspan>
+</tspan>
+    <tspan x="10px" y="1072px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1090px"><tspan class="fg-bright-blue bold">151</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local st, msg = pcall(function ()</tspan>
+</tspan>
+    <tspan x="10px" y="1108px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="1126px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1144px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1162px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1180px"><tspan class="fg-bright-blue bold">151</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>st, msg = pcall(function ()</tspan>
+</tspan>
+    <tspan x="10px" y="1198px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1216px">
+</tspan>
+    <tspan x="10px" y="1234px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="1252px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:52:16</tspan>
+</tspan>
+    <tspan x="10px" y="1270px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1288px"><tspan class="fg-bright-blue bold">52</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local function controlstruct ()</tspan>
+</tspan>
+    <tspan x="10px" y="1306px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="1324px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1342px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: delete the definition</tspan>
+</tspan>
+    <tspan x="10px" y="1360px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1378px"><tspan class="fg-bright-blue bold">52</tspan><tspan> </tspan><tspan class="fg-bright-red">- local function controlstruct ()</tspan>
+</tspan>
+    <tspan x="10px" y="1396px"><tspan class="fg-bright-blue bold">53</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print("control structure too long")</tspan>
+</tspan>
+    <tspan x="10px" y="1414px"><tspan class="fg-bright-blue bold">54</tspan><tspan> </tspan><tspan class="fg-bright-red">-   local lim = ((1 &lt;&lt; 24) - 2) // 4</tspan>
+</tspan>
+    <tspan x="10px" y="1432px"><tspan class="fg-bright-blue bold">55</tspan><tspan> </tspan><tspan class="fg-bright-red">-   local s = string.rep("a = a + 1/n", lim)</tspan>
+</tspan>
+    <tspan x="10px" y="1450px"><tspan class="fg-bright-blue bold">56</tspan><tspan> </tspan><tspan class="fg-bright-red">-   s = "while true do " .. s .. "end"</tspan>
+</tspan>
+    <tspan x="10px" y="1468px"><tspan class="fg-bright-blue bold">57</tspan><tspan> </tspan><tspan class="fg-bright-red">-   assert(load(s))</tspan>
+</tspan>
+    <tspan x="10px" y="1486px"><tspan class="fg-bright-blue bold">58</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print("ok with " .. lim .. " lines")</tspan>
+</tspan>
+    <tspan x="10px" y="1504px"><tspan class="fg-bright-blue bold">59</tspan><tspan> </tspan><tspan class="fg-bright-red">-   lim = lim + 3</tspan>
+</tspan>
+    <tspan x="10px" y="1522px"><tspan class="fg-bright-blue bold">60</tspan><tspan> </tspan><tspan class="fg-bright-red">-   s = string.rep("a = a + 1/n", lim)</tspan>
+</tspan>
+    <tspan x="10px" y="1540px"><tspan class="fg-bright-blue bold">61</tspan><tspan> </tspan><tspan class="fg-bright-red">-   s = "while true do " .. s .. "end"</tspan>
+</tspan>
+    <tspan x="10px" y="1558px"><tspan class="fg-bright-blue bold">62</tspan><tspan> </tspan><tspan class="fg-bright-red">-   local st, msg = load(s)</tspan>
+</tspan>
+    <tspan x="10px" y="1576px"><tspan class="fg-bright-blue bold">63</tspan><tspan> </tspan><tspan class="fg-bright-red">-   assert(not st and string.find(msg, "too long"))</tspan>
+</tspan>
+    <tspan x="10px" y="1594px"><tspan class="fg-bright-blue bold">64</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print(msg)</tspan>
+</tspan>
+    <tspan x="10px" y="1612px"><tspan class="fg-bright-blue bold">65</tspan><tspan> </tspan><tspan class="fg-bright-red">- end</tspan>
+</tspan>
+    <tspan x="10px" y="1630px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1648px">
+</tspan>
+    <tspan x="10px" y="1666px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="1684px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:76:16</tspan>
+</tspan>
+    <tspan x="10px" y="1702px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1720px"><tspan class="fg-bright-blue bold">76</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local function hugeid ()</tspan>
+</tspan>
+    <tspan x="10px" y="1738px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="1756px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1774px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: delete the definition</tspan>
+</tspan>
+    <tspan x="10px" y="1792px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1810px"><tspan class="fg-bright-blue bold">76</tspan><tspan> </tspan><tspan class="fg-bright-red">- local function hugeid ()</tspan>
+</tspan>
+    <tspan x="10px" y="1828px"><tspan class="fg-bright-blue bold">77</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print("loading chunk with huge identifier")</tspan>
+</tspan>
+    <tspan x="10px" y="1846px"><tspan class="fg-bright-blue bold">78</tspan><tspan> </tspan><tspan class="fg-bright-red">-   local st, msg = loadrep("a", "chars")</tspan>
+</tspan>
+    <tspan x="10px" y="1864px"><tspan class="fg-bright-blue bold">79</tspan><tspan> </tspan><tspan class="fg-bright-red">-   assert(not st and </tspan>
+</tspan>
+    <tspan x="10px" y="1882px"><tspan class="fg-bright-blue bold">80</tspan><tspan> </tspan><tspan class="fg-bright-red">-     (string.find(msg, "lexical element too long") or</tspan>
+</tspan>
+    <tspan x="10px" y="1900px"><tspan class="fg-bright-blue bold">81</tspan><tspan> </tspan><tspan class="fg-bright-red">-      string.find(msg, "not enough memory")))</tspan>
+</tspan>
+    <tspan x="10px" y="1918px"><tspan class="fg-bright-blue bold">82</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print('+')</tspan>
+</tspan>
+    <tspan x="10px" y="1936px"><tspan class="fg-bright-blue bold">83</tspan><tspan> </tspan><tspan class="fg-bright-red">- end</tspan>
+</tspan>
+    <tspan x="10px" y="1954px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1972px">
+</tspan>
+    <tspan x="10px" y="1990px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="2008px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:68:16</tspan>
+</tspan>
+    <tspan x="10px" y="2026px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2044px"><tspan class="fg-bright-blue bold">68</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local function manylines ()</tspan>
+</tspan>
+    <tspan x="10px" y="2062px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2080px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2098px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: delete the definition</tspan>
+</tspan>
+    <tspan x="10px" y="2116px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2134px"><tspan class="fg-bright-blue bold">68</tspan><tspan> </tspan><tspan class="fg-bright-red">- local function manylines ()</tspan>
+</tspan>
+    <tspan x="10px" y="2152px"><tspan class="fg-bright-blue bold">69</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print("loading chunk with too many lines")</tspan>
+</tspan>
+    <tspan x="10px" y="2170px"><tspan class="fg-bright-blue bold">70</tspan><tspan> </tspan><tspan class="fg-bright-red">-   local st, msg = loadrep("/n", "lines")</tspan>
+</tspan>
+    <tspan x="10px" y="2188px"><tspan class="fg-bright-blue bold">71</tspan><tspan> </tspan><tspan class="fg-bright-red">-   assert(not st and string.find(msg, "too many lines"))</tspan>
+</tspan>
+    <tspan x="10px" y="2206px"><tspan class="fg-bright-blue bold">72</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print('+')</tspan>
+</tspan>
+    <tspan x="10px" y="2224px"><tspan class="fg-bright-blue bold">73</tspan><tspan> </tspan><tspan class="fg-bright-red">- end</tspan>
+</tspan>
+    <tspan x="10px" y="2242px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2260px">
+</tspan>
+    <tspan x="10px" y="2278px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="2296px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:6:16</tspan>
+</tspan>
+    <tspan x="10px" y="2314px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2332px"><tspan class="fg-bright-blue bold"> 6</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local function teststring ()</tspan>
+</tspan>
+    <tspan x="10px" y="2350px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2368px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2386px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: delete the definition</tspan>
+</tspan>
+    <tspan x="10px" y="2404px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2422px"><tspan class="fg-bright-blue bold"> 6</tspan><tspan> </tspan><tspan class="fg-bright-red">- local function teststring ()</tspan>
+</tspan>
+    <tspan x="10px" y="2440px"><tspan class="fg-bright-blue bold"> 7</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print("creating a string too long")</tspan>
+</tspan>
+    <tspan x="10px" y="2458px"><tspan class="fg-bright-blue bold"> 8</tspan><tspan> </tspan><tspan class="fg-bright-red">-   do</tspan>
+</tspan>
+    <tspan x="10px" y="2476px"><tspan class="fg-bright-blue bold"> 9</tspan><tspan> </tspan><tspan class="fg-bright-red">-     local a = "x"</tspan>
+</tspan>
+    <tspan x="10px" y="2494px"><tspan class="fg-bright-blue bold">10</tspan><tspan> </tspan><tspan class="fg-bright-red">-     local st, msg = pcall(function ()</tspan>
+</tspan>
+    <tspan x="10px" y="2512px"><tspan class="fg-bright-blue bold">11</tspan><tspan> </tspan><tspan class="fg-bright-red">-       while true do</tspan>
+</tspan>
+    <tspan x="10px" y="2530px"><tspan class="fg-bright-blue bold">12</tspan><tspan> </tspan><tspan class="fg-bright-red">-         a = a .. a.. a.. a.. a.. a.. a.. a.. a.. a</tspan>
+</tspan>
+    <tspan x="10px" y="2548px"><tspan class="fg-bright-blue bold">13</tspan><tspan> </tspan><tspan class="fg-bright-red">-          .. a .. a.. a.. a.. a.. a.. a.. a.. a.. a</tspan>
+</tspan>
+    <tspan x="10px" y="2566px"><tspan class="fg-bright-blue bold">14</tspan><tspan> </tspan><tspan class="fg-bright-red">-          .. a .. a.. a.. a.. a.. a.. a.. a.. a.. a</tspan>
+</tspan>
+    <tspan x="10px" y="2584px"><tspan class="fg-bright-blue bold">15</tspan><tspan> </tspan><tspan class="fg-bright-red">-          .. a .. a.. a.. a.. a.. a.. a.. a.. a.. a</tspan>
+</tspan>
+    <tspan x="10px" y="2602px"><tspan class="fg-bright-blue bold">16</tspan><tspan> </tspan><tspan class="fg-bright-red">-          .. a .. a.. a.. a.. a.. a.. a.. a.. a.. a</tspan>
+</tspan>
+    <tspan x="10px" y="2620px"><tspan class="fg-bright-blue bold">17</tspan><tspan> </tspan><tspan class="fg-bright-red">-          .. a .. a.. a.. a.. a.. a.. a.. a.. a.. a</tspan>
+</tspan>
+    <tspan x="10px" y="2638px"><tspan class="fg-bright-blue bold">18</tspan><tspan> </tspan><tspan class="fg-bright-red">-          .. a .. a.. a.. a.. a.. a.. a.. a.. a.. a</tspan>
+</tspan>
+    <tspan x="10px" y="2656px"><tspan class="fg-bright-blue bold">19</tspan><tspan> </tspan><tspan class="fg-bright-red">-          .. a .. a.. a.. a.. a.. a.. a.. a.. a.. a</tspan>
+</tspan>
+    <tspan x="10px" y="2674px"><tspan class="fg-bright-blue bold">20</tspan><tspan> </tspan><tspan class="fg-bright-red">-          .. a .. a.. a.. a.. a.. a.. a.. a.. a.. a</tspan>
+</tspan>
+    <tspan x="10px" y="2692px"><tspan class="fg-bright-blue bold">21</tspan><tspan> </tspan><tspan class="fg-bright-red">-          .. a .. a.. a.. a.. a.. a.. a.. a.. a.. a</tspan>
+</tspan>
+    <tspan x="10px" y="2710px"><tspan class="fg-bright-blue bold">22</tspan><tspan> </tspan><tspan class="fg-bright-red">-          print(string.format("string with %d bytes", #a))</tspan>
+</tspan>
+    <tspan x="10px" y="2728px"><tspan class="fg-bright-blue bold">23</tspan><tspan> </tspan><tspan class="fg-bright-red">-       end</tspan>
+</tspan>
+    <tspan x="10px" y="2746px"><tspan class="fg-bright-blue bold">24</tspan><tspan> </tspan><tspan class="fg-bright-red">-     end)</tspan>
+</tspan>
+    <tspan x="10px" y="2764px"><tspan class="fg-bright-blue bold">25</tspan><tspan> </tspan><tspan class="fg-bright-red">-     assert(not st and</tspan>
+</tspan>
+    <tspan x="10px" y="2782px"><tspan class="fg-bright-blue bold">26</tspan><tspan> </tspan><tspan class="fg-bright-red">-       (string.find(msg, "string length overflow") or</tspan>
+</tspan>
+    <tspan x="10px" y="2800px"><tspan class="fg-bright-blue bold">27</tspan><tspan> </tspan><tspan class="fg-bright-red">-        string.find(msg, "not enough memory")))</tspan>
+</tspan>
+    <tspan x="10px" y="2818px"><tspan class="fg-bright-blue bold">28</tspan><tspan> </tspan><tspan class="fg-bright-red">-     print("string length overflow with " .. #a * 100)</tspan>
+</tspan>
+    <tspan x="10px" y="2836px"><tspan class="fg-bright-blue bold">29</tspan><tspan> </tspan><tspan class="fg-bright-red">-   end</tspan>
+</tspan>
+    <tspan x="10px" y="2854px"><tspan class="fg-bright-blue bold">30</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print('+')</tspan>
+</tspan>
+    <tspan x="10px" y="2872px"><tspan class="fg-bright-blue bold">31</tspan><tspan> </tspan><tspan class="fg-bright-red">- end</tspan>
+</tspan>
+    <tspan x="10px" y="2890px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2908px">
+</tspan>
+    <tspan x="10px" y="2926px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="2944px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:112:16</tspan>
+</tspan>
+    <tspan x="10px" y="2962px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2980px"><tspan class="fg-bright-blue bold">112</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local function toomanyconst ()</tspan>
+</tspan>
+    <tspan x="10px" y="2998px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="3016px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3034px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: delete the definition</tspan>
+</tspan>
+    <tspan x="10px" y="3052px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3070px"><tspan class="fg-bright-blue bold">112</tspan><tspan> </tspan><tspan class="fg-bright-red">- local function toomanyconst ()</tspan>
+</tspan>
+    <tspan x="10px" y="3088px"><tspan class="fg-bright-blue bold">113</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print("loading function with too many constants")</tspan>
+</tspan>
+    <tspan x="10px" y="3106px"><tspan class="fg-bright-blue bold">114</tspan><tspan> </tspan><tspan class="fg-bright-red">-   loadrepfunc("function foo () return {0,",</tspan>
+</tspan>
+    <tspan x="10px" y="3124px"><tspan class="fg-bright-blue bold">115</tspan><tspan> </tspan><tspan class="fg-bright-red">-       function (n)</tspan>
+</tspan>
+    <tspan x="10px" y="3142px"><tspan class="fg-bright-blue bold">116</tspan><tspan> </tspan><tspan class="fg-bright-red">-         -- convert 'n' to a string in the format [["...",]],</tspan>
+</tspan>
+    <tspan x="10px" y="3160px"><tspan class="fg-bright-blue bold">117</tspan><tspan> </tspan><tspan class="fg-bright-red">-         -- where '...' is a kind of number in base 128</tspan>
+</tspan>
+    <tspan x="10px" y="3178px"><tspan class="fg-bright-blue bold">118</tspan><tspan> </tspan><tspan class="fg-bright-red">-         -- (in a range that does not include either the double quote</tspan>
+</tspan>
+    <tspan x="10px" y="3196px"><tspan class="fg-bright-blue bold">119</tspan><tspan> </tspan><tspan class="fg-bright-red">-         -- and the escape.)</tspan>
+</tspan>
+    <tspan x="10px" y="3214px"><tspan class="fg-bright-blue bold">120</tspan><tspan> </tspan><tspan class="fg-bright-red">-         return string.char(34,</tspan>
+</tspan>
+    <tspan x="10px" y="3232px"><tspan class="fg-bright-blue bold">121</tspan><tspan> </tspan><tspan class="fg-bright-red">-           ((n // 128^0) &amp; 127) + 128,</tspan>
+</tspan>
+    <tspan x="10px" y="3250px"><tspan class="fg-bright-blue bold">122</tspan><tspan> </tspan><tspan class="fg-bright-red">-           ((n // 128^1) &amp; 127) + 128,</tspan>
+</tspan>
+    <tspan x="10px" y="3268px"><tspan class="fg-bright-blue bold">123</tspan><tspan> </tspan><tspan class="fg-bright-red">-           ((n // 128^2) &amp; 127) + 128,</tspan>
+</tspan>
+    <tspan x="10px" y="3286px"><tspan class="fg-bright-blue bold">124</tspan><tspan> </tspan><tspan class="fg-bright-red">-           ((n // 128^3) &amp; 127) + 128,</tspan>
+</tspan>
+    <tspan x="10px" y="3304px"><tspan class="fg-bright-blue bold">125</tspan><tspan> </tspan><tspan class="fg-bright-red">-           ((n // 128^4) &amp; 127) + 128,</tspan>
+</tspan>
+    <tspan x="10px" y="3322px"><tspan class="fg-bright-blue bold">126</tspan><tspan> </tspan><tspan class="fg-bright-red">-           34, 44)</tspan>
+</tspan>
+    <tspan x="10px" y="3340px"><tspan class="fg-bright-blue bold">127</tspan><tspan> </tspan><tspan class="fg-bright-red">-       end)</tspan>
+</tspan>
+    <tspan x="10px" y="3358px"><tspan class="fg-bright-blue bold">128</tspan><tspan> </tspan><tspan class="fg-bright-red">- end</tspan>
+</tspan>
+    <tspan x="10px" y="3376px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3394px">
+</tspan>
+    <tspan x="10px" y="3412px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="3430px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:85:16</tspan>
+</tspan>
+    <tspan x="10px" y="3448px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3466px"><tspan class="fg-bright-blue bold">85</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local function toomanyinst ()</tspan>
+</tspan>
+    <tspan x="10px" y="3484px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="3502px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3520px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: delete the definition</tspan>
+</tspan>
+    <tspan x="10px" y="3538px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3556px"><tspan class="fg-bright-blue bold">85</tspan><tspan> </tspan><tspan class="fg-bright-red">- local function toomanyinst ()</tspan>
+</tspan>
+    <tspan x="10px" y="3574px"><tspan class="fg-bright-blue bold">86</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print("loading chunk with too many instructions")</tspan>
+</tspan>
+    <tspan x="10px" y="3592px"><tspan class="fg-bright-blue bold">87</tspan><tspan> </tspan><tspan class="fg-bright-red">-   local st, msg = loadrep("a = 10; ", "instructions")</tspan>
+</tspan>
+    <tspan x="10px" y="3610px"><tspan class="fg-bright-blue bold">88</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print('+')</tspan>
+</tspan>
+    <tspan x="10px" y="3628px"><tspan class="fg-bright-blue bold">89</tspan><tspan> </tspan><tspan class="fg-bright-red">- end</tspan>
+</tspan>
+    <tspan x="10px" y="3646px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3664px">
+</tspan>
+    <tspan x="10px" y="3682px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="3700px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/heavy.lua:131:16</tspan>
+</tspan>
+    <tspan x="10px" y="3718px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3736px"><tspan class="fg-bright-blue bold">131</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local function toomanystr ()</tspan>
+</tspan>
+    <tspan x="10px" y="3754px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="3772px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3790px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: delete the definition</tspan>
+</tspan>
+    <tspan x="10px" y="3808px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3826px"><tspan class="fg-bright-blue bold">131</tspan><tspan> </tspan><tspan class="fg-bright-red">- local function toomanystr ()</tspan>
+</tspan>
+    <tspan x="10px" y="3844px"><tspan class="fg-bright-blue bold">132</tspan><tspan> </tspan><tspan class="fg-bright-red">-   local a = {}</tspan>
+</tspan>
+    <tspan x="10px" y="3862px"><tspan class="fg-bright-blue bold">133</tspan><tspan> </tspan><tspan class="fg-bright-red">-   local st, msg = pcall(function ()</tspan>
+</tspan>
+    <tspan x="10px" y="3880px"><tspan class="fg-bright-blue bold">134</tspan><tspan> </tspan><tspan class="fg-bright-red">-     for i = 1, math.huge do</tspan>
+</tspan>
+    <tspan x="10px" y="3898px"><tspan class="fg-bright-blue bold">135</tspan><tspan> </tspan><tspan class="fg-bright-red">-       if i % (0x100000) == 0 then</tspan>
+</tspan>
+    <tspan x="10px" y="3916px"><tspan class="fg-bright-blue bold">136</tspan><tspan> </tspan><tspan class="fg-bright-red">-         io.stderr:write("(", i // 2^20, " M)")</tspan>
+</tspan>
+    <tspan x="10px" y="3934px"><tspan class="fg-bright-blue bold">137</tspan><tspan> </tspan><tspan class="fg-bright-red">-       end</tspan>
+</tspan>
+    <tspan x="10px" y="3952px"><tspan class="fg-bright-blue bold">138</tspan><tspan> </tspan><tspan class="fg-bright-red">-       a[i] = string.pack("I", i)</tspan>
+</tspan>
+    <tspan x="10px" y="3970px"><tspan class="fg-bright-blue bold">139</tspan><tspan> </tspan><tspan class="fg-bright-red">-      end</tspan>
+</tspan>
+    <tspan x="10px" y="3988px"><tspan class="fg-bright-blue bold">140</tspan><tspan> </tspan><tspan class="fg-bright-red">-   end)</tspan>
+</tspan>
+    <tspan x="10px" y="4006px"><tspan class="fg-bright-blue bold">141</tspan><tspan> </tspan><tspan class="fg-bright-red">-   local size = #a</tspan>
+</tspan>
+    <tspan x="10px" y="4024px"><tspan class="fg-bright-blue bold">142</tspan><tspan> </tspan><tspan class="fg-bright-red">-   a = collectgarbage'count'</tspan>
+</tspan>
+    <tspan x="10px" y="4042px"><tspan class="fg-bright-blue bold">143</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print("/nmemory:", a * 1024)</tspan>
+</tspan>
+    <tspan x="10px" y="4060px"><tspan class="fg-bright-blue bold">144</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print("expected error:", msg)</tspan>
+</tspan>
+    <tspan x="10px" y="4078px"><tspan class="fg-bright-blue bold">145</tspan><tspan> </tspan><tspan class="fg-bright-red">-   print("size:", size)</tspan>
+</tspan>
+    <tspan x="10px" y="4096px"><tspan class="fg-bright-blue bold">146</tspan><tspan> </tspan><tspan class="fg-bright-red">- end</tspan>
+</tspan>
+    <tspan x="10px" y="4114px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4132px">
+</tspan>
+    <tspan x="10px" y="4150px">
+</tspan>
+  </text>
+
+</svg>

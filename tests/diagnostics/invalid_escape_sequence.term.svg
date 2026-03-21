@@ -1,0 +1,142 @@
+<svg width="740px" height="1064px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-red { fill: #FF5555 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-red bold">error</tspan><tspan class="bold">: invalid hexadecimal escape sequence</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/invalid_escape_sequence.lua:1:12</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">1</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local _ = "/x"</tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-red bold">^^</tspan>
+</tspan>
+    <tspan x="10px" y="118px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-green bold">note</tspan><tspan>: expected exactly two hexadecimal digits</tspan>
+</tspan>
+    <tspan x="10px" y="154px">
+</tspan>
+    <tspan x="10px" y="172px"><tspan class="fg-bright-red bold">error</tspan><tspan class="bold">: invalid escape sequence</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/invalid_escape_sequence.lua:2:12</tspan>
+</tspan>
+    <tspan x="10px" y="208px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="226px"><tspan class="fg-bright-blue bold">2</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local _ = "/m"</tspan>
+</tspan>
+    <tspan x="10px" y="244px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-red bold">^^</tspan>
+</tspan>
+    <tspan x="10px" y="262px">
+</tspan>
+    <tspan x="10px" y="280px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unicode-code-point-too-large">unicode-code-point-too-large</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: Unicode code point is too large</tspan>
+</tspan>
+    <tspan x="10px" y="298px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/invalid_escape_sequence.lua:3:15</tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="334px"><tspan class="fg-bright-blue bold">3</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local _ = "/u{12345678}"</tspan>
+</tspan>
+    <tspan x="10px" y="352px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua allows invalid Unicode code points larger than 0x10FFFF</tspan>
+</tspan>
+    <tspan x="10px" y="406px">
+</tspan>
+    <tspan x="10px" y="424px"><tspan class="fg-bright-red bold">error</tspan><tspan class="bold">: invalid unicode escape sequence</tspan>
+</tspan>
+    <tspan x="10px" y="442px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/invalid_escape_sequence.lua:4:12</tspan>
+</tspan>
+    <tspan x="10px" y="460px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan class="fg-bright-blue bold">4</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local _ = "/u{123456789}"</tspan>
+</tspan>
+    <tspan x="10px" y="496px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-red bold">^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="514px">
+</tspan>
+    <tspan x="10px" y="532px"><tspan class="fg-bright-red bold">error</tspan><tspan class="bold">: invalid unicode escape sequence</tspan>
+</tspan>
+    <tspan x="10px" y="550px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/invalid_escape_sequence.lua:5:12</tspan>
+</tspan>
+    <tspan x="10px" y="568px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan class="fg-bright-blue bold">5</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local _ = "/u{123XX}"</tspan>
+</tspan>
+    <tspan x="10px" y="604px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-red bold">^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="622px">
+</tspan>
+    <tspan x="10px" y="640px"><tspan class="fg-bright-red bold">error</tspan><tspan class="bold">: invalid unicode escape sequence</tspan>
+</tspan>
+    <tspan x="10px" y="658px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/invalid_escape_sequence.lua:6:13</tspan>
+</tspan>
+    <tspan x="10px" y="676px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="694px"><tspan class="fg-bright-blue bold">6</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local _ = "/u"</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>             </tspan><tspan class="fg-bright-red bold">^^</tspan>
+</tspan>
+    <tspan x="10px" y="730px">
+</tspan>
+    <tspan x="10px" y="748px"><tspan class="fg-bright-red bold">error</tspan><tspan class="bold">: UTF-8 value is too large</tspan>
+</tspan>
+    <tspan x="10px" y="766px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/invalid_escape_sequence.lua:7:15</tspan>
+</tspan>
+    <tspan x="10px" y="784px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="802px"><tspan class="fg-bright-blue bold">7</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local _ = "/u{FFFFFFFF}"</tspan>
+</tspan>
+    <tspan x="10px" y="820px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-red bold">^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="838px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="856px"><tspan class="fg-bright-green bold">note</tspan><tspan>: the code point can be any value less than 0x80000000</tspan>
+</tspan>
+    <tspan x="10px" y="874px"><tspan class="fg-bright-green bold">note</tspan><tspan>: the original UTF-8 specification is not restricted to valid Unicode code points</tspan>
+</tspan>
+    <tspan x="10px" y="892px">
+</tspan>
+    <tspan x="10px" y="910px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unicode-code-point-is-surrogate">unicode-code-point-is-surrogate</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: Unicode code point is a surrogate</tspan>
+</tspan>
+    <tspan x="10px" y="928px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/invalid_escape_sequence.lua:8:15</tspan>
+</tspan>
+    <tspan x="10px" y="946px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="964px"><tspan class="fg-bright-blue bold">8</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local _ = "/u{D800}"</tspan>
+</tspan>
+    <tspan x="10px" y="982px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="1000px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1018px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua allows invalid Unicode code points between 0xD800 and 0xDFFF</tspan>
+</tspan>
+    <tspan x="10px" y="1036px">
+</tspan>
+    <tspan x="10px" y="1054px">
+</tspan>
+  </text>
+
+</svg>

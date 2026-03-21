@@ -1,0 +1,1605 @@
+<svg width="810px" height="14222px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-cyan { fill: #55FFFF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-red { fill: #FF5555 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-blue bold">info[</tspan><tspan class="fg-bright-blue bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#trailing-whitespace">trailing-whitespace</a></tspan><tspan class="fg-bright-blue bold">]</tspan><tspan class="bold">: line contains trailing whitespace</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:162:13</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">162</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local x, y </tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>             </tspan><tspan class="fg-bright-blue bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="118px">
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#octal-confusion">octal-confusion</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: zero prefixed integer can be confused as octal number</tspan>
+</tspan>
+    <tspan x="10px" y="154px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:97:30</tspan>
+</tspan>
+    <tspan x="10px" y="172px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan class="fg-bright-blue bold">97</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(c%a == 0 and a^b == 08)</tspan>
+</tspan>
+    <tspan x="10px" y="208px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                              </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="226px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="244px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua doesn't have the octal numbers syntax from C</tspan>
+</tspan>
+    <tspan x="10px" y="262px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the prefix</tspan>
+</tspan>
+    <tspan x="10px" y="280px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="298px"><tspan class="fg-bright-blue bold">97</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(c%a == 0 and a^b == </tspan><tspan class="fg-bright-red">0</tspan><tspan>8)</tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan class="fg-bright-blue bold">97</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(c%a == 0 and a^b == 8)</tspan>
+</tspan>
+    <tspan x="10px" y="334px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="352px">
+</tspan>
+    <tspan x="10px" y="370px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:148:15</tspan>
+</tspan>
+    <tspan x="10px" y="406px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="424px"><tspan class="fg-bright-blue bold">148</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         local x = i + ti</tspan>
+</tspan>
+    <tspan x="10px" y="442px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="460px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="496px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="514px"><tspan class="fg-bright-blue bold">148</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>        local </tspan><tspan class="fg-bright-green">_</tspan><tspan>x = i + ti</tspan>
+</tspan>
+    <tspan x="10px" y="532px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="550px">
+</tspan>
+    <tspan x="10px" y="568px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:149:15</tspan>
+</tspan>
+    <tspan x="10px" y="604px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="622px"><tspan class="fg-bright-blue bold">149</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         local y = j + tj</tspan>
+</tspan>
+    <tspan x="10px" y="640px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="658px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="676px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="694px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan class="fg-bright-blue bold">149</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>        local </tspan><tspan class="fg-bright-green">_</tspan><tspan>y = j + tj</tspan>
+</tspan>
+    <tspan x="10px" y="730px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="748px">
+</tspan>
+    <tspan x="10px" y="766px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="784px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:220:25</tspan>
+</tspan>
+    <tspan x="10px" y="802px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="820px"><tspan class="fg-bright-blue bold">220</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(1 &lt; 1.1); assert(not (1 &lt; 0.9))</tspan>
+</tspan>
+    <tspan x="10px" y="838px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                         </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>    </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="856px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="874px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="892px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="910px"><tspan class="fg-bright-blue bold">220</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(1 &lt; 1.1); assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>1 </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> 0.9</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="928px"><tspan class="fg-bright-blue bold">220</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(1 &lt; 1.1); assert(1 </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> 0.9)</tspan>
+</tspan>
+    <tspan x="10px" y="946px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="964px">
+</tspan>
+    <tspan x="10px" y="982px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="1000px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:221:26</tspan>
+</tspan>
+    <tspan x="10px" y="1018px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1036px"><tspan class="fg-bright-blue bold">221</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(1 &lt;= 1.1); assert(not (1 &lt;= 0.9))</tspan>
+</tspan>
+    <tspan x="10px" y="1054px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>    </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="1072px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1090px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="1108px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1126px"><tspan class="fg-bright-blue bold">221</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(1 &lt;= 1.1); assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>1 </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> 0.9</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="1144px"><tspan class="fg-bright-blue bold">221</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(1 &lt;= 1.1); assert(1 </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> 0.9)</tspan>
+</tspan>
+    <tspan x="10px" y="1162px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1180px">
+</tspan>
+    <tspan x="10px" y="1198px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="1216px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:222:27</tspan>
+</tspan>
+    <tspan x="10px" y="1234px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1252px"><tspan class="fg-bright-blue bold">222</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(-1 &lt; -0.9); assert(not (-1 &lt; -1.1))</tspan>
+</tspan>
+    <tspan x="10px" y="1270px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                           </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>     </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="1288px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1306px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="1324px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1342px"><tspan class="fg-bright-blue bold">222</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(-1 &lt; -0.9); assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>-1 </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> -1.1</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="1360px"><tspan class="fg-bright-blue bold">222</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(-1 &lt; -0.9); assert(-1 </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> -1.1)</tspan>
+</tspan>
+    <tspan x="10px" y="1378px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1396px">
+</tspan>
+    <tspan x="10px" y="1414px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="1432px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:223:26</tspan>
+</tspan>
+    <tspan x="10px" y="1450px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1468px"><tspan class="fg-bright-blue bold">223</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(1 &lt;= 1.1); assert(not (-1 &lt;= -1.1))</tspan>
+</tspan>
+    <tspan x="10px" y="1486px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>     </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="1504px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1522px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="1540px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1558px"><tspan class="fg-bright-blue bold">223</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(1 &lt;= 1.1); assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>-1 </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> -1.1</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="1576px"><tspan class="fg-bright-blue bold">223</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(1 &lt;= 1.1); assert(-1 </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> -1.1)</tspan>
+</tspan>
+    <tspan x="10px" y="1594px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1612px">
+</tspan>
+    <tspan x="10px" y="1630px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="1648px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:224:27</tspan>
+</tspan>
+    <tspan x="10px" y="1666px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1684px"><tspan class="fg-bright-blue bold">224</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(-1 &lt; -0.9); assert(not (-1 &lt; -1.1))</tspan>
+</tspan>
+    <tspan x="10px" y="1702px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                           </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>     </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="1720px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1738px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="1756px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1774px"><tspan class="fg-bright-blue bold">224</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(-1 &lt; -0.9); assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>-1 </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> -1.1</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="1792px"><tspan class="fg-bright-blue bold">224</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(-1 &lt; -0.9); assert(-1 </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> -1.1)</tspan>
+</tspan>
+    <tspan x="10px" y="1810px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1828px">
+</tspan>
+    <tspan x="10px" y="1846px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="1864px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:225:28</tspan>
+</tspan>
+    <tspan x="10px" y="1882px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1900px"><tspan class="fg-bright-blue bold">225</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(-1 &lt;= -0.9); assert(not (-1 &lt;= -1.1))</tspan>
+</tspan>
+    <tspan x="10px" y="1918px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>     </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="1936px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1954px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="1972px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1990px"><tspan class="fg-bright-blue bold">225</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(-1 &lt;= -0.9); assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>-1 </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> -1.1</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="2008px"><tspan class="fg-bright-blue bold">225</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(-1 &lt;= -0.9); assert(-1 </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> -1.1)</tspan>
+</tspan>
+    <tspan x="10px" y="2026px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2044px">
+</tspan>
+    <tspan x="10px" y="2062px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="2080px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:228:8</tspan>
+</tspan>
+    <tspan x="10px" y="2098px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2116px"><tspan class="fg-bright-blue bold">228</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not (minint &lt; minint + 0.0))</tspan>
+</tspan>
+    <tspan x="10px" y="2134px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>         </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="2152px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2170px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="2188px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2206px"><tspan class="fg-bright-blue bold">228</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>minint </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> minint + 0.0</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="2224px"><tspan class="fg-bright-blue bold">228</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(minint </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> minint + 0.0)</tspan>
+</tspan>
+    <tspan x="10px" y="2242px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2260px">
+</tspan>
+    <tspan x="10px" y="2278px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="2296px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:229:8</tspan>
+</tspan>
+    <tspan x="10px" y="2314px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2332px"><tspan class="fg-bright-blue bold">229</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not (minint + 0.0 &lt; minint))</tspan>
+</tspan>
+    <tspan x="10px" y="2350px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>               </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="2368px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2386px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="2404px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2422px"><tspan class="fg-bright-blue bold">229</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>minint + 0.0 </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> minint</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="2440px"><tspan class="fg-bright-blue bold">229</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(minint + 0.0 </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> minint)</tspan>
+</tspan>
+    <tspan x="10px" y="2458px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2476px">
+</tspan>
+    <tspan x="10px" y="2494px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="2512px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:237:10</tspan>
+</tspan>
+    <tspan x="10px" y="2530px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2548px"><tspan class="fg-bright-blue bold">237</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (fmaxi1 &lt;= maxint))</tspan>
+</tspan>
+    <tspan x="10px" y="2566px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>         </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="2584px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2602px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="2620px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2638px"><tspan class="fg-bright-blue bold">237</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>fmaxi1 </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> maxint</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="2656px"><tspan class="fg-bright-blue bold">237</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(fmaxi1 </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> maxint)</tspan>
+</tspan>
+    <tspan x="10px" y="2674px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2692px">
+</tspan>
+    <tspan x="10px" y="2710px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="2728px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:249:10</tspan>
+</tspan>
+    <tspan x="10px" y="2746px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2764px"><tspan class="fg-bright-blue bold">249</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (fmax &lt;= ifmax - 1))</tspan>
+</tspan>
+    <tspan x="10px" y="2782px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="2800px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2818px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="2836px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2854px"><tspan class="fg-bright-blue bold">249</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>fmax </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> ifmax - 1</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="2872px"><tspan class="fg-bright-blue bold">249</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(fmax </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> ifmax - 1)</tspan>
+</tspan>
+    <tspan x="10px" y="2890px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2908px">
+</tspan>
+    <tspan x="10px" y="2926px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="2944px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:251:10</tspan>
+</tspan>
+    <tspan x="10px" y="2962px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2980px"><tspan class="fg-bright-blue bold">251</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (-fmax &gt;= -(ifmax - 1)))</tspan>
+</tspan>
+    <tspan x="10px" y="2998px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="3016px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3034px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="3052px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3070px"><tspan class="fg-bright-blue bold">251</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>-fmax </tspan><tspan class="fg-bright-red">&gt;=</tspan><tspan> -(ifmax - 1)</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="3088px"><tspan class="fg-bright-blue bold">251</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(-fmax </tspan><tspan class="fg-bright-green">&lt;</tspan><tspan> -(ifmax - 1))</tspan>
+</tspan>
+    <tspan x="10px" y="3106px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3124px">
+</tspan>
+    <tspan x="10px" y="3142px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="3160px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:266:10</tspan>
+</tspan>
+    <tspan x="10px" y="3178px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3196px"><tspan class="fg-bright-blue bold">266</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (maxint + 0.0 &lt; maxint))</tspan>
+</tspan>
+    <tspan x="10px" y="3214px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>               </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="3232px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3250px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="3268px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3286px"><tspan class="fg-bright-blue bold">266</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>maxint + 0.0 </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> maxint</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="3304px"><tspan class="fg-bright-blue bold">266</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(maxint + 0.0 </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> maxint)</tspan>
+</tspan>
+    <tspan x="10px" y="3322px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3340px">
+</tspan>
+    <tspan x="10px" y="3358px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="3376px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:268:10</tspan>
+</tspan>
+    <tspan x="10px" y="3394px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3412px"><tspan class="fg-bright-blue bold">268</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (maxint &lt; maxint + 0.0))</tspan>
+</tspan>
+    <tspan x="10px" y="3430px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>         </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="3448px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3466px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="3484px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3502px"><tspan class="fg-bright-blue bold">268</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>maxint </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> maxint + 0.0</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="3520px"><tspan class="fg-bright-blue bold">268</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(maxint </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> maxint + 0.0)</tspan>
+</tspan>
+    <tspan x="10px" y="3538px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3556px">
+</tspan>
+    <tspan x="10px" y="3574px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="3592px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:271:10</tspan>
+</tspan>
+    <tspan x="10px" y="3610px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3628px"><tspan class="fg-bright-blue bold">271</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (maxint + 1.0 &lt;= maxint))</tspan>
+</tspan>
+    <tspan x="10px" y="3646px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>               </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="3664px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3682px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="3700px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3718px"><tspan class="fg-bright-blue bold">271</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>maxint + 1.0 </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> maxint</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="3736px"><tspan class="fg-bright-blue bold">271</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(maxint + 1.0 </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> maxint)</tspan>
+</tspan>
+    <tspan x="10px" y="3754px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3772px">
+</tspan>
+    <tspan x="10px" y="3790px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="3808px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:272:10</tspan>
+</tspan>
+    <tspan x="10px" y="3826px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3844px"><tspan class="fg-bright-blue bold">272</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (maxint + 0.5 &lt;= maxint))</tspan>
+</tspan>
+    <tspan x="10px" y="3862px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>               </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="3880px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3898px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="3916px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3934px"><tspan class="fg-bright-blue bold">272</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>maxint + 0.5 </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> maxint</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="3952px"><tspan class="fg-bright-blue bold">272</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(maxint + 0.5 </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> maxint)</tspan>
+</tspan>
+    <tspan x="10px" y="3970px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3988px">
+</tspan>
+    <tspan x="10px" y="4006px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="4024px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:273:10</tspan>
+</tspan>
+    <tspan x="10px" y="4042px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4060px"><tspan class="fg-bright-blue bold">273</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (maxint &lt;= maxint - 1.0))</tspan>
+</tspan>
+    <tspan x="10px" y="4078px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>         </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="4096px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4114px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="4132px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4150px"><tspan class="fg-bright-blue bold">273</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>maxint </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> maxint - 1.0</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="4168px"><tspan class="fg-bright-blue bold">273</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(maxint </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> maxint - 1.0)</tspan>
+</tspan>
+    <tspan x="10px" y="4186px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4204px">
+</tspan>
+    <tspan x="10px" y="4222px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="4240px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:274:10</tspan>
+</tspan>
+    <tspan x="10px" y="4258px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4276px"><tspan class="fg-bright-blue bold">274</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (maxint &lt;= maxint - 0.5))</tspan>
+</tspan>
+    <tspan x="10px" y="4294px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>         </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="4312px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4330px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="4348px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4366px"><tspan class="fg-bright-blue bold">274</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>maxint </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> maxint - 0.5</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="4384px"><tspan class="fg-bright-blue bold">274</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(maxint </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> maxint - 0.5)</tspan>
+</tspan>
+    <tspan x="10px" y="4402px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4420px">
+</tspan>
+    <tspan x="10px" y="4438px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="4456px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:281:10</tspan>
+</tspan>
+    <tspan x="10px" y="4474px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4492px"><tspan class="fg-bright-blue bold">281</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (minint + 0.0 &lt; minint))</tspan>
+</tspan>
+    <tspan x="10px" y="4510px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>               </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="4528px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4546px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="4564px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4582px"><tspan class="fg-bright-blue bold">281</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>minint + 0.0 </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> minint</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="4600px"><tspan class="fg-bright-blue bold">281</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(minint + 0.0 </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> minint)</tspan>
+</tspan>
+    <tspan x="10px" y="4618px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4636px">
+</tspan>
+    <tspan x="10px" y="4654px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="4672px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:282:10</tspan>
+</tspan>
+    <tspan x="10px" y="4690px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4708px"><tspan class="fg-bright-blue bold">282</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (minint + 0.5 &lt; minint))</tspan>
+</tspan>
+    <tspan x="10px" y="4726px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>               </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="4744px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4762px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="4780px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4798px"><tspan class="fg-bright-blue bold">282</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>minint + 0.5 </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> minint</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="4816px"><tspan class="fg-bright-blue bold">282</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(minint + 0.5 </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> minint)</tspan>
+</tspan>
+    <tspan x="10px" y="4834px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4852px">
+</tspan>
+    <tspan x="10px" y="4870px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="4888px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:283:10</tspan>
+</tspan>
+    <tspan x="10px" y="4906px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4924px"><tspan class="fg-bright-blue bold">283</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (minint &lt; minint + 0.0))</tspan>
+</tspan>
+    <tspan x="10px" y="4942px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>         </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="4960px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4978px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="4996px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5014px"><tspan class="fg-bright-blue bold">283</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>minint </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> minint + 0.0</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="5032px"><tspan class="fg-bright-blue bold">283</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(minint </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> minint + 0.0)</tspan>
+</tspan>
+    <tspan x="10px" y="5050px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5068px">
+</tspan>
+    <tspan x="10px" y="5086px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="5104px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:286:10</tspan>
+</tspan>
+    <tspan x="10px" y="5122px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5140px"><tspan class="fg-bright-blue bold">286</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (minint + 1.0 &lt;= minint))</tspan>
+</tspan>
+    <tspan x="10px" y="5158px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>               </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="5176px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5194px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="5212px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5230px"><tspan class="fg-bright-blue bold">286</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>minint + 1.0 </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> minint</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="5248px"><tspan class="fg-bright-blue bold">286</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(minint + 1.0 </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> minint)</tspan>
+</tspan>
+    <tspan x="10px" y="5266px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5284px">
+</tspan>
+    <tspan x="10px" y="5302px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="5320px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:287:10</tspan>
+</tspan>
+    <tspan x="10px" y="5338px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5356px"><tspan class="fg-bright-blue bold">287</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (minint + 0.5 &lt;= minint))</tspan>
+</tspan>
+    <tspan x="10px" y="5374px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>               </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="5392px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5410px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="5428px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5446px"><tspan class="fg-bright-blue bold">287</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>minint + 0.5 </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> minint</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="5464px"><tspan class="fg-bright-blue bold">287</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(minint + 0.5 </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> minint)</tspan>
+</tspan>
+    <tspan x="10px" y="5482px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5500px">
+</tspan>
+    <tspan x="10px" y="5518px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="5536px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:288:10</tspan>
+</tspan>
+    <tspan x="10px" y="5554px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5572px"><tspan class="fg-bright-blue bold">288</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (minint &lt;= minint - 1.0))</tspan>
+</tspan>
+    <tspan x="10px" y="5590px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>         </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="5608px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5626px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="5644px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5662px"><tspan class="fg-bright-blue bold">288</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>minint </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> minint - 1.0</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="5680px"><tspan class="fg-bright-blue bold">288</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(minint </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> minint - 1.0)</tspan>
+</tspan>
+    <tspan x="10px" y="5698px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5716px">
+</tspan>
+    <tspan x="10px" y="5734px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="5752px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:293:10</tspan>
+</tspan>
+    <tspan x="10px" y="5770px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5788px"><tspan class="fg-bright-blue bold">293</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (NaN &lt; 0))</tspan>
+</tspan>
+    <tspan x="10px" y="5806px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="5824px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5842px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="5860px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5878px"><tspan class="fg-bright-blue bold">293</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>NaN </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> 0</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="5896px"><tspan class="fg-bright-blue bold">293</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(NaN </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> 0)</tspan>
+</tspan>
+    <tspan x="10px" y="5914px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5932px">
+</tspan>
+    <tspan x="10px" y="5950px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="5968px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:294:10</tspan>
+</tspan>
+    <tspan x="10px" y="5986px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6004px"><tspan class="fg-bright-blue bold">294</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (NaN &gt; minint))</tspan>
+</tspan>
+    <tspan x="10px" y="6022px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="6040px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6058px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="6076px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6094px"><tspan class="fg-bright-blue bold">294</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>NaN </tspan><tspan class="fg-bright-red">&gt;</tspan><tspan> minint</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="6112px"><tspan class="fg-bright-blue bold">294</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(NaN </tspan><tspan class="fg-bright-green">&lt;=</tspan><tspan> minint)</tspan>
+</tspan>
+    <tspan x="10px" y="6130px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6148px">
+</tspan>
+    <tspan x="10px" y="6166px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="6184px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:295:10</tspan>
+</tspan>
+    <tspan x="10px" y="6202px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6220px"><tspan class="fg-bright-blue bold">295</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (NaN &lt;= -9))</tspan>
+</tspan>
+    <tspan x="10px" y="6238px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="6256px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6274px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="6292px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6310px"><tspan class="fg-bright-blue bold">295</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>NaN </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> -9</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="6328px"><tspan class="fg-bright-blue bold">295</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(NaN </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> -9)</tspan>
+</tspan>
+    <tspan x="10px" y="6346px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6364px">
+</tspan>
+    <tspan x="10px" y="6382px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="6400px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:296:10</tspan>
+</tspan>
+    <tspan x="10px" y="6418px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6436px"><tspan class="fg-bright-blue bold">296</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (NaN &lt;= maxint))</tspan>
+</tspan>
+    <tspan x="10px" y="6454px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="6472px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6490px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="6508px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6526px"><tspan class="fg-bright-blue bold">296</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>NaN </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> maxint</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="6544px"><tspan class="fg-bright-blue bold">296</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(NaN </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> maxint)</tspan>
+</tspan>
+    <tspan x="10px" y="6562px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6580px">
+</tspan>
+    <tspan x="10px" y="6598px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="6616px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:297:10</tspan>
+</tspan>
+    <tspan x="10px" y="6634px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6652px"><tspan class="fg-bright-blue bold">297</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (NaN &lt; maxint))</tspan>
+</tspan>
+    <tspan x="10px" y="6670px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="6688px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6706px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="6724px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6742px"><tspan class="fg-bright-blue bold">297</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>NaN </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> maxint</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="6760px"><tspan class="fg-bright-blue bold">297</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(NaN </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> maxint)</tspan>
+</tspan>
+    <tspan x="10px" y="6778px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6796px">
+</tspan>
+    <tspan x="10px" y="6814px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="6832px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:298:10</tspan>
+</tspan>
+    <tspan x="10px" y="6850px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6868px"><tspan class="fg-bright-blue bold">298</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (minint &lt;= NaN))</tspan>
+</tspan>
+    <tspan x="10px" y="6886px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>         </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="6904px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6922px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="6940px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6958px"><tspan class="fg-bright-blue bold">298</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>minint </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> NaN</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="6976px"><tspan class="fg-bright-blue bold">298</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(minint </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> NaN)</tspan>
+</tspan>
+    <tspan x="10px" y="6994px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7012px">
+</tspan>
+    <tspan x="10px" y="7030px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="7048px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:299:10</tspan>
+</tspan>
+    <tspan x="10px" y="7066px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7084px"><tspan class="fg-bright-blue bold">299</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (minint &lt; NaN))</tspan>
+</tspan>
+    <tspan x="10px" y="7102px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>         </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="7120px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7138px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="7156px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7174px"><tspan class="fg-bright-blue bold">299</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>minint </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> NaN</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="7192px"><tspan class="fg-bright-blue bold">299</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(minint </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> NaN)</tspan>
+</tspan>
+    <tspan x="10px" y="7210px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7228px">
+</tspan>
+    <tspan x="10px" y="7246px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="7264px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:300:10</tspan>
+</tspan>
+    <tspan x="10px" y="7282px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7300px"><tspan class="fg-bright-blue bold">300</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (4 &lt;= NaN))</tspan>
+</tspan>
+    <tspan x="10px" y="7318px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>    </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="7336px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7354px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="7372px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7390px"><tspan class="fg-bright-blue bold">300</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>4 </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> NaN</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="7408px"><tspan class="fg-bright-blue bold">300</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(4 </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> NaN)</tspan>
+</tspan>
+    <tspan x="10px" y="7426px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7444px">
+</tspan>
+    <tspan x="10px" y="7462px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="7480px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:301:10</tspan>
+</tspan>
+    <tspan x="10px" y="7498px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7516px"><tspan class="fg-bright-blue bold">301</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (4 &lt; NaN))</tspan>
+</tspan>
+    <tspan x="10px" y="7534px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>    </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="7552px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7570px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="7588px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7606px"><tspan class="fg-bright-blue bold">301</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>4 </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> NaN</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="7624px"><tspan class="fg-bright-blue bold">301</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(4 </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> NaN)</tspan>
+</tspan>
+    <tspan x="10px" y="7642px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7660px">
+</tspan>
+    <tspan x="10px" y="7678px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#octal-confusion">octal-confusion</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: zero prefixed integer can be confused as octal number</tspan>
+</tspan>
+    <tspan x="10px" y="7696px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:414:29</tspan>
+</tspan>
+    <tspan x="10px" y="7714px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7732px"><tspan class="fg-bright-blue bold">414</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(tonumber('-012') == -010-2)</tspan>
+</tspan>
+    <tspan x="10px" y="7750px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                             </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="7768px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7786px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua doesn't have the octal numbers syntax from C</tspan>
+</tspan>
+    <tspan x="10px" y="7804px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the prefix</tspan>
+</tspan>
+    <tspan x="10px" y="7822px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7840px"><tspan class="fg-bright-blue bold">414</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(tonumber('-012') == -</tspan><tspan class="fg-bright-red">0</tspan><tspan>10-2)</tspan>
+</tspan>
+    <tspan x="10px" y="7858px"><tspan class="fg-bright-blue bold">414</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(tonumber('-012') == -10-2)</tspan>
+</tspan>
+    <tspan x="10px" y="7876px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7894px">
+</tspan>
+    <tspan x="10px" y="7912px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#octal-confusion">octal-confusion</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: zero prefixed integer can be confused as octal number</tspan>
+</tspan>
+    <tspan x="10px" y="7930px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:423:38</tspan>
+</tspan>
+    <tspan x="10px" y="7948px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7966px"><tspan class="fg-bright-blue bold">423</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(tonumber('  001010  ', 10) == 001010)</tspan>
+</tspan>
+    <tspan x="10px" y="7984px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                      </tspan><tspan class="fg-bright-yellow">^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="8002px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8020px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua doesn't have the octal numbers syntax from C</tspan>
+</tspan>
+    <tspan x="10px" y="8038px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the prefix</tspan>
+</tspan>
+    <tspan x="10px" y="8056px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8074px"><tspan class="fg-bright-blue bold">423</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(tonumber('  001010  ', 10) == </tspan><tspan class="fg-bright-red">0</tspan><tspan>01010)</tspan>
+</tspan>
+    <tspan x="10px" y="8092px"><tspan class="fg-bright-blue bold">423</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(tonumber('  001010  ', 10) == 01010)</tspan>
+</tspan>
+    <tspan x="10px" y="8110px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8128px">
+</tspan>
+    <tspan x="10px" y="8146px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="8164px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:548:8</tspan>
+</tspan>
+    <tspan x="10px" y="8182px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8200px"><tspan class="fg-bright-blue bold">548</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not(1&lt;1) and (1&lt;2) and not(2&lt;1))</tspan>
+</tspan>
+    <tspan x="10px" y="8218px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>  </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="8236px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8254px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="8272px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8290px"><tspan class="fg-bright-blue bold">548</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(</tspan><tspan class="fg-bright-red">not(</tspan><tspan>1</tspan><tspan class="fg-bright-red">&lt;</tspan><tspan>1</tspan><tspan class="fg-bright-red">)</tspan><tspan> and (1&lt;2) and not(2&lt;1))</tspan>
+</tspan>
+    <tspan x="10px" y="8308px"><tspan class="fg-bright-blue bold">548</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(1</tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan>1 and (1&lt;2) and not(2&lt;1))</tspan>
+</tspan>
+    <tspan x="10px" y="8326px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8344px">
+</tspan>
+    <tspan x="10px" y="8362px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="8380px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:548:31</tspan>
+</tspan>
+    <tspan x="10px" y="8398px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8416px"><tspan class="fg-bright-blue bold">548</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not(1&lt;1) and (1&lt;2) and not(2&lt;1))</tspan>
+</tspan>
+    <tspan x="10px" y="8434px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                               </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>  </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="8452px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8470px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="8488px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8506px"><tspan class="fg-bright-blue bold">548</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(not(1&lt;1) and (1&lt;2) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>2</tspan><tspan class="fg-bright-red">&lt;</tspan><tspan>1</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="8524px"><tspan class="fg-bright-blue bold">548</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(not(1&lt;1) and (1&lt;2) and 2</tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan>1)</tspan>
+</tspan>
+    <tspan x="10px" y="8542px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8560px">
+</tspan>
+    <tspan x="10px" y="8578px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="8596px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:549:8</tspan>
+</tspan>
+    <tspan x="10px" y="8614px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8632px"><tspan class="fg-bright-blue bold">549</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not('a'&lt;'a') and ('a'&lt;'b') and not('b'&lt;'a'))</tspan>
+</tspan>
+    <tspan x="10px" y="8650px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>    </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="8668px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8686px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="8704px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8722px"><tspan class="fg-bright-blue bold">549</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(</tspan><tspan class="fg-bright-red">not(</tspan><tspan>'a'</tspan><tspan class="fg-bright-red">&lt;</tspan><tspan>'a'</tspan><tspan class="fg-bright-red">)</tspan><tspan> and ('a'&lt;'b') and not('b'&lt;'a'))</tspan>
+</tspan>
+    <tspan x="10px" y="8740px"><tspan class="fg-bright-blue bold">549</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert('a'</tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan>'a' and ('a'&lt;'b') and not('b'&lt;'a'))</tspan>
+</tspan>
+    <tspan x="10px" y="8758px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8776px">
+</tspan>
+    <tspan x="10px" y="8794px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="8812px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:549:39</tspan>
+</tspan>
+    <tspan x="10px" y="8830px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8848px"><tspan class="fg-bright-blue bold">549</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not('a'&lt;'a') and ('a'&lt;'b') and not('b'&lt;'a'))</tspan>
+</tspan>
+    <tspan x="10px" y="8866px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                       </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>    </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="8884px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8902px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="8920px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8938px"><tspan class="fg-bright-blue bold">549</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(not('a'&lt;'a') and ('a'&lt;'b') and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>'b'</tspan><tspan class="fg-bright-red">&lt;</tspan><tspan>'a'</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="8956px"><tspan class="fg-bright-blue bold">549</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(not('a'&lt;'a') and ('a'&lt;'b') and 'b'</tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan>'a')</tspan>
+</tspan>
+    <tspan x="10px" y="8974px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8992px">
+</tspan>
+    <tspan x="10px" y="9010px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="9028px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:550:30</tspan>
+</tspan>
+    <tspan x="10px" y="9046px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9064px"><tspan class="fg-bright-blue bold">550</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((1&lt;=1) and (1&lt;=2) and not(2&lt;=1))</tspan>
+</tspan>
+    <tspan x="10px" y="9082px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                              </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>  </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="9100px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9118px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="9136px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9154px"><tspan class="fg-bright-blue bold">550</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert((1&lt;=1) and (1&lt;=2) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>2</tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan>1</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="9172px"><tspan class="fg-bright-blue bold">550</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert((1&lt;=1) and (1&lt;=2) and 2</tspan><tspan class="fg-bright-green">&gt;</tspan><tspan>1)</tspan>
+</tspan>
+    <tspan x="10px" y="9190px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9208px">
+</tspan>
+    <tspan x="10px" y="9226px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="9244px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:551:38</tspan>
+</tspan>
+    <tspan x="10px" y="9262px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9280px"><tspan class="fg-bright-blue bold">551</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(('a'&lt;='a') and ('a'&lt;='b') and not('b'&lt;='a'))</tspan>
+</tspan>
+    <tspan x="10px" y="9298px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                      </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>    </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="9316px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9334px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="9352px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9370px"><tspan class="fg-bright-blue bold">551</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(('a'&lt;='a') and ('a'&lt;='b') and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>'b'</tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan>'a'</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="9388px"><tspan class="fg-bright-blue bold">551</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(('a'&lt;='a') and ('a'&lt;='b') and 'b'</tspan><tspan class="fg-bright-green">&gt;</tspan><tspan>'a')</tspan>
+</tspan>
+    <tspan x="10px" y="9406px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9424px">
+</tspan>
+    <tspan x="10px" y="9442px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="9460px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:552:8</tspan>
+</tspan>
+    <tspan x="10px" y="9478px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9496px"><tspan class="fg-bright-blue bold">552</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not(1&gt;1) and not(1&gt;2) and (2&gt;1))</tspan>
+</tspan>
+    <tspan x="10px" y="9514px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>  </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="9532px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9550px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="9568px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9586px"><tspan class="fg-bright-blue bold">552</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(</tspan><tspan class="fg-bright-red">not(</tspan><tspan>1</tspan><tspan class="fg-bright-red">&gt;</tspan><tspan>1</tspan><tspan class="fg-bright-red">)</tspan><tspan> and not(1&gt;2) and (2&gt;1))</tspan>
+</tspan>
+    <tspan x="10px" y="9604px"><tspan class="fg-bright-blue bold">552</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(1</tspan><tspan class="fg-bright-green">&lt;=</tspan><tspan>1 and not(1&gt;2) and (2&gt;1))</tspan>
+</tspan>
+    <tspan x="10px" y="9622px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9640px">
+</tspan>
+    <tspan x="10px" y="9658px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="9676px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:552:21</tspan>
+</tspan>
+    <tspan x="10px" y="9694px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9712px"><tspan class="fg-bright-blue bold">552</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not(1&gt;1) and not(1&gt;2) and (2&gt;1))</tspan>
+</tspan>
+    <tspan x="10px" y="9730px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                     </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>  </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="9748px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9766px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="9784px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9802px"><tspan class="fg-bright-blue bold">552</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(not(1&gt;1) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>1</tspan><tspan class="fg-bright-red">&gt;</tspan><tspan>2</tspan><tspan class="fg-bright-red">)</tspan><tspan> and (2&gt;1))</tspan>
+</tspan>
+    <tspan x="10px" y="9820px"><tspan class="fg-bright-blue bold">552</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(not(1&gt;1) and 1</tspan><tspan class="fg-bright-green">&lt;=</tspan><tspan>2 and (2&gt;1))</tspan>
+</tspan>
+    <tspan x="10px" y="9838px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9856px">
+</tspan>
+    <tspan x="10px" y="9874px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="9892px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:553:8</tspan>
+</tspan>
+    <tspan x="10px" y="9910px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9928px"><tspan class="fg-bright-blue bold">553</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not('a'&gt;'a') and not('a'&gt;'b') and ('b'&gt;'a'))</tspan>
+</tspan>
+    <tspan x="10px" y="9946px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>    </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="9964px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9982px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="10000px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10018px"><tspan class="fg-bright-blue bold">553</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(</tspan><tspan class="fg-bright-red">not(</tspan><tspan>'a'</tspan><tspan class="fg-bright-red">&gt;</tspan><tspan>'a'</tspan><tspan class="fg-bright-red">)</tspan><tspan> and not('a'&gt;'b') and ('b'&gt;'a'))</tspan>
+</tspan>
+    <tspan x="10px" y="10036px"><tspan class="fg-bright-blue bold">553</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert('a'</tspan><tspan class="fg-bright-green">&lt;=</tspan><tspan>'a' and not('a'&gt;'b') and ('b'&gt;'a'))</tspan>
+</tspan>
+    <tspan x="10px" y="10054px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10072px">
+</tspan>
+    <tspan x="10px" y="10090px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="10108px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:553:25</tspan>
+</tspan>
+    <tspan x="10px" y="10126px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10144px"><tspan class="fg-bright-blue bold">553</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not('a'&gt;'a') and not('a'&gt;'b') and ('b'&gt;'a'))</tspan>
+</tspan>
+    <tspan x="10px" y="10162px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                         </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>    </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="10180px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10198px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="10216px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10234px"><tspan class="fg-bright-blue bold">553</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(not('a'&gt;'a') and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>'a'</tspan><tspan class="fg-bright-red">&gt;</tspan><tspan>'b'</tspan><tspan class="fg-bright-red">)</tspan><tspan> and ('b'&gt;'a'))</tspan>
+</tspan>
+    <tspan x="10px" y="10252px"><tspan class="fg-bright-blue bold">553</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(not('a'&gt;'a') and 'a'</tspan><tspan class="fg-bright-green">&lt;=</tspan><tspan>'b' and ('b'&gt;'a'))</tspan>
+</tspan>
+    <tspan x="10px" y="10270px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10288px">
+</tspan>
+    <tspan x="10px" y="10306px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="10324px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:554:19</tspan>
+</tspan>
+    <tspan x="10px" y="10342px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10360px"><tspan class="fg-bright-blue bold">554</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((1&gt;=1) and not(1&gt;=2) and (2&gt;=1))</tspan>
+</tspan>
+    <tspan x="10px" y="10378px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                   </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>  </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="10396px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10414px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="10432px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10450px"><tspan class="fg-bright-blue bold">554</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert((1&gt;=1) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>1</tspan><tspan class="fg-bright-red">&gt;=</tspan><tspan>2</tspan><tspan class="fg-bright-red">)</tspan><tspan> and (2&gt;=1))</tspan>
+</tspan>
+    <tspan x="10px" y="10468px"><tspan class="fg-bright-blue bold">554</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert((1&gt;=1) and 1</tspan><tspan class="fg-bright-green">&lt;</tspan><tspan>2 and (2&gt;=1))</tspan>
+</tspan>
+    <tspan x="10px" y="10486px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10504px">
+</tspan>
+    <tspan x="10px" y="10522px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="10540px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:555:23</tspan>
+</tspan>
+    <tspan x="10px" y="10558px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10576px"><tspan class="fg-bright-blue bold">555</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(('a'&gt;='a') and not('a'&gt;='b') and ('b'&gt;='a'))</tspan>
+</tspan>
+    <tspan x="10px" y="10594px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                       </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>    </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="10612px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10630px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="10648px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10666px"><tspan class="fg-bright-blue bold">555</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(('a'&gt;='a') and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>'a'</tspan><tspan class="fg-bright-red">&gt;=</tspan><tspan>'b'</tspan><tspan class="fg-bright-red">)</tspan><tspan> and ('b'&gt;='a'))</tspan>
+</tspan>
+    <tspan x="10px" y="10684px"><tspan class="fg-bright-blue bold">555</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(('a'&gt;='a') and 'a'</tspan><tspan class="fg-bright-green">&lt;</tspan><tspan>'b' and ('b'&gt;='a'))</tspan>
+</tspan>
+    <tspan x="10px" y="10702px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10720px">
+</tspan>
+    <tspan x="10px" y="10738px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="10756px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:556:37</tspan>
+</tspan>
+    <tspan x="10px" y="10774px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10792px"><tspan class="fg-bright-blue bold">556</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(1.3 &lt; 1.4 and 1.3 &lt;= 1.4 and not (1.3 &lt; 1.3) and 1.3 &lt;= 1.3)</tspan>
+</tspan>
+    <tspan x="10px" y="10810px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                     </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="10828px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10846px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="10864px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10882px"><tspan class="fg-bright-blue bold">556</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(1.3 &lt; 1.4 and 1.3 &lt;= 1.4 and </tspan><tspan class="fg-bright-red">not (</tspan><tspan>1.3 </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> 1.3</tspan><tspan class="fg-bright-red">)</tspan><tspan> and 1.3 &lt;= 1.3)</tspan>
+</tspan>
+    <tspan x="10px" y="10900px"><tspan class="fg-bright-blue bold">556</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(1.3 &lt; 1.4 and 1.3 &lt;= 1.4 and 1.3 </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> 1.3 and 1.3 &lt;= 1.3)</tspan>
+</tspan>
+    <tspan x="10px" y="10918px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10936px">
+</tspan>
+    <tspan x="10px" y="10954px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#approx-pi">approx-pi</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: numeric literal is approximatly pi</tspan>
+</tspan>
+    <tspan x="10px" y="10972px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:576:37</tspan>
+</tspan>
+    <tspan x="10px" y="10990px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11008px"><tspan class="fg-bright-blue bold">576</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(math.pi - math.pi % 0.001 == 3.141)</tspan>
+</tspan>
+    <tspan x="10px" y="11026px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                     </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="11044px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11062px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use math.pi instead if this was intended</tspan>
+</tspan>
+    <tspan x="10px" y="11080px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11098px"><tspan class="fg-bright-blue bold">576</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(math.pi - math.pi % 0.001 == </tspan><tspan class="fg-bright-red">3.141</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="11116px"><tspan class="fg-bright-blue bold">576</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(math.pi - math.pi % 0.001 == </tspan><tspan class="fg-bright-green">math.pi</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="11134px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11152px">
+</tspan>
+    <tspan x="10px" y="11170px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="11188px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:817:10</tspan>
+</tspan>
+    <tspan x="10px" y="11206px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11224px"><tspan class="fg-bright-blue bold">817</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (NaN &lt; NaN))</tspan>
+</tspan>
+    <tspan x="10px" y="11242px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="11260px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11278px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="11296px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11314px"><tspan class="fg-bright-blue bold">817</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>NaN </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> NaN</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="11332px"><tspan class="fg-bright-blue bold">817</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(NaN </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> NaN)</tspan>
+</tspan>
+    <tspan x="10px" y="11350px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11368px">
+</tspan>
+    <tspan x="10px" y="11386px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="11404px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:818:10</tspan>
+</tspan>
+    <tspan x="10px" y="11422px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11440px"><tspan class="fg-bright-blue bold">818</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (NaN &lt;= NaN))</tspan>
+</tspan>
+    <tspan x="10px" y="11458px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="11476px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11494px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="11512px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11530px"><tspan class="fg-bright-blue bold">818</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>NaN </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> NaN</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="11548px"><tspan class="fg-bright-blue bold">818</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(NaN </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> NaN)</tspan>
+</tspan>
+    <tspan x="10px" y="11566px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11584px">
+</tspan>
+    <tspan x="10px" y="11602px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="11620px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:819:10</tspan>
+</tspan>
+    <tspan x="10px" y="11638px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11656px"><tspan class="fg-bright-blue bold">819</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (NaN &gt; NaN))</tspan>
+</tspan>
+    <tspan x="10px" y="11674px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="11692px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11710px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="11728px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11746px"><tspan class="fg-bright-blue bold">819</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>NaN </tspan><tspan class="fg-bright-red">&gt;</tspan><tspan> NaN</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="11764px"><tspan class="fg-bright-blue bold">819</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(NaN </tspan><tspan class="fg-bright-green">&lt;=</tspan><tspan> NaN)</tspan>
+</tspan>
+    <tspan x="10px" y="11782px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11800px">
+</tspan>
+    <tspan x="10px" y="11818px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="11836px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:820:10</tspan>
+</tspan>
+    <tspan x="10px" y="11854px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11872px"><tspan class="fg-bright-blue bold">820</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (NaN &gt;= NaN))</tspan>
+</tspan>
+    <tspan x="10px" y="11890px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="11908px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11926px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="11944px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11962px"><tspan class="fg-bright-blue bold">820</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>NaN </tspan><tspan class="fg-bright-red">&gt;=</tspan><tspan> NaN</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="11980px"><tspan class="fg-bright-blue bold">820</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(NaN </tspan><tspan class="fg-bright-green">&lt;</tspan><tspan> NaN)</tspan>
+</tspan>
+    <tspan x="10px" y="11998px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12016px">
+</tspan>
+    <tspan x="10px" y="12034px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="12052px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:821:10</tspan>
+</tspan>
+    <tspan x="10px" y="12070px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12088px"><tspan class="fg-bright-blue bold">821</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (0 &lt; NaN) and not (NaN &lt; 0))</tspan>
+</tspan>
+    <tspan x="10px" y="12106px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>    </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="12124px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12142px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="12160px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12178px"><tspan class="fg-bright-blue bold">821</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>0 </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> NaN</tspan><tspan class="fg-bright-red">)</tspan><tspan> and not (NaN &lt; 0))</tspan>
+</tspan>
+    <tspan x="10px" y="12196px"><tspan class="fg-bright-blue bold">821</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(0 </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> NaN and not (NaN &lt; 0))</tspan>
+</tspan>
+    <tspan x="10px" y="12214px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12232px">
+</tspan>
+    <tspan x="10px" y="12250px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="12268px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:821:28</tspan>
+</tspan>
+    <tspan x="10px" y="12286px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12304px"><tspan class="fg-bright-blue bold">821</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (0 &lt; NaN) and not (NaN &lt; 0))</tspan>
+</tspan>
+    <tspan x="10px" y="12322px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="12340px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12358px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="12376px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12394px"><tspan class="fg-bright-blue bold">821</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(not (0 &lt; NaN) and </tspan><tspan class="fg-bright-red">not (</tspan><tspan>NaN </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> 0</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="12412px"><tspan class="fg-bright-blue bold">821</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(not (0 &lt; NaN) and NaN </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> 0)</tspan>
+</tspan>
+    <tspan x="10px" y="12430px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12448px">
+</tspan>
+    <tspan x="10px" y="12466px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="12484px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:823:26</tspan>
+</tspan>
+    <tspan x="10px" y="12502px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12520px"><tspan class="fg-bright-blue bold">823</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(NaN ~= NaN1 and not (NaN &lt;= NaN1) and not (NaN1 &lt;= NaN))</tspan>
+</tspan>
+    <tspan x="10px" y="12538px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="12556px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12574px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="12592px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12610px"><tspan class="fg-bright-blue bold">823</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(NaN ~= NaN1 and </tspan><tspan class="fg-bright-red">not (</tspan><tspan>NaN </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> NaN1</tspan><tspan class="fg-bright-red">)</tspan><tspan> and not (NaN1 &lt;= NaN))</tspan>
+</tspan>
+    <tspan x="10px" y="12628px"><tspan class="fg-bright-blue bold">823</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(NaN ~= NaN1 and NaN </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> NaN1 and not (NaN1 &lt;= NaN))</tspan>
+</tspan>
+    <tspan x="10px" y="12646px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12664px">
+</tspan>
+    <tspan x="10px" y="12682px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="12700px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:823:48</tspan>
+</tspan>
+    <tspan x="10px" y="12718px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12736px"><tspan class="fg-bright-blue bold">823</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(NaN ~= NaN1 and not (NaN &lt;= NaN1) and not (NaN1 &lt;= NaN))</tspan>
+</tspan>
+    <tspan x="10px" y="12754px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                                </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="12772px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12790px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="12808px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12826px"><tspan class="fg-bright-blue bold">823</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(NaN ~= NaN1 and not (NaN &lt;= NaN1) and </tspan><tspan class="fg-bright-red">not (</tspan><tspan>NaN1 </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> NaN</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="12844px"><tspan class="fg-bright-blue bold">823</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(NaN ~= NaN1 and not (NaN &lt;= NaN1) and NaN1 </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> NaN)</tspan>
+</tspan>
+    <tspan x="10px" y="12862px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12880px">
+</tspan>
+    <tspan x="10px" y="12898px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#inexact-hex-float">inexact-hex-float</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: cannot exactly represent hexadecimal float in 64 bit</tspan>
+</tspan>
+    <tspan x="10px" y="12916px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:875:19</tspan>
+</tspan>
+    <tspan x="10px" y="12934px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12952px"><tspan class="fg-bright-blue bold">875</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(eq(rand, 0x0.7a7040a5a323c9d6, 2^-floatbits))</tspan>
+</tspan>
+    <tspan x="10px" y="12970px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="12988px">
+</tspan>
+    <tspan x="10px" y="13006px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="13024px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:968:7</tspan>
+</tspan>
+    <tspan x="10px" y="13042px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13060px"><tspan class="fg-bright-blue bold">968</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1, rep * 6 do</tspan>
+</tspan>
+    <tspan x="10px" y="13078px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="13096px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13114px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="13132px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13150px"><tspan class="fg-bright-blue bold">968</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = 1, rep * 6 do</tspan>
+</tspan>
+    <tspan x="10px" y="13168px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="13186px">
+</tspan>
+    <tspan x="10px" y="13204px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="13222px"><tspan>    </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:1030:8</tspan>
+</tspan>
+    <tspan x="10px" y="13240px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13258px"><tspan class="fg-bright-blue bold">1030</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     if not (count &gt;= n * 0.8) then</tspan>
+</tspan>
+    <tspan x="10px" y="13276px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="13294px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13312px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="13330px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13348px"><tspan class="fg-bright-blue bold">1030</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>    if </tspan><tspan class="fg-bright-red">not (</tspan><tspan>count </tspan><tspan class="fg-bright-red">&gt;=</tspan><tspan> n * 0.8</tspan><tspan class="fg-bright-red">)</tspan><tspan> then</tspan>
+</tspan>
+    <tspan x="10px" y="13366px"><tspan class="fg-bright-blue bold">1030</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>    if count </tspan><tspan class="fg-bright-green">&lt;</tspan><tspan> n * 0.8 then</tspan>
+</tspan>
+    <tspan x="10px" y="13384px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13402px">
+</tspan>
+    <tspan x="10px" y="13420px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="13438px"><tspan>    </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:1082:7</tspan>
+</tspan>
+    <tspan x="10px" y="13456px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13474px"><tspan class="fg-bright-blue bold">1082</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1, maxexp do</tspan>
+</tspan>
+    <tspan x="10px" y="13492px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="13510px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13528px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="13546px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13564px"><tspan class="fg-bright-blue bold">1082</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = 1, maxexp do</tspan>
+</tspan>
+    <tspan x="10px" y="13582px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="13600px">
+</tspan>
+    <tspan x="10px" y="13618px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="13636px"><tspan>    </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:1089:7</tspan>
+</tspan>
+    <tspan x="10px" y="13654px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13672px"><tspan class="fg-bright-blue bold">1089</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1, 100 do</tspan>
+</tspan>
+    <tspan x="10px" y="13690px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="13708px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13726px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="13744px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13762px"><tspan class="fg-bright-blue bold">1089</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = 1, 100 do</tspan>
+</tspan>
+    <tspan x="10px" y="13780px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="13798px">
+</tspan>
+    <tspan x="10px" y="13816px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="13834px"><tspan>    </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:1115:7</tspan>
+</tspan>
+    <tspan x="10px" y="13852px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13870px"><tspan class="fg-bright-blue bold">1115</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1, 1000 do</tspan>
+</tspan>
+    <tspan x="10px" y="13888px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="13906px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13924px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="13942px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13960px"><tspan class="fg-bright-blue bold">1115</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = 1, 1000 do</tspan>
+</tspan>
+    <tspan x="10px" y="13978px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="13996px">
+</tspan>
+    <tspan x="10px" y="14014px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="14032px"><tspan>    </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:1129:7</tspan>
+</tspan>
+    <tspan x="10px" y="14050px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14068px"><tspan class="fg-bright-blue bold">1129</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i = 1, 400 do</tspan>
+</tspan>
+    <tspan x="10px" y="14086px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="14104px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14122px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="14140px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14158px"><tspan class="fg-bright-blue bold">1129</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = 1, 400 do</tspan>
+</tspan>
+    <tspan x="10px" y="14176px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="14194px">
+</tspan>
+    <tspan x="10px" y="14212px">
+</tspan>
+  </text>
+
+</svg>

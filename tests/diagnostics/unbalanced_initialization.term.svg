@@ -1,0 +1,139 @@
+<svg width="860px" height="1046px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unbalanced-initialization">unbalanced-initialization</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unexpected number of expressions on right side of initialization</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unbalanced_initialization.lua:1:12</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">1</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local a, b = 1, 2, 3</tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">----</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">-------</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 3 expressions</tspan>
+</tspan>
+    <tspan x="10px" y="118px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="136px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">found 2 names</tspan>
+</tspan>
+    <tspan x="10px" y="154px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="172px"><tspan class="fg-bright-green bold">note</tspan><tspan>: extra right-hand side value will be redundant</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unbalanced_initialization.lua:1:20</tspan>
+</tspan>
+    <tspan x="10px" y="208px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="226px"><tspan class="fg-bright-blue bold">1</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local a, b = 1, 2, 3</tspan>
+</tspan>
+    <tspan x="10px" y="244px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                    </tspan><tspan class="fg-bright-green bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="262px">
+</tspan>
+    <tspan x="10px" y="280px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unbalanced-initialization">unbalanced-initialization</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unexpected number of expressions on right side of initialization</tspan>
+</tspan>
+    <tspan x="10px" y="298px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unbalanced_initialization.lua:2:12</tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="334px"><tspan class="fg-bright-blue bold">2</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local c, d = a + b</tspan>
+</tspan>
+    <tspan x="10px" y="352px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">----</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">-----</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 1 expression</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">found 2 names</tspan>
+</tspan>
+    <tspan x="10px" y="406px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="424px"><tspan class="fg-bright-green bold">note</tspan><tspan>: extra left-hand side variable will be assigned `nil`</tspan>
+</tspan>
+    <tspan x="10px" y="442px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unbalanced_initialization.lua:2:10</tspan>
+</tspan>
+    <tspan x="10px" y="460px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan class="fg-bright-blue bold">2</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local c, d = a + b</tspan>
+</tspan>
+    <tspan x="10px" y="496px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-green bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="514px">
+</tspan>
+    <tspan x="10px" y="532px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unbalanced-initialization">unbalanced-initialization</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unexpected number of expressions on right side of initialization</tspan>
+</tspan>
+    <tspan x="10px" y="550px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unbalanced_initialization.lua:5:13</tspan>
+</tspan>
+    <tspan x="10px" y="568px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan class="fg-bright-blue bold">5</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> global e, f = 1, 2, 3</tspan>
+</tspan>
+    <tspan x="10px" y="604px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">----</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">-------</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 3 expressions</tspan>
+</tspan>
+    <tspan x="10px" y="622px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="640px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">found 2 names</tspan>
+</tspan>
+    <tspan x="10px" y="658px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="676px"><tspan class="fg-bright-green bold">note</tspan><tspan>: extra right-hand side value will be redundant</tspan>
+</tspan>
+    <tspan x="10px" y="694px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unbalanced_initialization.lua:5:21</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="730px"><tspan class="fg-bright-blue bold">5</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> global e, f = 1, 2, 3</tspan>
+</tspan>
+    <tspan x="10px" y="748px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                     </tspan><tspan class="fg-bright-green bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="766px">
+</tspan>
+    <tspan x="10px" y="784px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unbalanced-initialization">unbalanced-initialization</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unexpected number of expressions on right side of initialization</tspan>
+</tspan>
+    <tspan x="10px" y="802px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unbalanced_initialization.lua:6:13</tspan>
+</tspan>
+    <tspan x="10px" y="820px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="838px"><tspan class="fg-bright-blue bold">6</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> global g, h = e + f</tspan>
+</tspan>
+    <tspan x="10px" y="856px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">----</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">-----</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 1 expression</tspan>
+</tspan>
+    <tspan x="10px" y="874px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="892px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">found 2 names</tspan>
+</tspan>
+    <tspan x="10px" y="910px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="928px"><tspan class="fg-bright-green bold">note</tspan><tspan>: extra left-hand side variable will be assigned `nil`</tspan>
+</tspan>
+    <tspan x="10px" y="946px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unbalanced_initialization.lua:6:11</tspan>
+</tspan>
+    <tspan x="10px" y="964px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="982px"><tspan class="fg-bright-blue bold">6</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> global g, h = e + f</tspan>
+</tspan>
+    <tspan x="10px" y="1000px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-green bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="1018px">
+</tspan>
+    <tspan x="10px" y="1036px">
+</tspan>
+  </text>
+
+</svg>

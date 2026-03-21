@@ -1,0 +1,312 @@
+<svg width="793px" height="2594px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-cyan { fill: #55FFFF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/files.lua:109:7</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">109</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i=1,5 do</tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="118px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="154px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="172px"><tspan class="fg-bright-blue bold">109</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1,5 do</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="208px">
+</tspan>
+    <tspan x="10px" y="226px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="244px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/files.lua:108:5</tspan>
+</tspan>
+    <tspan x="10px" y="262px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="280px"><tspan class="fg-bright-blue bold">108</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> for i=1,120 do</tspan>
+</tspan>
+    <tspan x="10px" y="298px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="334px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="352px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan class="fg-bright-blue bold">108</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1,120 do</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="406px">
+</tspan>
+    <tspan x="10px" y="424px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="442px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/files.lua:219:22</tspan>
+</tspan>
+    <tspan x="10px" y="460px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan class="fg-bright-blue bold">219</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> f:write("1234"); for i = 1, 1000 do f:write("0") end;  f:write("/n")</tspan>
+</tspan>
+    <tspan x="10px" y="496px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                      </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="514px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="532px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="550px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="568px"><tspan class="fg-bright-blue bold">219</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>f:write("1234"); for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = 1, 1000 do f:write("0") end;  f:write("/n")</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                      </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="604px">
+</tspan>
+    <tspan x="10px" y="622px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#hex-int-overflow">hex-int-overflow</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: overflow in integer literal</tspan>
+</tspan>
+    <tspan x="10px" y="640px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/files.lua:231:23</tspan>
+</tspan>
+    <tspan x="10px" y="658px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="676px"><tspan class="fg-bright-blue bold">231</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(f:read("n") == 0Xdeadbeefdeadbeef); assert(f:read(2) == "x/n")</tspan>
+</tspan>
+    <tspan x="10px" y="694px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                       </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">the actual value will be -2401053088876216593</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="730px"><tspan class="fg-bright-green bold">note</tspan><tspan>: hexadecimal integer literals are not implicitly converted to float values</tspan>
+</tspan>
+    <tspan x="10px" y="748px">
+</tspan>
+    <tspan x="10px" y="766px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="784px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/files.lua:339:5</tspan>
+</tspan>
+    <tspan x="10px" y="802px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="820px"><tspan class="fg-bright-blue bold">339</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> for i=1,10 do t = t..t; end</tspan>
+</tspan>
+    <tspan x="10px" y="838px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="856px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="874px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="892px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="910px"><tspan class="fg-bright-blue bold">339</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1,10 do t = t..t; end</tspan>
+</tspan>
+    <tspan x="10px" y="928px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="946px">
+</tspan>
+    <tspan x="10px" y="964px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="982px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/files.lua:445:7</tspan>
+</tspan>
+    <tspan x="10px" y="1000px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1018px"><tspan class="fg-bright-blue bold">445</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for l in io.lines(file) do</tspan>
+</tspan>
+    <tspan x="10px" y="1036px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1054px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1072px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1090px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1108px"><tspan class="fg-bright-blue bold">445</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>l in io.lines(file) do</tspan>
+</tspan>
+    <tspan x="10px" y="1126px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1144px">
+</tspan>
+    <tspan x="10px" y="1162px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="1180px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/files.lua:454:9</tspan>
+</tspan>
+    <tspan x="10px" y="1198px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1216px"><tspan class="fg-bright-blue bold">454</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     for l in io.lines(name) do</tspan>
+</tspan>
+    <tspan x="10px" y="1234px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1252px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1270px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1288px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1306px"><tspan class="fg-bright-blue bold">454</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    for </tspan><tspan class="fg-bright-green">_</tspan><tspan>l in io.lines(name) do</tspan>
+</tspan>
+    <tspan x="10px" y="1324px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1342px">
+</tspan>
+    <tspan x="10px" y="1360px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#used-despite-unused-hint">used-despite-unused-hint</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: used declaration with unused hint</tspan>
+</tspan>
+    <tspan x="10px" y="1378px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/files.lua:680:8</tspan>
+</tspan>
+    <tspan x="10px" y="1396px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1414px"><tspan class="fg-bright-blue bold">678</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local _,a,b,c,d,e,h,__ = io.read(1, 'n', 'n', 'l', 'l', 'l', 'a', 10)</tspan>
+</tspan>
+    <tspan x="10px" y="1432px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">declared here</tspan>
+</tspan>
+    <tspan x="10px" y="1450px"><tspan class="fg-bright-blue bold">679</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(io.close(io.input()))</tspan>
+</tspan>
+    <tspan x="10px" y="1468px"><tspan class="fg-bright-blue bold">680</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(_ == ' ' and not __)</tspan>
+</tspan>
+    <tspan x="10px" y="1486px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1504px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1522px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the underscore prefix in the name</tspan>
+</tspan>
+    <tspan x="10px" y="1540px">
+</tspan>
+    <tspan x="10px" y="1558px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#used-despite-unused-hint">used-despite-unused-hint</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: used declaration with unused hint</tspan>
+</tspan>
+    <tspan x="10px" y="1576px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/files.lua:680:25</tspan>
+</tspan>
+    <tspan x="10px" y="1594px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1612px"><tspan class="fg-bright-blue bold">678</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local _,a,b,c,d,e,h,__ = io.read(1, 'n', 'n', 'l', 'l', 'l', 'a', 10)</tspan>
+</tspan>
+    <tspan x="10px" y="1630px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                     </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">declared here</tspan>
+</tspan>
+    <tspan x="10px" y="1648px"><tspan class="fg-bright-blue bold">679</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(io.close(io.input()))</tspan>
+</tspan>
+    <tspan x="10px" y="1666px"><tspan class="fg-bright-blue bold">680</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(_ == ' ' and not __)</tspan>
+</tspan>
+    <tspan x="10px" y="1684px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                         </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="1702px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1720px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the underscore prefix in the name</tspan>
+</tspan>
+    <tspan x="10px" y="1738px">
+</tspan>
+    <tspan x="10px" y="1756px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="1774px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/files.lua:752:7</tspan>
+</tspan>
+    <tspan x="10px" y="1792px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1810px"><tspan class="fg-bright-blue bold">752</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i=1,5001 do io.write('0123456789123') end</tspan>
+</tspan>
+    <tspan x="10px" y="1828px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1846px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1864px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1882px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1900px"><tspan class="fg-bright-blue bold">752</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1,5001 do io.write('0123456789123') end</tspan>
+</tspan>
+    <tspan x="10px" y="1918px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1936px">
+</tspan>
+    <tspan x="10px" y="1954px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="1972px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/files.lua:678:13</tspan>
+</tspan>
+    <tspan x="10px" y="1990px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2008px"><tspan class="fg-bright-blue bold">678</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local _,a,b,c,d,e,h,__ = io.read(1, 'n', 'n', 'l', 'l', 'l', 'a', 10)</tspan>
+</tspan>
+    <tspan x="10px" y="2026px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>             </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="2044px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2062px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="2080px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2098px"><tspan class="fg-bright-blue bold">678</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>local _,a,b,</tspan><tspan class="fg-bright-green">_</tspan><tspan>c,d,e,h,__ = io.read(1, 'n', 'n', 'l', 'l', 'l', 'a', 10)</tspan>
+</tspan>
+    <tspan x="10px" y="2116px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>             </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2134px">
+</tspan>
+    <tspan x="10px" y="2152px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#next-line-args">next-line-args</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: arguments of called function start in next line</tspan>
+</tspan>
+    <tspan x="10px" y="2170px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/files.lua:923:11</tspan>
+</tspan>
+    <tspan x="10px" y="2188px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2206px"><tspan class="fg-bright-blue bold">922</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         assert(tonumber(os.time</tspan>
+</tspan>
+    <tspan x="10px" y="2224px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                         </tspan><tspan class="fg-bright-blue bold">-------</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for call to this function</tspan>
+</tspan>
+    <tspan x="10px" y="2242px"><tspan class="fg-bright-blue bold">923</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           {year=(1 &lt;&lt; 31) + 1899, month=12, day=31, hour=23, min=59, sec=59}))</tspan>
+</tspan>
+    <tspan x="10px" y="2260px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2278px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2296px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: add a semicolon if this was not intended to be a function call</tspan>
+</tspan>
+    <tspan x="10px" y="2314px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2332px"><tspan class="fg-bright-blue bold">923</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>          </tspan><tspan class="fg-bright-green">;</tspan><tspan>{year=(1 &lt;&lt; 31) + 1899, month=12, day=31, hour=23, min=59, sec=59}))</tspan>
+</tspan>
+    <tspan x="10px" y="2350px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2368px">
+</tspan>
+    <tspan x="10px" y="2386px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="2404px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/files.lua:52:10</tspan>
+</tspan>
+    <tspan x="10px" y="2422px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2440px"><tspan class="fg-bright-blue bold">52</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local f, msg = io.open(file, "w")</tspan>
+</tspan>
+    <tspan x="10px" y="2458px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2476px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2494px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="2512px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2530px"><tspan class="fg-bright-blue bold">52</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>local f, </tspan><tspan class="fg-bright-green">_</tspan><tspan>msg = io.open(file, "w")</tspan>
+</tspan>
+    <tspan x="10px" y="2548px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2566px">
+</tspan>
+    <tspan x="10px" y="2584px">
+</tspan>
+  </text>
+
+</svg>

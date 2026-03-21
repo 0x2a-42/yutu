@@ -1,0 +1,101 @@
+<svg width="740px" height="704px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#too-many-lines">too-many-lines</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: function contains too many lines</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/too_many_lines.lua:1:1</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">  1</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> function Foo()</tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan class="fg-bright-blue bold">  2</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   A = 42</tspan>
+</tspan>
+    <tspan x="10px" y="118px"><tspan class="fg-bright-blue bold">...</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">|</tspan>
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-blue bold">300</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   B = 42</tspan>
+</tspan>
+    <tspan x="10px" y="154px"><tspan class="fg-bright-blue bold">301</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> end</tspan>
+</tspan>
+    <tspan x="10px" y="172px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|___^</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="208px"><tspan class="fg-bright-green bold">note</tspan><tspan>: there are 300 lines and the threshold is set to 300</tspan>
+</tspan>
+    <tspan x="10px" y="226px">
+</tspan>
+    <tspan x="10px" y="244px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#too-many-lines">too-many-lines</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: function contains too many lines</tspan>
+</tspan>
+    <tspan x="10px" y="262px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/too_many_lines.lua:303:1</tspan>
+</tspan>
+    <tspan x="10px" y="280px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="298px"><tspan class="fg-bright-blue bold">303</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> local function bar()</tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan class="fg-bright-blue bold">304</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   A = 42</tspan>
+</tspan>
+    <tspan x="10px" y="334px"><tspan class="fg-bright-blue bold">...</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">|</tspan>
+</tspan>
+    <tspan x="10px" y="352px"><tspan class="fg-bright-blue bold">602</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   B = 42</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan class="fg-bright-blue bold">603</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> end</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|___^</tspan>
+</tspan>
+    <tspan x="10px" y="406px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="424px"><tspan class="fg-bright-green bold">note</tspan><tspan>: there are 300 lines and the threshold is set to 300</tspan>
+</tspan>
+    <tspan x="10px" y="442px">
+</tspan>
+    <tspan x="10px" y="460px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#too-many-lines">too-many-lines</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: function contains too many lines</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/too_many_lines.lua:606:11</tspan>
+</tspan>
+    <tspan x="10px" y="496px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="514px"><tspan class="fg-bright-blue bold">606</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local _ = function ()</tspan>
+</tspan>
+    <tspan x="10px" y="532px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow"> ___________^</tspan>
+</tspan>
+    <tspan x="10px" y="550px"><tspan class="fg-bright-blue bold">607</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   A = 42</tspan>
+</tspan>
+    <tspan x="10px" y="568px"><tspan class="fg-bright-blue bold">...</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">|</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan class="fg-bright-blue bold">905</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   B = 42</tspan>
+</tspan>
+    <tspan x="10px" y="604px"><tspan class="fg-bright-blue bold">906</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> end</tspan>
+</tspan>
+    <tspan x="10px" y="622px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|___^</tspan>
+</tspan>
+    <tspan x="10px" y="640px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="658px"><tspan class="fg-bright-green bold">note</tspan><tspan>: there are 300 lines and the threshold is set to 300</tspan>
+</tspan>
+    <tspan x="10px" y="676px">
+</tspan>
+    <tspan x="10px" y="694px">
+</tspan>
+  </text>
+
+</svg>

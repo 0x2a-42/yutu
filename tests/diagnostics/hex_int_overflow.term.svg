@@ -1,0 +1,59 @@
+<svg width="740px" height="326px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#hex-int-overflow">hex-int-overflow</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: overflow in integer literal</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/hex_int_overflow.lua:1:5</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">1</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> A = 0xFFFFFFFFFFFFFFFF</tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">the actual value will be -1</tspan>
+</tspan>
+    <tspan x="10px" y="118px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-green bold">note</tspan><tspan>: hexadecimal integer literals are not implicitly converted to float values</tspan>
+</tspan>
+    <tspan x="10px" y="154px">
+</tspan>
+    <tspan x="10px" y="172px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#hex-int-overflow">hex-int-overflow</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: overflow in integer literal</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/hex_int_overflow.lua:2:5</tspan>
+</tspan>
+    <tspan x="10px" y="208px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="226px"><tspan class="fg-bright-blue bold">2</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> B = 0x1FFFFFFFFFFFFFFFF</tspan>
+</tspan>
+    <tspan x="10px" y="244px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">the actual value will be -1</tspan>
+</tspan>
+    <tspan x="10px" y="262px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="280px"><tspan class="fg-bright-green bold">note</tspan><tspan>: hexadecimal integer literals are not implicitly converted to float values</tspan>
+</tspan>
+    <tspan x="10px" y="298px">
+</tspan>
+    <tspan x="10px" y="316px">
+</tspan>
+  </text>
+
+</svg>

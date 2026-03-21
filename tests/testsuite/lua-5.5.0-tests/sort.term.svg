@@ -1,0 +1,192 @@
+<svg width="740px" height="1514px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-cyan { fill: #55FFFF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-blue bold">info[</tspan><tspan class="fg-bright-blue bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#trailing-whitespace">trailing-whitespace</a></tspan><tspan class="fg-bright-blue bold">]</tspan><tspan class="bold">: line contains trailing whitespace</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/sort.lua:112:35</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">112</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(a[1] == undef and a.n == 0) </tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                   </tspan><tspan class="fg-bright-blue bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="118px">
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-blue bold">info[</tspan><tspan class="fg-bright-blue bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#trailing-whitespace">trailing-whitespace</a></tspan><tspan class="fg-bright-blue bold">]</tspan><tspan class="bold">: line contains trailing whitespace</tspan>
+</tspan>
+    <tspan x="10px" y="154px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/sort.lua:127:50</tspan>
+</tspan>
+    <tspan x="10px" y="172px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan class="fg-bright-blue bold">127</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     for k, v in pairs(a) do assert(b[k] == v) end </tspan>
+</tspan>
+    <tspan x="10px" y="208px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                                  </tspan><tspan class="fg-bright-blue bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="226px">
+</tspan>
+    <tspan x="10px" y="244px"><tspan class="fg-bright-blue bold">info[</tspan><tspan class="fg-bright-blue bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#trailing-whitespace">trailing-whitespace</a></tspan><tspan class="fg-bright-blue bold">]</tspan><tspan class="bold">: line contains trailing whitespace</tspan>
+</tspan>
+    <tspan x="10px" y="262px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/sort.lua:128:50</tspan>
+</tspan>
+    <tspan x="10px" y="280px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="298px"><tspan class="fg-bright-blue bold">128</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     for k, v in pairs(b) do assert(a[k] == v) end </tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                                  </tspan><tspan class="fg-bright-blue bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="334px">
+</tspan>
+    <tspan x="10px" y="352px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/sort.lua:112:16</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="406px"><tspan class="fg-bright-blue bold">112</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(a[1] == undef and a.n == 0) </tspan>
+</tspan>
+    <tspan x="10px" y="424px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="442px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="460px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="496px">
+</tspan>
+    <tspan x="10px" y="514px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="532px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/sort.lua:201:15</tspan>
+</tspan>
+    <tspan x="10px" y="550px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="568px"><tspan class="fg-bright-blue bold">201</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local st, msg = pcall(table.move, a, f, e, t)</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="604px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="622px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="640px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="658px"><tspan class="fg-bright-blue bold">201</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local st, </tspan><tspan class="fg-bright-green">_</tspan><tspan>msg = pcall(table.move, a, f, e, t)</tspan>
+</tspan>
+    <tspan x="10px" y="676px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="694px">
+</tspan>
+    <tspan x="10px" y="712px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="730px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/sort.lua:318:30</tspan>
+</tspan>
+    <tspan x="10px" y="748px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="766px"><tspan class="fg-bright-blue bold">318</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> timesort(a, limit,  function(x,y) return nil end, "equal")</tspan>
+</tspan>
+    <tspan x="10px" y="784px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="802px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="820px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="838px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="856px"><tspan class="fg-bright-blue bold">318</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>timesort(a, limit,  function(</tspan><tspan class="fg-bright-green">_</tspan><tspan>x,y) return nil end, "equal")</tspan>
+</tspan>
+    <tspan x="10px" y="874px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="892px">
+</tspan>
+    <tspan x="10px" y="910px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="928px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/sort.lua:318:32</tspan>
+</tspan>
+    <tspan x="10px" y="946px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="964px"><tspan class="fg-bright-blue bold">318</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> timesort(a, limit,  function(x,y) return nil end, "equal")</tspan>
+</tspan>
+    <tspan x="10px" y="982px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1000px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1018px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1036px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1054px"><tspan class="fg-bright-blue bold">318</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>timesort(a, limit,  function(x,</tspan><tspan class="fg-bright-green">_</tspan><tspan>y) return nil end, "equal")</tspan>
+</tspan>
+    <tspan x="10px" y="1072px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1090px">
+</tspan>
+    <tspan x="10px" y="1108px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="1126px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/sort.lua:320:5</tspan>
+</tspan>
+    <tspan x="10px" y="1144px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1162px"><tspan class="fg-bright-blue bold">320</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> for i,v in pairs(a) do assert(v == false) end</tspan>
+</tspan>
+    <tspan x="10px" y="1180px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1198px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1216px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1234px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1252px"><tspan class="fg-bright-blue bold">320</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i,v in pairs(a) do assert(v == false) end</tspan>
+</tspan>
+    <tspan x="10px" y="1270px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1288px">
+</tspan>
+    <tspan x="10px" y="1306px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="1324px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/sort.lua:52:15</tspan>
+</tspan>
+    <tspan x="10px" y="1342px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1360px"><tspan class="fg-bright-blue bold">52</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local x,y,z,a,n</tspan>
+</tspan>
+    <tspan x="10px" y="1378px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1396px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1414px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1432px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1450px"><tspan class="fg-bright-blue bold">52</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>local x,y,z,a,</tspan><tspan class="fg-bright-green">_</tspan><tspan>n</tspan>
+</tspan>
+    <tspan x="10px" y="1468px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1486px">
+</tspan>
+    <tspan x="10px" y="1504px">
+</tspan>
+  </text>
+
+</svg>

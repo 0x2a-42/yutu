@@ -1,0 +1,135 @@
+// Based on https://www.lua.org/manual/5.5/manual.html#9
+
+token Break='break' Return='return' Function='function' End='end' Goto='goto' Do='do' While='while'
+      Repeat='repeat' If='if' Then='then' Until='until' Elseif='elseif' Else='else' For='for'
+      In='in' Local='local' And='and' Or='or' Not='not' Nil='nil' False='false' True='true'
+      Global='global';
+token Semi=';' ColonColon='::' Colon=':' Dot='.' Comma=',' Dot3='...' Equal='=' Plus='+' Minus='-'
+      Star='*' Slash='/' SlashSlash='//' Hat='^' Percent='%' Ampersand='&' Tilde='~' Pipe='|'
+      GtGt='>>' LtLt='<<' Dot2='..' Less='<' LessEqual='<=' Greater='>' GreaterEqual='>='
+      EqualEqual='==' TildeEqual='~=' Hash='#';
+token LBrak='[' RBrak=']' LParen='(' RParen=')' LBrace='{' RBrace='}';
+token Name='<name>' LiteralString='<string>' DecIntNumeral='<decimal integer>'
+      DecFloatNumeral='<decimal float>' HexIntNumeral='<hexadecimal integer>'
+      HexFloatNumeral='<hexadecimal float>';
+token Comment FirstLineComment Whitespace;
+
+skip Comment FirstLineComment Whitespace;
+right '..' '^';
+
+start chunk;
+
+chunk: chunk_block;
+chunk_block: stat* [retstat] @block; // extra rule for better error handling
+block: & stat* [retstat];
+stat^:
+  emptystat
+| expstat
+| label
+| breakstat
+| gotostat
+| dostat
+| whilestat
+| repeatstat
+| ifstat
+| forstat
+| funcstat
+| localvarstat
+| globalvarstat
+;
+emptystat: ';';
+/// superset of official grammar, check in cst that syntax is valid
+expstat: prefixexp [(',' prefixexp)* '=' explist @assignstat];
+
+breakstat: 'break';
+gotostat: 'goto' Name;
+dostat: 'do' block 'end';
+whilestat: 'while' exp 'do' block 'end';
+repeatstat: 'repeat' block 'until' exp;
+ifstat: 'if' exp 'then' block elif_branch* [else_branch] 'end';
+elif_branch: 'elseif' exp 'then' block;
+else_branch: 'else' block;
+forstat:
+  'for' (
+    ?1 loopvar '=' exp ',' exp [',' exp] 'do' block 'end' @numeric_forstat // resolve LL(1) conflict
+  | loopvar (',' loopvar)* 'in' explist 'do' block 'end' @generic_forstat
+  )
+;
+funcstat: 'function' funcname pars block 'end';
+localvarstat:
+  'local' (
+    'function' Name pars block 'end' @localfuncstat
+  | [?1 attrib] attname (',' attname)* ['=' explist]
+  )
+;
+globalvarstat:
+  'global' (
+    [attrib] (
+      '*' @collective_globalvarstat
+    | attname (',' attname)* ['=' explist]
+    )
+  | 'function' Name pars block 'end' @globalfuncstat
+  )
+;
+attname: Name [attrib];
+attrib: '<' Name '>';
+retstat: 'return' [explist] [';'];
+label: '::' Name '::';
+funcname: qualname [':' Name];
+qualname: Name ('.' Name)*;
+loopvar: Name;
+explist: exp (',' exp)*;
+args_explist: '(' [exp (',' exp)*] ')'; // extra rule for better error handling
+
+exp:
+  exp '^' exp @binexp
+| ('not' | '-' | '#' | '~') exp @unaryexp
+| exp ('*' | '/' | '//' | '%') exp @binexp
+| exp ('+' | '-') exp @binexp
+| exp '..' exp @binexp
+| exp ('<<' | '>>') exp @binexp
+| exp '&' exp @binexp
+| exp '~' exp @binexp
+| exp '|' exp @binexp
+| exp ('<' | '>' | '<=' | '>=' | '~=' | '==') exp @binexp
+| exp 'and' exp @binexp
+| exp 'or' exp @binexp
+| 'nil' @nilexp
+| 'false' @falseexp
+| 'true' @trueexp
+| '...' @varargexp
+| DecIntNumeral @decintexp
+| HexIntNumeral @hexintexp
+| DecFloatNumeral @decfloatexp
+| HexFloatNumeral @hexfloatexp
+| stringexp ^
+| prefixexp ^
+| tableconstructor ^
+| functiondef ^
+;
+prefixexp:
+  prefixexp '[' exp ']' @indexexp
+| prefixexp '.' Name @fieldexp
+| ?t prefixexp (args | ':' Name args) @callexp // resolve ambiguity described in section 3.3.1
+| Name @nameexp
+| '(' exp ')' @parenexp
+;
+args^:
+  args_explist
+| args_single
+;
+args_single:
+  tableconstructor
+| stringexp
+;
+stringexp: LiteralString;
+functiondef: 'function' pars block 'end';
+pars: '(' [par (?1 ',' par)* [',' varargpar] | varargpar] ')'; // resolve LL(1) conflict
+par: Name;
+varargpar: '...' [?1 Name];
+tableconstructor: '{' [field (?1 (',' | ';') field)* [',' | ';']] '}'; // resolve LL(1) conflict
+field:
+  '[' exp ']' '=' exp @keyval_field
+| ?1 Name '=' exp @named_field // resolve LL(1) conflict
+| exp @counted_field
+;

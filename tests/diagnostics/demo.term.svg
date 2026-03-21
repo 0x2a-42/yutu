@@ -1,0 +1,133 @@
+<svg width="860px" height="974px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-cyan { fill: #55FFFF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-red { fill: #FF5555 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unbalanced-initialization">unbalanced-initialization</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unexpected number of expressions on right side of initialization</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/demo.lua:2:12</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">2</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local a, b = 1, 2, 3</tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">----</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">-------</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 3 expressions</tspan>
+</tspan>
+    <tspan x="10px" y="118px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="136px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">found 2 names</tspan>
+</tspan>
+    <tspan x="10px" y="154px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="172px"><tspan class="fg-bright-green bold">note</tspan><tspan>: extra right-hand side value will be redundant</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/demo.lua:2:20</tspan>
+</tspan>
+    <tspan x="10px" y="208px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="226px"><tspan class="fg-bright-blue bold">2</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local a, b = 1, 2, 3</tspan>
+</tspan>
+    <tspan x="10px" y="244px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                    </tspan><tspan class="fg-bright-green bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="262px">
+</tspan>
+    <tspan x="10px" y="280px"><tspan class="fg-bright-red bold">error</tspan><tspan class="bold">: goto jumps into the scope of local</tspan>
+</tspan>
+    <tspan x="10px" y="298px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/demo.lua:1:1</tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="334px"><tspan class="fg-bright-blue bold">1</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   goto foo</tspan>
+</tspan>
+    <tspan x="10px" y="352px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold"> _-</tspan><tspan class="fg-bright-red bold">^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan class="fg-bright-blue bold">2</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local a, b = 1, 2, 3</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan>  </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">local declaration</tspan>
+</tspan>
+    <tspan x="10px" y="406px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="424px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">local declaration</tspan>
+</tspan>
+    <tspan x="10px" y="442px"><tspan class="fg-bright-blue bold">3</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> ::foo::</tspan>
+</tspan>
+    <tspan x="10px" y="460px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|_______-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">jumped code</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="496px"><tspan class="fg-bright-green bold">note</tspan><tspan>: this is only allowed for labels at the end of a block</tspan>
+</tspan>
+    <tspan x="10px" y="514px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/demo.lua:4:1</tspan>
+</tspan>
+    <tspan x="10px" y="532px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="550px"><tspan class="fg-bright-blue bold">4</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-green bold">/</tspan><tspan> if not (a &gt; b) then</tspan>
+</tspan>
+    <tspan x="10px" y="568px"><tspan class="fg-bright-blue bold">5</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-green bold">|</tspan><tspan>   print(b)</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan class="fg-bright-blue bold">6</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-green bold">|</tspan><tspan> end</tspan>
+</tspan>
+    <tspan x="10px" y="604px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-green bold">|___^</tspan><tspan> </tspan><tspan class="fg-bright-green bold">however label is followed by this statement</tspan>
+</tspan>
+    <tspan x="10px" y="622px">
+</tspan>
+    <tspan x="10px" y="640px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="658px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/demo.lua:4:4</tspan>
+</tspan>
+    <tspan x="10px" y="676px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="694px"><tspan class="fg-bright-blue bold">4</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> if not (a &gt; b) then</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>    </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>    </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="730px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="748px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="766px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="784px"><tspan class="fg-bright-blue bold">4</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>if </tspan><tspan class="fg-bright-red">not (</tspan><tspan>a </tspan><tspan class="fg-bright-red">&gt;</tspan><tspan> b</tspan><tspan class="fg-bright-red">)</tspan><tspan> then</tspan>
+</tspan>
+    <tspan x="10px" y="802px"><tspan class="fg-bright-blue bold">4</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>if a </tspan><tspan class="fg-bright-green">&lt;=</tspan><tspan> b then</tspan>
+</tspan>
+    <tspan x="10px" y="820px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="838px">
+</tspan>
+    <tspan x="10px" y="856px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
+</tspan>
+    <tspan x="10px" y="874px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/demo.lua:2:1</tspan>
+</tspan>
+    <tspan x="10px" y="892px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="910px"><tspan class="fg-bright-blue bold">2</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local a, b = 1, 2, 3</tspan>
+</tspan>
+    <tspan x="10px" y="928px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="946px">
+</tspan>
+    <tspan x="10px" y="964px">
+</tspan>
+  </text>
+
+</svg>

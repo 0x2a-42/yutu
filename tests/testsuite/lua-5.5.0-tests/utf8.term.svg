@@ -1,0 +1,155 @@
+<svg width="740px" height="1190px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unicode-code-point-too-large">unicode-code-point-too-large</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: Unicode code point is too large</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/utf8.lua:134:18</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">134</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   errorcodes("/u{110000}")</tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                  </tspan><tspan class="fg-bright-yellow">^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="118px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua allows invalid Unicode code points larger than 0x10FFFF</tspan>
+</tspan>
+    <tspan x="10px" y="154px">
+</tspan>
+    <tspan x="10px" y="172px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unicode-code-point-is-surrogate">unicode-code-point-is-surrogate</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: Unicode code point is a surrogate</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/utf8.lua:190:29</tspan>
+</tspan>
+    <tspan x="10px" y="208px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="226px"><tspan class="fg-bright-blue bold">190</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(utf8.codepoint("/u{D800}", 1, 1, true) == 0xD800)</tspan>
+</tspan>
+    <tspan x="10px" y="244px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                             </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="262px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="280px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua allows invalid Unicode code points between 0xD800 and 0xDFFF</tspan>
+</tspan>
+    <tspan x="10px" y="298px">
+</tspan>
+    <tspan x="10px" y="316px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unicode-code-point-is-surrogate">unicode-code-point-is-surrogate</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: Unicode code point is a surrogate</tspan>
+</tspan>
+    <tspan x="10px" y="334px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/utf8.lua:191:29</tspan>
+</tspan>
+    <tspan x="10px" y="352px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan class="fg-bright-blue bold">191</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(utf8.codepoint("/u{DFFF}", 1, 1, true) == 0xDFFF)</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                             </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="406px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="424px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua allows invalid Unicode code points between 0xD800 and 0xDFFF</tspan>
+</tspan>
+    <tspan x="10px" y="442px">
+</tspan>
+    <tspan x="10px" y="460px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unicode-code-point-too-large">unicode-code-point-too-large</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: Unicode code point is too large</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/utf8.lua:192:29</tspan>
+</tspan>
+    <tspan x="10px" y="496px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="514px"><tspan class="fg-bright-blue bold">192</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(utf8.codepoint("/u{7FFFFFFF}", 1, 1, true) == 0x7FFFFFFF)</tspan>
+</tspan>
+    <tspan x="10px" y="532px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                             </tspan><tspan class="fg-bright-yellow">^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="550px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="568px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua allows invalid Unicode code points larger than 0x10FFFF</tspan>
+</tspan>
+    <tspan x="10px" y="586px">
+</tspan>
+    <tspan x="10px" y="604px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unicode-code-point-is-surrogate">unicode-code-point-is-surrogate</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: Unicode code point is a surrogate</tspan>
+</tspan>
+    <tspan x="10px" y="622px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/utf8.lua:213:13</tspan>
+</tspan>
+    <tspan x="10px" y="640px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="658px"><tspan class="fg-bright-blue bold">213</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> invalid("/u{D800}")</tspan>
+</tspan>
+    <tspan x="10px" y="676px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>             </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="694px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua allows invalid Unicode code points between 0xD800 and 0xDFFF</tspan>
+</tspan>
+    <tspan x="10px" y="730px">
+</tspan>
+    <tspan x="10px" y="748px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unicode-code-point-is-surrogate">unicode-code-point-is-surrogate</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: Unicode code point is a surrogate</tspan>
+</tspan>
+    <tspan x="10px" y="766px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/utf8.lua:214:13</tspan>
+</tspan>
+    <tspan x="10px" y="784px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="802px"><tspan class="fg-bright-blue bold">214</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> invalid("/u{DFFF}")</tspan>
+</tspan>
+    <tspan x="10px" y="820px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>             </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="838px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="856px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua allows invalid Unicode code points between 0xD800 and 0xDFFF</tspan>
+</tspan>
+    <tspan x="10px" y="874px">
+</tspan>
+    <tspan x="10px" y="892px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unicode-code-point-too-large">unicode-code-point-too-large</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: Unicode code point is too large</tspan>
+</tspan>
+    <tspan x="10px" y="910px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/utf8.lua:243:17</tspan>
+</tspan>
+    <tspan x="10px" y="928px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="946px"><tspan class="fg-bright-blue bold">243</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local s = "/u{4000000}/u{7FFFFFFF}"</tspan>
+</tspan>
+    <tspan x="10px" y="964px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                 </tspan><tspan class="fg-bright-yellow">^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="982px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1000px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua allows invalid Unicode code points larger than 0x10FFFF</tspan>
+</tspan>
+    <tspan x="10px" y="1018px">
+</tspan>
+    <tspan x="10px" y="1036px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unicode-code-point-too-large">unicode-code-point-too-large</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: Unicode code point is too large</tspan>
+</tspan>
+    <tspan x="10px" y="1054px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/utf8.lua:247:11</tspan>
+</tspan>
+    <tspan x="10px" y="1072px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1090px"><tspan class="fg-bright-blue bold">247</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   s = "/u{200000}/u{3FFFFFF}"</tspan>
+</tspan>
+    <tspan x="10px" y="1108px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="1126px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1144px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua allows invalid Unicode code points larger than 0x10FFFF</tspan>
+</tspan>
+    <tspan x="10px" y="1162px">
+</tspan>
+    <tspan x="10px" y="1180px">
+</tspan>
+  </text>
+
+</svg>

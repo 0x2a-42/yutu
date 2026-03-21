@@ -1,0 +1,462 @@
+<svg width="793px" height="3944px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-cyan { fill: #55FFFF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-blue bold">info[</tspan><tspan class="fg-bright-blue bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#only-whitespace">only-whitespace</a></tspan><tspan class="fg-bright-blue bold">]</tspan><tspan class="bold">: line contains only whitespace</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:603:1</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">603</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>  </tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="118px">
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-blue bold">info[</tspan><tspan class="fg-bright-blue bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#only-whitespace">only-whitespace</a></tspan><tspan class="fg-bright-blue bold">]</tspan><tspan class="bold">: line contains only whitespace</tspan>
+</tspan>
+    <tspan x="10px" y="154px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:657:1</tspan>
+</tspan>
+    <tspan x="10px" y="172px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan class="fg-bright-blue bold">657</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>  </tspan>
+</tspan>
+    <tspan x="10px" y="208px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="226px">
+</tspan>
+    <tspan x="10px" y="244px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="262px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:33:35</tspan>
+</tspan>
+    <tspan x="10px" y="280px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="298px"><tspan class="fg-bright-blue bold">33</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local function checksyntax (prog, extra, token, line)</tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                   </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="334px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="352px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan class="fg-bright-blue bold">33</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>local function checksyntax (prog, </tspan><tspan class="fg-bright-green">_</tspan><tspan>extra, token, line)</tspan>
+</tspan>
+    <tspan x="10px" y="406px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                   </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="424px">
+</tspan>
+    <tspan x="10px" y="442px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="460px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:73:11</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="496px"><tspan class="fg-bright-blue bold">73</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local st, err = load(prog)</tspan>
+</tspan>
+    <tspan x="10px" y="514px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="532px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="550px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="568px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan class="fg-bright-blue bold">73</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local </tspan><tspan class="fg-bright-green">_</tspan><tspan>st, err = load(prog)</tspan>
+</tspan>
+    <tspan x="10px" y="604px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="622px">
+</tspan>
+    <tspan x="10px" y="640px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#next-line-args">next-line-args</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: arguments of called function start in next line</tspan>
+</tspan>
+    <tspan x="10px" y="658px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:94:5</tspan>
+</tspan>
+    <tspan x="10px" y="676px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="694px"><tspan class="fg-bright-blue bold">93</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   (Message or print)</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-blue bold">------------------</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for call to this function</tspan>
+</tspan>
+    <tspan x="10px" y="730px"><tspan class="fg-bright-blue bold">94</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     ('/n &gt;&gt;&gt; testC not active: skipping tests for messages in C &lt;&lt;&lt;/n')</tspan>
+</tspan>
+    <tspan x="10px" y="748px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="766px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="784px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: add a semicolon if this was not intended to be a function call</tspan>
+</tspan>
+    <tspan x="10px" y="802px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="820px"><tspan class="fg-bright-blue bold">94</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    </tspan><tspan class="fg-bright-green">;</tspan><tspan>('/n &gt;&gt;&gt; testC not active: skipping tests for messages in C &lt;&lt;&lt;/n')</tspan>
+</tspan>
+    <tspan x="10px" y="838px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="856px">
+</tspan>
+    <tspan x="10px" y="874px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unbalanced-assignment">unbalanced-assignment</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unexpected number of expressions on right side of assignment</tspan>
+</tspan>
+    <tspan x="10px" y="892px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:168:17</tspan>
+</tspan>
+    <tspan x="10px" y="910px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="928px"><tspan class="fg-bright-blue bold">168</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> _G.aaa, _G.bbbb = nil</tspan>
+</tspan>
+    <tspan x="10px" y="946px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">---------------</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">---</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 1 expression</tspan>
+</tspan>
+    <tspan x="10px" y="964px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="982px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 2 expressions</tspan>
+</tspan>
+    <tspan x="10px" y="1000px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1018px"><tspan class="fg-bright-green bold">note</tspan><tspan>: extra left-hand side value will be assigned `nil`</tspan>
+</tspan>
+    <tspan x="10px" y="1036px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:168:9</tspan>
+</tspan>
+    <tspan x="10px" y="1054px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1072px"><tspan class="fg-bright-blue bold">168</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> _G.aaa, _G.bbbb = nil</tspan>
+</tspan>
+    <tspan x="10px" y="1090px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green bold">^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="1108px">
+</tspan>
+    <tspan x="10px" y="1126px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="1144px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:376:1</tspan>
+</tspan>
+    <tspan x="10px" y="1162px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1180px"><tspan class="fg-bright-blue bold">376</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> aaa = {}; setmetatable(aaa, {__index = string})</tspan>
+</tspan>
+    <tspan x="10px" y="1198px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="1216px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1234px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="1252px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="1270px">
+</tspan>
+    <tspan x="10px" y="1288px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="1306px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:376:24</tspan>
+</tspan>
+    <tspan x="10px" y="1324px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1342px"><tspan class="fg-bright-blue bold">376</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> aaa = {}; setmetatable(aaa, {__index = string})</tspan>
+</tspan>
+    <tspan x="10px" y="1360px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                        </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="1378px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1396px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="1414px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="1432px">
+</tspan>
+    <tspan x="10px" y="1450px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="1468px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:391:9</tspan>
+</tspan>
+    <tspan x="10px" y="1486px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1504px"><tspan class="fg-bright-blue bold">391</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local a,b = coroutine.resume(c)</tspan>
+</tspan>
+    <tspan x="10px" y="1522px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1540px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1558px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1576px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1594px"><tspan class="fg-bright-blue bold">391</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>a,b = coroutine.resume(c)</tspan>
+</tspan>
+    <tspan x="10px" y="1612px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1630px">
+</tspan>
+    <tspan x="10px" y="1648px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="1666px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:389:19</tspan>
+</tspan>
+    <tspan x="10px" y="1684px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1702px"><tspan class="fg-bright-blue bold">389</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local function f (n)</tspan>
+</tspan>
+    <tspan x="10px" y="1720px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                   </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1738px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1756px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1774px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1792px"><tspan class="fg-bright-blue bold">389</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>local function f (</tspan><tspan class="fg-bright-green">_</tspan><tspan>n)</tspan>
+</tspan>
+    <tspan x="10px" y="1810px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                   </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1828px">
+</tspan>
+    <tspan x="10px" y="1846px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="1864px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:422:9</tspan>
+</tspan>
+    <tspan x="10px" y="1882px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1900px"><tspan class="fg-bright-blue bold">422</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local err,msg = pcall(load(s))</tspan>
+</tspan>
+    <tspan x="10px" y="1918px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="1936px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1954px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1972px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1990px"><tspan class="fg-bright-blue bold">422</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>err,msg = pcall(load(s))</tspan>
+</tspan>
+    <tspan x="10px" y="2008px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2026px">
+</tspan>
+    <tspan x="10px" y="2044px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unbalanced-assignment">unbalanced-assignment</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unexpected number of expressions on right side of assignment</tspan>
+</tspan>
+    <tspan x="10px" y="2062px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:473:19</tspan>
+</tspan>
+    <tspan x="10px" y="2080px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2098px"><tspan class="fg-bright-blue bold">473</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> _G.XX, _G.g, _G.f = nil</tspan>
+</tspan>
+    <tspan x="10px" y="2116px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">-----------------</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">---</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 1 expression</tspan>
+</tspan>
+    <tspan x="10px" y="2134px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2152px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 3 expressions</tspan>
+</tspan>
+    <tspan x="10px" y="2170px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2188px"><tspan class="fg-bright-green bold">note</tspan><tspan>: extra left-hand side values will be assigned `nil`</tspan>
+</tspan>
+    <tspan x="10px" y="2206px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:473:8</tspan>
+</tspan>
+    <tspan x="10px" y="2224px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2242px"><tspan class="fg-bright-blue bold">473</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> _G.XX, _G.g, _G.f = nil</tspan>
+</tspan>
+    <tspan x="10px" y="2260px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-green bold">^^^^</tspan><tspan>  </tspan><tspan class="fg-bright-green bold">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2278px">
+</tspan>
+    <tspan x="10px" y="2296px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="2314px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:518:9</tspan>
+</tspan>
+    <tspan x="10px" y="2332px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2350px"><tspan class="fg-bright-blue bold">518</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local err,msg = load(s)</tspan>
+</tspan>
+    <tspan x="10px" y="2368px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2386px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2404px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="2422px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2440px"><tspan class="fg-bright-blue bold">518</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>err,msg = load(s)</tspan>
+</tspan>
+    <tspan x="10px" y="2458px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2476px">
+</tspan>
+    <tspan x="10px" y="2494px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="2512px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:604:9</tspan>
+</tspan>
+    <tspan x="10px" y="2530px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2548px"><tspan class="fg-bright-blue bold">604</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local res, msg = xpcall(loop, function (m)</tspan>
+</tspan>
+    <tspan x="10px" y="2566px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2584px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2602px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="2620px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2638px"><tspan class="fg-bright-blue bold">604</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>res, msg = xpcall(loop, function (m)</tspan>
+</tspan>
+    <tspan x="10px" y="2656px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2674px">
+</tspan>
+    <tspan x="10px" y="2692px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="2710px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:678:41</tspan>
+</tspan>
+    <tspan x="10px" y="2728px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2746px"><tspan class="fg-bright-blue bold">678</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> a, b, c = xpcall(string.find, function (x) return {} end, true, "al")</tspan>
+</tspan>
+    <tspan x="10px" y="2764px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                         </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="2782px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2800px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="2818px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2836px"><tspan class="fg-bright-blue bold">678</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>a, b, c = xpcall(string.find, function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>x) return {} end, true, "al")</tspan>
+</tspan>
+    <tspan x="10px" y="2854px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2872px">
+</tspan>
+    <tspan x="10px" y="2890px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unbalanced-assignment">unbalanced-assignment</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unexpected number of expressions on right side of assignment</tspan>
+</tspan>
+    <tspan x="10px" y="2908px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:698:13</tspan>
+</tspan>
+    <tspan x="10px" y="2926px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2944px"><tspan class="fg-bright-blue bold">698</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> _G.I,_G.aaa = nil</tspan>
+</tspan>
+    <tspan x="10px" y="2962px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">-----------</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">---</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 1 expression</tspan>
+</tspan>
+    <tspan x="10px" y="2980px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2998px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 2 expressions</tspan>
+</tspan>
+    <tspan x="10px" y="3016px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3034px"><tspan class="fg-bright-green bold">note</tspan><tspan>: extra left-hand side value will be assigned `nil`</tspan>
+</tspan>
+    <tspan x="10px" y="3052px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:698:6</tspan>
+</tspan>
+    <tspan x="10px" y="3070px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3088px"><tspan class="fg-bright-blue bold">698</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> _G.I,_G.aaa = nil</tspan>
+</tspan>
+    <tspan x="10px" y="3106px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>      </tspan><tspan class="fg-bright-green bold">^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="3124px">
+</tspan>
+    <tspan x="10px" y="3142px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="3160px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:703:5</tspan>
+</tspan>
+    <tspan x="10px" y="3178px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3196px"><tspan class="fg-bright-blue bold">703</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> for i=1,lim do</tspan>
+</tspan>
+    <tspan x="10px" y="3214px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="3232px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3250px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3268px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3286px"><tspan class="fg-bright-blue bold">703</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>for </tspan><tspan class="fg-bright-green">_</tspan><tspan>i=1,lim do</tspan>
+</tspan>
+    <tspan x="10px" y="3304px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3322px">
+</tspan>
+    <tspan x="10px" y="3340px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="3358px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:715:14</tspan>
+</tspan>
+    <tspan x="10px" y="3376px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3394px"><tspan class="fg-bright-blue bold">715</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local res, msg = load(gencode(100))   -- 100 levels is OK</tspan>
+</tspan>
+    <tspan x="10px" y="3412px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="3430px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3448px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3466px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3484px"><tspan class="fg-bright-blue bold">715</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local res, </tspan><tspan class="fg-bright-green">_</tspan><tspan>msg = load(gencode(100))   -- 100 levels is OK</tspan>
+</tspan>
+    <tspan x="10px" y="3502px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3520px">
+</tspan>
+    <tspan x="10px" y="3538px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="3556px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:764:7</tspan>
+</tspan>
+    <tspan x="10px" y="3574px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3592px"><tspan class="fg-bright-blue bold">764</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local a,b = load(s)</tspan>
+</tspan>
+    <tspan x="10px" y="3610px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="3628px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3646px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3664px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3682px"><tspan class="fg-bright-blue bold">764</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>local </tspan><tspan class="fg-bright-green">_</tspan><tspan>a,b = load(s)</tspan>
+</tspan>
+    <tspan x="10px" y="3700px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3718px">
+</tspan>
+    <tspan x="10px" y="3736px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="3754px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:774:7</tspan>
+</tspan>
+    <tspan x="10px" y="3772px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3790px"><tspan class="fg-bright-blue bold">774</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local a,b = load(s)</tspan>
+</tspan>
+    <tspan x="10px" y="3808px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="3826px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3844px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3862px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3880px"><tspan class="fg-bright-blue bold">774</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>local </tspan><tspan class="fg-bright-green">_</tspan><tspan>a,b = load(s)</tspan>
+</tspan>
+    <tspan x="10px" y="3898px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3916px">
+</tspan>
+    <tspan x="10px" y="3934px">
+</tspan>
+  </text>
+
+</svg>

@@ -1,0 +1,110 @@
+<svg width="740px" height="794px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan> </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unreachable.lua:3:5</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">3</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     print("unreachable in if")</tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="118px">
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
+</tspan>
+    <tspan x="10px" y="154px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unreachable.lua:11:3</tspan>
+</tspan>
+    <tspan x="10px" y="172px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan class="fg-bright-blue bold">11</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   print("unreachable after while")</tspan>
+</tspan>
+    <tspan x="10px" y="208px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="226px">
+</tspan>
+    <tspan x="10px" y="244px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
+</tspan>
+    <tspan x="10px" y="262px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unreachable.lua:18:3</tspan>
+</tspan>
+    <tspan x="10px" y="280px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="298px"><tspan class="fg-bright-blue bold">18</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   print("unreachable after repeat")</tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="334px">
+</tspan>
+    <tspan x="10px" y="352px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unreachable.lua:25:3</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="406px"><tspan class="fg-bright-blue bold">25</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   print("unreachable after return")</tspan>
+</tspan>
+    <tspan x="10px" y="424px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="442px">
+</tspan>
+    <tspan x="10px" y="460px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unreachable.lua:31:5</tspan>
+</tspan>
+    <tspan x="10px" y="496px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="514px"><tspan class="fg-bright-blue bold">31</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     print("unreachable after break")</tspan>
+</tspan>
+    <tspan x="10px" y="532px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="550px">
+</tspan>
+    <tspan x="10px" y="568px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unreachable.lua:37:3</tspan>
+</tspan>
+    <tspan x="10px" y="604px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="622px"><tspan class="fg-bright-blue bold">37</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   print("unreachable after assert")</tspan>
+</tspan>
+    <tspan x="10px" y="640px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="658px">
+</tspan>
+    <tspan x="10px" y="676px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
+</tspan>
+    <tspan x="10px" y="694px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/unreachable.lua:42:3</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="730px"><tspan class="fg-bright-blue bold">42</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   print("unreachable after error")</tspan>
+</tspan>
+    <tspan x="10px" y="748px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="766px">
+</tspan>
+    <tspan x="10px" y="784px">
+</tspan>
+  </text>
+
+</svg>

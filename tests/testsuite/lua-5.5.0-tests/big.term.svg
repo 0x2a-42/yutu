@@ -1,0 +1,130 @@
+<svg width="793px" height="956px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-cyan { fill: #55FFFF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-blue bold">info[</tspan><tspan class="fg-bright-blue bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#trailing-whitespace">trailing-whitespace</a></tspan><tspan class="fg-bright-blue bold">]</tspan><tspan class="bold">: line contains trailing whitespace</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/big.lua:10:29</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">10</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local debug = require"debug" </tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                             </tspan><tspan class="fg-bright-blue bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="118px">
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="154px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/big.lua:26:33</tspan>
+</tspan>
+    <tspan x="10px" y="172px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan class="fg-bright-blue bold">26</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> for k in pairs(env) do env[k] = undef end</tspan>
+</tspan>
+    <tspan x="10px" y="208px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                 </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="226px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="244px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="262px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="280px">
+</tspan>
+    <tspan x="10px" y="298px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/big.lua:30:23</tspan>
+</tspan>
+    <tspan x="10px" y="334px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="352px"><tspan class="fg-bright-blue bold">30</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   __index = function (t, n) coroutine.yield('g'); return _G[n] end,</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="406px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="424px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="442px"><tspan class="fg-bright-blue bold">30</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  __index = function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>t, n) coroutine.yield('g'); return _G[n] end,</tspan>
+</tspan>
+    <tspan x="10px" y="460px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                       </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="478px">
+</tspan>
+    <tspan x="10px" y="496px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="514px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/big.lua:31:26</tspan>
+</tspan>
+    <tspan x="10px" y="532px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="550px"><tspan class="fg-bright-blue bold">31</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   __newindex = function (t, n, v) coroutine.yield('s'); _G[n] = v end,</tspan>
+</tspan>
+    <tspan x="10px" y="568px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                          </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="604px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="622px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="640px"><tspan class="fg-bright-blue bold">31</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  __newindex = function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>t, n, v) coroutine.yield('s'); _G[n] = v end,</tspan>
+</tspan>
+    <tspan x="10px" y="658px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                          </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="676px">
+</tspan>
+    <tspan x="10px" y="694px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unbalanced-assignment">unbalanced-assignment</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unexpected number of expressions on right side of assignment</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/big.lua:54:6</tspan>
+</tspan>
+    <tspan x="10px" y="730px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="748px"><tspan class="fg-bright-blue bold">54</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> f, X = nil</tspan>
+</tspan>
+    <tspan x="10px" y="766px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">----</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">---</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 1 expression</tspan>
+</tspan>
+    <tspan x="10px" y="784px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="802px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 2 expressions</tspan>
+</tspan>
+    <tspan x="10px" y="820px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="838px"><tspan class="fg-bright-green bold">note</tspan><tspan>: extra left-hand side value will be assigned `nil`</tspan>
+</tspan>
+    <tspan x="10px" y="856px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/big.lua:54:4</tspan>
+</tspan>
+    <tspan x="10px" y="874px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="892px"><tspan class="fg-bright-blue bold">54</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> f, X = nil</tspan>
+</tspan>
+    <tspan x="10px" y="910px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>    </tspan><tspan class="fg-bright-green bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="928px">
+</tspan>
+    <tspan x="10px" y="946px">
+</tspan>
+  </text>
+
+</svg>

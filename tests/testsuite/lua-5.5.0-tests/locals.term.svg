@@ -1,0 +1,1123 @@
+<svg width="740px" height="9884px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-cyan { fill: #55FFFF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-red { fill: #FF5555 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:30:11</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">30</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local i = 20</tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="118px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="154px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="172px"><tspan class="fg-bright-blue bold">30</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local </tspan><tspan class="fg-bright-green">_</tspan><tspan>i = 20</tspan>
+</tspan>
+    <tspan x="10px" y="190px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="208px">
+</tspan>
+    <tspan x="10px" y="226px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="244px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:55:9</tspan>
+</tspan>
+    <tspan x="10px" y="262px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="280px"><tspan class="fg-bright-blue bold">55</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local c,d = a,b</tspan>
+</tspan>
+    <tspan x="10px" y="298px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="334px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="352px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan class="fg-bright-blue bold">55</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>c,d = a,b</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="406px">
+</tspan>
+    <tspan x="10px" y="424px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="442px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:64:9</tspan>
+</tspan>
+    <tspan x="10px" y="460px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan class="fg-bright-blue bold">64</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local f = 10</tspan>
+</tspan>
+    <tspan x="10px" y="496px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="514px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="532px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="550px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="568px"><tspan class="fg-bright-blue bold">64</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>f = 10</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="604px">
+</tspan>
+    <tspan x="10px" y="622px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="640px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:138:15</tspan>
+</tspan>
+    <tspan x="10px" y="658px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="676px"><tspan class="fg-bright-blue bold">138</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local st, msg = pcall(additems)</tspan>
+</tspan>
+    <tspan x="10px" y="694px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="730px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="748px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="766px"><tspan class="fg-bright-blue bold">138</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local st, </tspan><tspan class="fg-bright-green">_</tspan><tspan>msg = pcall(additems)</tspan>
+</tspan>
+    <tspan x="10px" y="784px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="802px">
+</tspan>
+    <tspan x="10px" y="820px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="838px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:253:50</tspan>
+</tspan>
+    <tspan x="10px" y="856px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="874px"><tspan class="fg-bright-blue bold">253</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local w, y &lt;close&gt;, z = func2close(function (self, err)</tspan>
+</tspan>
+    <tspan x="10px" y="892px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                                  </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="910px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="928px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="946px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="964px"><tspan class="fg-bright-blue bold">253</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local w, y &lt;close&gt;, z = func2close(function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>self, err)</tspan>
+</tspan>
+    <tspan x="10px" y="982px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                                  </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1000px">
+</tspan>
+    <tspan x="10px" y="1018px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplfied</tspan>
+</tspan>
+    <tspan x="10px" y="1036px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:281:50</tspan>
+</tspan>
+    <tspan x="10px" y="1054px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1072px"><tspan class="fg-bright-blue bold">281</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(a == 1.5 and b == false and c == 23 and X == true)</tspan>
+</tspan>
+    <tspan x="10px" y="1090px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                                  </tspan><tspan class="fg-bright-yellow">^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="1108px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1126px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the comparison</tspan>
+</tspan>
+    <tspan x="10px" y="1144px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1162px"><tspan class="fg-bright-blue bold">281</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(a == 1.5 and b == false and c == 23 and X</tspan><tspan class="fg-bright-red"> == true</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="1180px"><tspan class="fg-bright-blue bold">281</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(a == 1.5 and b == false and c == 23 and X)</tspan>
+</tspan>
+    <tspan x="10px" y="1198px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1216px">
+</tspan>
+    <tspan x="10px" y="1234px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="1252px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:284:19</tspan>
+</tspan>
+    <tspan x="10px" y="1270px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1288px"><tspan class="fg-bright-blue bold">284</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   foo = function (x)</tspan>
+</tspan>
+    <tspan x="10px" y="1306px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                   </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1324px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1342px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="1360px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1378px"><tspan class="fg-bright-blue bold">284</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  foo = function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>x)</tspan>
+</tspan>
+    <tspan x="10px" y="1396px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                   </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="1414px">
+</tspan>
+    <tspan x="10px" y="1432px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplfied</tspan>
+</tspan>
+    <tspan x="10px" y="1450px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:296:26</tspan>
+</tspan>
+    <tspan x="10px" y="1468px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1486px"><tspan class="fg-bright-blue bold">296</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(foo() == 15 and X == true)</tspan>
+</tspan>
+    <tspan x="10px" y="1504px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                          </tspan><tspan class="fg-bright-yellow">^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="1522px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1540px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the comparison</tspan>
+</tspan>
+    <tspan x="10px" y="1558px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1576px"><tspan class="fg-bright-blue bold">296</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(foo() == 15 and X</tspan><tspan class="fg-bright-red"> == true</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="1594px"><tspan class="fg-bright-blue bold">296</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(foo() == 15 and X)</tspan>
+</tspan>
+    <tspan x="10px" y="1612px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1630px">
+</tspan>
+    <tspan x="10px" y="1648px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplfied</tspan>
+</tspan>
+    <tspan x="10px" y="1666px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:304:34</tspan>
+</tspan>
+    <tspan x="10px" y="1684px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1702px"><tspan class="fg-bright-blue bold">304</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(foo() == closescope and X == true)</tspan>
+</tspan>
+    <tspan x="10px" y="1720px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                  </tspan><tspan class="fg-bright-yellow">^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="1738px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1756px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the comparison</tspan>
+</tspan>
+    <tspan x="10px" y="1774px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1792px"><tspan class="fg-bright-blue bold">304</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(foo() == closescope and X</tspan><tspan class="fg-bright-red"> == true</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="1810px"><tspan class="fg-bright-blue bold">304</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(foo() == closescope and X)</tspan>
+</tspan>
+    <tspan x="10px" y="1828px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1846px">
+</tspan>
+    <tspan x="10px" y="1864px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplfied</tspan>
+</tspan>
+    <tspan x="10px" y="1882px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:340:34</tspan>
+</tspan>
+    <tspan x="10px" y="1900px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1918px"><tspan class="fg-bright-blue bold">340</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     {__close = function() assert(flag == false); flag = true end})</tspan>
+</tspan>
+    <tspan x="10px" y="1936px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                  </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="1954px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1972px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the comparison</tspan>
+</tspan>
+    <tspan x="10px" y="1990px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2008px"><tspan class="fg-bright-blue bold">340</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>    {__close = function() assert(flag</tspan><tspan class="fg-bright-red"> == false</tspan><tspan>); flag = true end})</tspan>
+</tspan>
+    <tspan x="10px" y="2026px"><tspan class="fg-bright-blue bold">340</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>    {__close = function() assert(</tspan><tspan class="fg-bright-green">not </tspan><tspan>flag); flag = true end})</tspan>
+</tspan>
+    <tspan x="10px" y="2044px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2062px">
+</tspan>
+    <tspan x="10px" y="2080px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="2098px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:341:9</tspan>
+</tspan>
+    <tspan x="10px" y="2116px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2134px"><tspan class="fg-bright-blue bold">341</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local y &lt;const&gt; = nil</tspan>
+</tspan>
+    <tspan x="10px" y="2152px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2170px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2188px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="2206px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2224px"><tspan class="fg-bright-blue bold">341</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>y &lt;const&gt; = nil</tspan>
+</tspan>
+    <tspan x="10px" y="2242px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2260px">
+</tspan>
+    <tspan x="10px" y="2278px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="2296px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:342:9</tspan>
+</tspan>
+    <tspan x="10px" y="2314px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2332px"><tspan class="fg-bright-blue bold">342</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local z &lt;const&gt; = nil</tspan>
+</tspan>
+    <tspan x="10px" y="2350px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2368px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2386px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="2404px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2422px"><tspan class="fg-bright-blue bold">342</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>z &lt;const&gt; = nil</tspan>
+</tspan>
+    <tspan x="10px" y="2440px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2458px">
+</tspan>
+    <tspan x="10px" y="2476px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplfied</tspan>
+</tspan>
+    <tspan x="10px" y="2494px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:353:35</tspan>
+</tspan>
+    <tspan x="10px" y="2512px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2530px"><tspan class="fg-bright-blue bold">353</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     {__close = function () assert(flag == false); flag = true end})</tspan>
+</tspan>
+    <tspan x="10px" y="2548px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2566px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2584px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the comparison</tspan>
+</tspan>
+    <tspan x="10px" y="2602px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2620px"><tspan class="fg-bright-blue bold">353</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>    {__close = function () assert(flag</tspan><tspan class="fg-bright-red"> == false</tspan><tspan>); flag = true end})</tspan>
+</tspan>
+    <tspan x="10px" y="2638px"><tspan class="fg-bright-blue bold">353</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>    {__close = function () assert(</tspan><tspan class="fg-bright-green">not </tspan><tspan>flag); flag = true end})</tspan>
+</tspan>
+    <tspan x="10px" y="2656px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2674px">
+</tspan>
+    <tspan x="10px" y="2692px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="2710px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:358:9</tspan>
+</tspan>
+    <tspan x="10px" y="2728px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2746px"><tspan class="fg-bright-blue bold">358</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local v &lt;const&gt; = 1</tspan>
+</tspan>
+    <tspan x="10px" y="2764px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2782px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2800px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="2818px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2836px"><tspan class="fg-bright-blue bold">358</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>v &lt;const&gt; = 1</tspan>
+</tspan>
+    <tspan x="10px" y="2854px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="2872px">
+</tspan>
+    <tspan x="10px" y="2890px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="2908px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:359:9</tspan>
+</tspan>
+    <tspan x="10px" y="2926px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2944px"><tspan class="fg-bright-blue bold">359</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local w &lt;const&gt; = 1</tspan>
+</tspan>
+    <tspan x="10px" y="2962px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2980px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2998px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3016px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3034px"><tspan class="fg-bright-blue bold">359</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>w &lt;const&gt; = 1</tspan>
+</tspan>
+    <tspan x="10px" y="3052px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3070px">
+</tspan>
+    <tspan x="10px" y="3088px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="3106px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:360:9</tspan>
+</tspan>
+    <tspan x="10px" y="3124px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3142px"><tspan class="fg-bright-blue bold">360</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local x &lt;const&gt; = 1</tspan>
+</tspan>
+    <tspan x="10px" y="3160px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="3178px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3196px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3214px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3232px"><tspan class="fg-bright-blue bold">360</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>x &lt;const&gt; = 1</tspan>
+</tspan>
+    <tspan x="10px" y="3250px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3268px">
+</tspan>
+    <tspan x="10px" y="3286px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="3304px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:361:9</tspan>
+</tspan>
+    <tspan x="10px" y="3322px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3340px"><tspan class="fg-bright-blue bold">361</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local y &lt;const&gt; = 1</tspan>
+</tspan>
+    <tspan x="10px" y="3358px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="3376px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3394px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3412px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3430px"><tspan class="fg-bright-blue bold">361</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>y &lt;const&gt; = 1</tspan>
+</tspan>
+    <tspan x="10px" y="3448px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3466px">
+</tspan>
+    <tspan x="10px" y="3484px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="3502px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:362:9</tspan>
+</tspan>
+    <tspan x="10px" y="3520px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3538px"><tspan class="fg-bright-blue bold">362</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local z &lt;const&gt; = 1</tspan>
+</tspan>
+    <tspan x="10px" y="3556px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="3574px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3592px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3610px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3628px"><tspan class="fg-bright-blue bold">362</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>z &lt;const&gt; = 1</tspan>
+</tspan>
+    <tspan x="10px" y="3646px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3664px">
+</tspan>
+    <tspan x="10px" y="3682px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="3700px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:408:9</tspan>
+</tspan>
+    <tspan x="10px" y="3718px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3736px"><tspan class="fg-bright-blue bold">408</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     for k in foo() do return tail() end</tspan>
+</tspan>
+    <tspan x="10px" y="3754px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="3772px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3790px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="3808px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3826px"><tspan class="fg-bright-blue bold">408</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    for </tspan><tspan class="fg-bright-green">_</tspan><tspan>k in foo() do return tail() end</tspan>
+</tspan>
+    <tspan x="10px" y="3844px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="3862px">
+</tspan>
+    <tspan x="10px" y="3880px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplfied</tspan>
+</tspan>
+    <tspan x="10px" y="3898px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:412:10</tspan>
+</tspan>
+    <tspan x="10px" y="3916px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3934px"><tspan class="fg-bright-blue bold">412</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(closed == true)</tspan>
+</tspan>
+    <tspan x="10px" y="3952px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="3970px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3988px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the comparison</tspan>
+</tspan>
+    <tspan x="10px" y="4006px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4024px"><tspan class="fg-bright-blue bold">412</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(closed</tspan><tspan class="fg-bright-red"> == true</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="4042px"><tspan class="fg-bright-blue bold">412</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(closed)</tspan>
+</tspan>
+    <tspan x="10px" y="4060px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4078px">
+</tspan>
+    <tspan x="10px" y="4096px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="4114px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:426:22</tspan>
+</tspan>
+    <tspan x="10px" y="4132px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4150px"><tspan class="fg-bright-blue bold">426</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       local function f() return k end   -- create an upvalue</tspan>
+</tspan>
+    <tspan x="10px" y="4168px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                      </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4186px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4204px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: delete the definition</tspan>
+</tspan>
+    <tspan x="10px" y="4222px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4240px"><tspan class="fg-bright-blue bold">426</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>      </tspan><tspan class="fg-bright-red">local function f() return k end</tspan><tspan>   -- create an upvalue</tspan>
+</tspan>
+    <tspan x="10px" y="4258px"><tspan class="fg-bright-blue bold">426</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>         -- create an upvalue</tspan>
+</tspan>
+    <tspan x="10px" y="4276px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4294px">
+</tspan>
+    <tspan x="10px" y="4312px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-loopvar">unused-loopvar</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused loop variable</tspan>
+</tspan>
+    <tspan x="10px" y="4330px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:425:12</tspan>
+</tspan>
+    <tspan x="10px" y="4348px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4366px"><tspan class="fg-bright-blue bold">425</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     for k, v in next, {}, nil, o1 do</tspan>
+</tspan>
+    <tspan x="10px" y="4384px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4402px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4420px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="4438px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4456px"><tspan class="fg-bright-blue bold">425</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    for k, </tspan><tspan class="fg-bright-green">_</tspan><tspan>v in next, {}, nil, o1 do</tspan>
+</tspan>
+    <tspan x="10px" y="4474px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="4492px">
+</tspan>
+    <tspan x="10px" y="4510px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="4528px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:442:28</tspan>
+</tspan>
+    <tspan x="10px" y="4546px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4564px"><tspan class="fg-bright-blue bold">442</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       func2close(function (self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="4582px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="4600px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4618px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="4636px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4654px"><tspan class="fg-bright-blue bold">442</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>      func2close(function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="4672px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="4690px">
+</tspan>
+    <tspan x="10px" y="4708px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="4726px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:448:28</tspan>
+</tspan>
+    <tspan x="10px" y="4744px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4762px"><tspan class="fg-bright-blue bold">448</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       func2close(function (self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="4780px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="4798px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4816px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="4834px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4852px"><tspan class="fg-bright-blue bold">448</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>      func2close(function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="4870px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="4888px">
+</tspan>
+    <tspan x="10px" y="4906px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="4924px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:455:28</tspan>
+</tspan>
+    <tspan x="10px" y="4942px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4960px"><tspan class="fg-bright-blue bold">455</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       func2close(function (self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="4978px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="4996px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5014px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="5032px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5050px"><tspan class="fg-bright-blue bold">455</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>      func2close(function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="5068px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="5086px">
+</tspan>
+    <tspan x="10px" y="5104px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="5122px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:461:28</tspan>
+</tspan>
+    <tspan x="10px" y="5140px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5158px"><tspan class="fg-bright-blue bold">461</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       func2close(function (self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="5176px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="5194px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5212px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="5230px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5248px"><tspan class="fg-bright-blue bold">461</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>      func2close(function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="5266px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="5284px">
+</tspan>
+    <tspan x="10px" y="5302px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="5320px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:477:28</tspan>
+</tspan>
+    <tspan x="10px" y="5338px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5356px"><tspan class="fg-bright-blue bold">477</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       func2close(function (self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="5374px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="5392px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5410px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="5428px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5446px"><tspan class="fg-bright-blue bold">477</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>      func2close(function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="5464px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="5482px">
+</tspan>
+    <tspan x="10px" y="5500px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="5518px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:485:28</tspan>
+</tspan>
+    <tspan x="10px" y="5536px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5554px"><tspan class="fg-bright-blue bold">485</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       func2close(function (self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="5572px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="5590px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5608px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="5626px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5644px"><tspan class="fg-bright-blue bold">485</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>      func2close(function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="5662px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="5680px">
+</tspan>
+    <tspan x="10px" y="5698px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="5716px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:494:28</tspan>
+</tspan>
+    <tspan x="10px" y="5734px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5752px"><tspan class="fg-bright-blue bold">494</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       func2close(function (self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="5770px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="5788px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5806px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="5824px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5842px"><tspan class="fg-bright-blue bold">494</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>      func2close(function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="5860px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="5878px">
+</tspan>
+    <tspan x="10px" y="5896px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="5914px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:502:28</tspan>
+</tspan>
+    <tspan x="10px" y="5932px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5950px"><tspan class="fg-bright-blue bold">502</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       func2close(function (self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="5968px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="5986px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6004px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="6022px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6040px"><tspan class="fg-bright-blue bold">502</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>      func2close(function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="6058px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="6076px">
+</tspan>
+    <tspan x="10px" y="6094px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="6112px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:520:30</tspan>
+</tspan>
+    <tspan x="10px" y="6130px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6148px"><tspan class="fg-bright-blue bold">520</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         func2close(function (self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="6166px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                              </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6184px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6202px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="6220px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6238px"><tspan class="fg-bright-blue bold">520</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>        func2close(function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="6256px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="6274px">
+</tspan>
+    <tspan x="10px" y="6292px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-vararg">unused-vararg</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused variable length argument</tspan>
+</tspan>
+    <tspan x="10px" y="6310px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:517:23</tspan>
+</tspan>
+    <tspan x="10px" y="6328px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6346px"><tspan class="fg-bright-blue bold">517</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local function foo (...)</tspan>
+</tspan>
+    <tspan x="10px" y="6364px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                       </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6382px">
+</tspan>
+    <tspan x="10px" y="6400px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-vararg">unused-vararg</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused variable length argument</tspan>
+</tspan>
+    <tspan x="10px" y="6418px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:538:23</tspan>
+</tspan>
+    <tspan x="10px" y="6436px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6454px"><tspan class="fg-bright-blue bold">538</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local function foo (...)</tspan>
+</tspan>
+    <tspan x="10px" y="6472px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                       </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6490px">
+</tspan>
+    <tspan x="10px" y="6508px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="6526px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:534:9</tspan>
+</tspan>
+    <tspan x="10px" y="6544px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6562px"><tspan class="fg-bright-blue bold">534</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local st, msg = xpcall(foo, debug.traceback)</tspan>
+</tspan>
+    <tspan x="10px" y="6580px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="6598px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6616px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="6634px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6652px"><tspan class="fg-bright-blue bold">534</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>st, msg = xpcall(foo, debug.traceback)</tspan>
+</tspan>
+    <tspan x="10px" y="6670px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="6688px">
+</tspan>
+    <tspan x="10px" y="6706px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="6724px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:542:9</tspan>
+</tspan>
+    <tspan x="10px" y="6742px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6760px"><tspan class="fg-bright-blue bold">542</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local st, msg = xpcall(foo, debug.traceback)</tspan>
+</tspan>
+    <tspan x="10px" y="6778px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="6796px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6814px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="6832px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6850px"><tspan class="fg-bright-blue bold">542</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>st, msg = xpcall(foo, debug.traceback)</tspan>
+</tspan>
+    <tspan x="10px" y="6868px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="6886px">
+</tspan>
+    <tspan x="10px" y="6904px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="6922px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:469:9</tspan>
+</tspan>
+    <tspan x="10px" y="6940px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6958px"><tspan class="fg-bright-blue bold">469</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local stat, msg = pcall(foo, false)</tspan>
+</tspan>
+    <tspan x="10px" y="6976px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6994px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7012px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="7030px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7048px"><tspan class="fg-bright-blue bold">469</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>stat, msg = pcall(foo, false)</tspan>
+</tspan>
+    <tspan x="10px" y="7066px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="7084px">
+</tspan>
+    <tspan x="10px" y="7102px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="7120px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:513:9</tspan>
+</tspan>
+    <tspan x="10px" y="7138px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7156px"><tspan class="fg-bright-blue bold">513</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local stat, msg = pcall(foo, true)</tspan>
+</tspan>
+    <tspan x="10px" y="7174px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="7192px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7210px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="7228px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7246px"><tspan class="fg-bright-blue bold">513</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local </tspan><tspan class="fg-bright-green">_</tspan><tspan>stat, msg = pcall(foo, true)</tspan>
+</tspan>
+    <tspan x="10px" y="7264px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="7282px">
+</tspan>
+    <tspan x="10px" y="7300px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="7318px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:694:30</tspan>
+</tspan>
+    <tspan x="10px" y="7336px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7354px"><tspan class="fg-bright-blue bold">694</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       T.alloccount(0); local x = {}   -- force a memory error</tspan>
+</tspan>
+    <tspan x="10px" y="7372px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="7390px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7408px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="7426px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7444px"><tspan class="fg-bright-blue bold">694</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>      T.alloccount(0); local </tspan><tspan class="fg-bright-green">_</tspan><tspan>x = {}   -- force a memory error</tspan>
+</tspan>
+    <tspan x="10px" y="7462px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="7480px">
+</tspan>
+    <tspan x="10px" y="7498px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="7516px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:707:38</tspan>
+</tspan>
+    <tspan x="10px" y="7534px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7552px"><tspan class="fg-bright-blue bold">707</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local close = func2close(function (self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="7570px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                      </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="7588px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7606px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="7624px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7642px"><tspan class="fg-bright-blue bold">707</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  local close = func2close(function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="7660px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                      </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="7678px">
+</tspan>
+    <tspan x="10px" y="7696px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="7714px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:722:11</tspan>
+</tspan>
+    <tspan x="10px" y="7732px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7750px"><tspan class="fg-bright-blue bold">722</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local y = {}    -- raise a memory error</tspan>
+</tspan>
+    <tspan x="10px" y="7768px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="7786px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7804px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="7822px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7840px"><tspan class="fg-bright-blue bold">722</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local </tspan><tspan class="fg-bright-green">_</tspan><tspan>y = {}    -- raise a memory error</tspan>
+</tspan>
+    <tspan x="10px" y="7858px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="7876px">
+</tspan>
+    <tspan x="10px" y="7894px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="7912px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:731:46</tspan>
+</tspan>
+    <tspan x="10px" y="7930px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7948px"><tspan class="fg-bright-blue bold">731</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local xxx &lt;close&gt; = func2close(function (self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="7966px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                              </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="7984px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8002px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="8020px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8038px"><tspan class="fg-bright-blue bold">731</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local xxx &lt;close&gt; = func2close(function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="8056px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="8074px">
+</tspan>
+    <tspan x="10px" y="8092px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="8110px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:735:45</tspan>
+</tspan>
+    <tspan x="10px" y="8128px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8146px"><tspan class="fg-bright-blue bold">735</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local xx &lt;close&gt; = func2close(function (self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="8164px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                             </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="8182px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8200px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="8218px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8236px"><tspan class="fg-bright-blue bold">735</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local xx &lt;close&gt; = func2close(function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>self, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="8254px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                             </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="8272px">
+</tspan>
+    <tspan x="10px" y="8290px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="8308px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:739:11</tspan>
+</tspan>
+    <tspan x="10px" y="8326px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8344px"><tspan class="fg-bright-blue bold">739</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local y = {}   -- raise a memory error</tspan>
+</tspan>
+    <tspan x="10px" y="8362px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="8380px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8398px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="8416px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8434px"><tspan class="fg-bright-blue bold">739</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local </tspan><tspan class="fg-bright-green">_</tspan><tspan>y = {}   -- raise a memory error</tspan>
+</tspan>
+    <tspan x="10px" y="8452px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="8470px">
+</tspan>
+    <tspan x="10px" y="8488px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="8506px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:802:38</tspan>
+</tspan>
+    <tspan x="10px" y="8524px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8542px"><tspan class="fg-bright-blue bold">802</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local x = func2close(function (_,msg)</tspan>
+</tspan>
+    <tspan x="10px" y="8560px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                      </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="8578px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8596px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="8614px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8632px"><tspan class="fg-bright-blue bold">802</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local x = func2close(function (_,</tspan><tspan class="fg-bright-green">_</tspan><tspan>msg)</tspan>
+</tspan>
+    <tspan x="10px" y="8650px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                      </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="8668px">
+</tspan>
+    <tspan x="10px" y="8686px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="8704px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:806:38</tspan>
+</tspan>
+    <tspan x="10px" y="8722px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8740px"><tspan class="fg-bright-blue bold">806</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local y = func2close(function (_,msg)</tspan>
+</tspan>
+    <tspan x="10px" y="8758px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                      </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="8776px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8794px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="8812px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8830px"><tspan class="fg-bright-blue bold">806</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local y = func2close(function (_,</tspan><tspan class="fg-bright-green">_</tspan><tspan>msg)</tspan>
+</tspan>
+    <tspan x="10px" y="8848px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                      </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="8866px">
+</tspan>
+    <tspan x="10px" y="8884px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="8902px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:837:46</tspan>
+</tspan>
+    <tspan x="10px" y="8920px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8938px"><tspan class="fg-bright-blue bold">837</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local x &lt;close&gt; = func2close(function (_,msg)</tspan>
+</tspan>
+    <tspan x="10px" y="8956px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                              </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="8974px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8992px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="9010px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9028px"><tspan class="fg-bright-blue bold">837</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local x &lt;close&gt; = func2close(function (_,</tspan><tspan class="fg-bright-green">_</tspan><tspan>msg)</tspan>
+</tspan>
+    <tspan x="10px" y="9046px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="9064px">
+</tspan>
+    <tspan x="10px" y="9082px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="9100px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:841:46</tspan>
+</tspan>
+    <tspan x="10px" y="9118px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9136px"><tspan class="fg-bright-blue bold">841</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local y &lt;close&gt; = func2close(function (_,msg)</tspan>
+</tspan>
+    <tspan x="10px" y="9154px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                              </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="9172px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9190px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="9208px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9226px"><tspan class="fg-bright-blue bold">841</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local y &lt;close&gt; = func2close(function (_,</tspan><tspan class="fg-bright-green">_</tspan><tspan>msg)</tspan>
+</tspan>
+    <tspan x="10px" y="9244px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="9262px">
+</tspan>
+    <tspan x="10px" y="9280px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="9298px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:953:11</tspan>
+</tspan>
+    <tspan x="10px" y="9316px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9334px"><tspan class="fg-bright-blue bold">953</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local y, z = 20, 30</tspan>
+</tspan>
+    <tspan x="10px" y="9352px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="9370px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9388px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="9406px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9424px"><tspan class="fg-bright-blue bold">953</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local </tspan><tspan class="fg-bright-green">_</tspan><tspan>y, z = 20, 30</tspan>
+</tspan>
+    <tspan x="10px" y="9442px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="9460px">
+</tspan>
+    <tspan x="10px" y="9478px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-local">unused-local</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused local</tspan>
+</tspan>
+    <tspan x="10px" y="9496px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:953:14</tspan>
+</tspan>
+    <tspan x="10px" y="9514px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9532px"><tspan class="fg-bright-blue bold">953</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local y, z = 20, 30</tspan>
+</tspan>
+    <tspan x="10px" y="9550px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="9568px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9586px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="9604px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9622px"><tspan class="fg-bright-blue bold">953</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local y, </tspan><tspan class="fg-bright-green">_</tspan><tspan>z = 20, 30</tspan>
+</tspan>
+    <tspan x="10px" y="9640px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="9658px">
+</tspan>
+    <tspan x="10px" y="9676px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="9694px"><tspan>    </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:1119:41</tspan>
+</tspan>
+    <tspan x="10px" y="9712px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9730px"><tspan class="fg-bright-blue bold">1119</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local obj = func2close(function (_, msg)</tspan>
+</tspan>
+    <tspan x="10px" y="9748px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                         </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="9766px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9784px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="9802px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9820px"><tspan class="fg-bright-blue bold">1119</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>    local obj = func2close(function (_, </tspan><tspan class="fg-bright-green">_</tspan><tspan>msg)</tspan>
+</tspan>
+    <tspan x="10px" y="9838px"><tspan>     </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                         </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="9856px">
+</tspan>
+    <tspan x="10px" y="9874px">
+</tspan>
+  </text>
+
+</svg>

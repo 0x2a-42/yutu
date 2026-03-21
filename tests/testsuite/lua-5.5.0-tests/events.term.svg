@@ -1,0 +1,2117 @@
+<svg width="886px" height="18830px" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .fg { fill: #AAAAAA }
+    .bg { fill: #000000 }
+    .fg-bright-blue { fill: #5555FF }
+    .fg-bright-cyan { fill: #55FFFF }
+    .fg-bright-green { fill: #55FF55 }
+    .fg-bright-red { fill: #FF5555 }
+    .fg-bright-yellow { fill: #FFFF55 }
+    .container {
+      padding: 0 10px;
+      line-height: 18px;
+    }
+    .bold { font-weight: bold; }
+    tspan {
+      font: 14px SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+      white-space: pre;
+      line-height: 18px;
+    }
+  </style>
+
+  <rect width="100%" height="100%" y="0" rx="4.5" class="bg" />
+
+  <text xml:space="preserve" class="container fg">
+    <tspan x="10px" y="28px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="46px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:18:13</tspan>
+</tspan>
+    <tspan x="10px" y="64px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">18</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> _ENV["B"] = undef</tspan>
+</tspan>
+    <tspan x="10px" y="100px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>             </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="118px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="136px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="154px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="172px">
+</tspan>
+    <tspan x="10px" y="190px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="208px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:24:1</tspan>
+</tspan>
+    <tspan x="10px" y="226px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="244px"><tspan class="fg-bright-blue bold">24</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> a={name = "NAME"}; setmetatable(a, {__metatable = "xuxu",</tspan>
+</tspan>
+    <tspan x="10px" y="262px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="280px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="298px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="316px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="334px">
+</tspan>
+    <tspan x="10px" y="352px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="370px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:24:33</tspan>
+</tspan>
+    <tspan x="10px" y="388px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="406px"><tspan class="fg-bright-blue bold">24</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> a={name = "NAME"}; setmetatable(a, {__metatable = "xuxu",</tspan>
+</tspan>
+    <tspan x="10px" y="424px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                 </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="442px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="460px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="478px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="496px">
+</tspan>
+    <tspan x="10px" y="514px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="532px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:26:21</tspan>
+</tspan>
+    <tspan x="10px" y="550px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="568px"><tspan class="fg-bright-blue bold">26</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(getmetatable(a) == "xuxu")</tspan>
+</tspan>
+    <tspan x="10px" y="586px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                     </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="604px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="622px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="640px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="658px">
+</tspan>
+    <tspan x="10px" y="676px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="694px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:27:17</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="730px"><tspan class="fg-bright-blue bold">27</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(tostring(a) == "NAME")</tspan>
+</tspan>
+    <tspan x="10px" y="748px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                 </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="766px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="784px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="802px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="820px">
+</tspan>
+    <tspan x="10px" y="838px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="856px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:29:28</tspan>
+</tspan>
+    <tspan x="10px" y="874px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="892px"><tspan class="fg-bright-blue bold">29</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(pcall(setmetatable, a, {}) == false)</tspan>
+</tspan>
+    <tspan x="10px" y="910px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="928px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="946px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="964px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="982px">
+</tspan>
+    <tspan x="10px" y="1000px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="1018px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:30:1</tspan>
+</tspan>
+    <tspan x="10px" y="1036px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1054px"><tspan class="fg-bright-blue bold">30</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> a.name = "gororoba"</tspan>
+</tspan>
+    <tspan x="10px" y="1072px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1090px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1108px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="1126px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="1144px">
+</tspan>
+    <tspan x="10px" y="1162px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="1180px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:31:17</tspan>
+</tspan>
+    <tspan x="10px" y="1198px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1216px"><tspan class="fg-bright-blue bold">31</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(tostring(a) == "gororoba")</tspan>
+</tspan>
+    <tspan x="10px" y="1234px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                 </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1252px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1270px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="1288px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="1306px">
+</tspan>
+    <tspan x="10px" y="1324px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="1342px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:41:10</tspan>
+</tspan>
+    <tspan x="10px" y="1360px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1378px"><tspan class="fg-bright-blue bold">41</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> function f (t, i, e)</tspan>
+</tspan>
+    <tspan x="10px" y="1396px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="1414px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1432px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="1450px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="1468px">
+</tspan>
+    <tspan x="10px" y="1486px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="1504px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:47:13</tspan>
+</tspan>
+    <tspan x="10px" y="1522px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1540px"><tspan class="fg-bright-blue bold">47</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__index = f</tspan>
+</tspan>
+    <tspan x="10px" y="1558px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>             </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1576px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1594px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="1612px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="1630px">
+</tspan>
+    <tspan x="10px" y="1648px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="1666px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:55:10</tspan>
+</tspan>
+    <tspan x="10px" y="1684px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1702px"><tspan class="fg-bright-blue bold">55</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> function f(t, i, v) rawset(t, i, v-3) end</tspan>
+</tspan>
+    <tspan x="10px" y="1720px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="1738px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1756px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="1774px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="1792px">
+</tspan>
+    <tspan x="10px" y="1810px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="1828px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:57:16</tspan>
+</tspan>
+    <tspan x="10px" y="1846px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1864px"><tspan class="fg-bright-blue bold">57</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__newindex = f</tspan>
+</tspan>
+    <tspan x="10px" y="1882px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="1900px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="1918px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="1936px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="1954px">
+</tspan>
+    <tspan x="10px" y="1972px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="1990px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:102:21</tspan>
+</tspan>
+    <tspan x="10px" y="2008px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2026px"><tspan class="fg-bright-blue bold">102</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   foi = false; a[1]=undef; assert(not foi)</tspan>
+</tspan>
+    <tspan x="10px" y="2044px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                     </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2062px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2080px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="2098px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="2116px">
+</tspan>
+    <tspan x="10px" y="2134px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="2152px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:103:10</tspan>
+</tspan>
+    <tspan x="10px" y="2170px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2188px"><tspan class="fg-bright-blue bold">103</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   a[1] = undef</tspan>
+</tspan>
+    <tspan x="10px" y="2206px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2224px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2242px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="2260px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="2278px">
+</tspan>
+    <tspan x="10px" y="2296px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="2314px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:109:10</tspan>
+</tspan>
+    <tspan x="10px" y="2332px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2350px"><tspan class="fg-bright-blue bold">109</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> function f (t, ...) return t, {...} end</tspan>
+</tspan>
+    <tspan x="10px" y="2368px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="2386px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2404px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="2422px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="2440px">
+</tspan>
+    <tspan x="10px" y="2458px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="2476px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:110:12</tspan>
+</tspan>
+    <tspan x="10px" y="2494px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2512px"><tspan class="fg-bright-blue bold">110</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__call = f</tspan>
+</tspan>
+    <tspan x="10px" y="2530px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="2548px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2566px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="2584px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="2602px">
+</tspan>
+    <tspan x="10px" y="2620px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="2638px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:114:51</tspan>
+</tspan>
+    <tspan x="10px" y="2656px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2674px"><tspan class="fg-bright-blue bold">114</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(x==a and y[1]=='a' and y[2]==1 and y[3]==undef)</tspan>
+</tspan>
+    <tspan x="10px" y="2692px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                                   </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2710px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2728px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="2746px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="2764px">
+</tspan>
+    <tspan x="10px" y="2782px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="2800px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:116:25</tspan>
+</tspan>
+    <tspan x="10px" y="2818px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2836px"><tspan class="fg-bright-blue bold">116</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(x==a and y[1]==undef)</tspan>
+</tspan>
+    <tspan x="10px" y="2854px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                         </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2872px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2890px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="2908px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="2926px">
+</tspan>
+    <tspan x="10px" y="2944px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="2962px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:124:25</tspan>
+</tspan>
+    <tspan x="10px" y="2980px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2998px"><tspan class="fg-bright-blue bold">124</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   return function (...) cap = {[0] = op, ...} ; return (...) end</tspan>
+</tspan>
+    <tspan x="10px" y="3016px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                         </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="3034px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3052px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="3070px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="3088px">
+</tspan>
+    <tspan x="10px" y="3106px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="3124px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:123:10</tspan>
+</tspan>
+    <tspan x="10px" y="3142px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3160px"><tspan class="fg-bright-blue bold">123</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> function f(op)</tspan>
+</tspan>
+    <tspan x="10px" y="3178px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="3196px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3214px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="3232px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="3250px">
+</tspan>
+    <tspan x="10px" y="3268px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="3286px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:126:11</tspan>
+</tspan>
+    <tspan x="10px" y="3304px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3322px"><tspan class="fg-bright-blue bold">126</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__add = f("add")</tspan>
+</tspan>
+    <tspan x="10px" y="3340px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="3358px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3376px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="3394px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="3412px">
+</tspan>
+    <tspan x="10px" y="3430px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="3448px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:127:11</tspan>
+</tspan>
+    <tspan x="10px" y="3466px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3484px"><tspan class="fg-bright-blue bold">127</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__sub = f("sub")</tspan>
+</tspan>
+    <tspan x="10px" y="3502px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="3520px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3538px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="3556px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="3574px">
+</tspan>
+    <tspan x="10px" y="3592px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="3610px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:128:11</tspan>
+</tspan>
+    <tspan x="10px" y="3628px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3646px"><tspan class="fg-bright-blue bold">128</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__mul = f("mul")</tspan>
+</tspan>
+    <tspan x="10px" y="3664px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="3682px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3700px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="3718px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="3736px">
+</tspan>
+    <tspan x="10px" y="3754px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="3772px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:129:11</tspan>
+</tspan>
+    <tspan x="10px" y="3790px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3808px"><tspan class="fg-bright-blue bold">129</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__div = f("div")</tspan>
+</tspan>
+    <tspan x="10px" y="3826px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="3844px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3862px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="3880px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="3898px">
+</tspan>
+    <tspan x="10px" y="3916px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="3934px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:130:12</tspan>
+</tspan>
+    <tspan x="10px" y="3952px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3970px"><tspan class="fg-bright-blue bold">130</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__idiv = f("idiv")</tspan>
+</tspan>
+    <tspan x="10px" y="3988px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4006px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4024px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="4042px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="4060px">
+</tspan>
+    <tspan x="10px" y="4078px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="4096px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:131:11</tspan>
+</tspan>
+    <tspan x="10px" y="4114px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4132px"><tspan class="fg-bright-blue bold">131</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__mod = f("mod")</tspan>
+</tspan>
+    <tspan x="10px" y="4150px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4168px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4186px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="4204px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="4222px">
+</tspan>
+    <tspan x="10px" y="4240px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="4258px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:132:11</tspan>
+</tspan>
+    <tspan x="10px" y="4276px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4294px"><tspan class="fg-bright-blue bold">132</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__unm = f("unm")</tspan>
+</tspan>
+    <tspan x="10px" y="4312px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4330px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4348px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="4366px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="4384px">
+</tspan>
+    <tspan x="10px" y="4402px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="4420px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:133:11</tspan>
+</tspan>
+    <tspan x="10px" y="4438px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4456px"><tspan class="fg-bright-blue bold">133</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__pow = f("pow")</tspan>
+</tspan>
+    <tspan x="10px" y="4474px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4492px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4510px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="4528px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="4546px">
+</tspan>
+    <tspan x="10px" y="4564px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="4582px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:134:11</tspan>
+</tspan>
+    <tspan x="10px" y="4600px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4618px"><tspan class="fg-bright-blue bold">134</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__len = f("len")</tspan>
+</tspan>
+    <tspan x="10px" y="4636px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4654px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4672px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="4690px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="4708px">
+</tspan>
+    <tspan x="10px" y="4726px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="4744px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:135:12</tspan>
+</tspan>
+    <tspan x="10px" y="4762px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4780px"><tspan class="fg-bright-blue bold">135</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__band = f("band")</tspan>
+</tspan>
+    <tspan x="10px" y="4798px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4816px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4834px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="4852px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="4870px">
+</tspan>
+    <tspan x="10px" y="4888px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="4906px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:136:11</tspan>
+</tspan>
+    <tspan x="10px" y="4924px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4942px"><tspan class="fg-bright-blue bold">136</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__bor = f("bor")</tspan>
+</tspan>
+    <tspan x="10px" y="4960px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4978px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4996px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="5014px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="5032px">
+</tspan>
+    <tspan x="10px" y="5050px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="5068px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:137:12</tspan>
+</tspan>
+    <tspan x="10px" y="5086px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5104px"><tspan class="fg-bright-blue bold">137</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__bxor = f("bxor")</tspan>
+</tspan>
+    <tspan x="10px" y="5122px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="5140px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5158px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="5176px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="5194px">
+</tspan>
+    <tspan x="10px" y="5212px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="5230px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:138:11</tspan>
+</tspan>
+    <tspan x="10px" y="5248px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5266px"><tspan class="fg-bright-blue bold">138</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__shl = f("shl")</tspan>
+</tspan>
+    <tspan x="10px" y="5284px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="5302px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5320px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="5338px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="5356px">
+</tspan>
+    <tspan x="10px" y="5374px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="5392px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:139:11</tspan>
+</tspan>
+    <tspan x="10px" y="5410px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5428px"><tspan class="fg-bright-blue bold">139</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__shr = f("shr")</tspan>
+</tspan>
+    <tspan x="10px" y="5446px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="5464px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5482px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="5500px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="5518px">
+</tspan>
+    <tspan x="10px" y="5536px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="5554px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:140:12</tspan>
+</tspan>
+    <tspan x="10px" y="5572px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5590px"><tspan class="fg-bright-blue bold">140</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__bnot = f("bnot")</tspan>
+</tspan>
+    <tspan x="10px" y="5608px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="5626px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5644px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="5662px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="5680px">
+</tspan>
+    <tspan x="10px" y="5698px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="5716px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:141:10</tspan>
+</tspan>
+    <tspan x="10px" y="5734px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5752px"><tspan class="fg-bright-blue bold">141</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__lt = f("lt")</tspan>
+</tspan>
+    <tspan x="10px" y="5770px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="5788px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5806px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="5824px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="5842px">
+</tspan>
+    <tspan x="10px" y="5860px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="5878px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:142:10</tspan>
+</tspan>
+    <tspan x="10px" y="5896px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5914px"><tspan class="fg-bright-blue bold">142</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> t.__le = f("le")</tspan>
+</tspan>
+    <tspan x="10px" y="5932px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="5950px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="5968px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="5986px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="6004px">
+</tspan>
+    <tspan x="10px" y="6022px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="6040px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:146:11</tspan>
+</tspan>
+    <tspan x="10px" y="6058px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6076px"><tspan class="fg-bright-blue bold">146</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(#cap + 1 == #t)</tspan>
+</tspan>
+    <tspan x="10px" y="6094px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6112px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6130px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="6148px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="6166px">
+</tspan>
+    <tspan x="10px" y="6184px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="6202px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:148:12</tspan>
+</tspan>
+    <tspan x="10px" y="6220px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6238px"><tspan class="fg-bright-blue bold">148</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     assert(cap[i - 1] == t[i])</tspan>
+</tspan>
+    <tspan x="10px" y="6256px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6274px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6292px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="6310px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="6328px">
+</tspan>
+    <tspan x="10px" y="6346px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="6364px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:149:22</tspan>
+</tspan>
+    <tspan x="10px" y="6382px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6400px"><tspan class="fg-bright-blue bold">149</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     assert(math.type(cap[i - 1]) == math.type(t[i]))</tspan>
+</tspan>
+    <tspan x="10px" y="6418px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                      </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6436px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6454px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="6472px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="6490px">
+</tspan>
+    <tspan x="10px" y="6508px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="6526px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:230:10</tspan>
+</tspan>
+    <tspan x="10px" y="6544px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6562px"><tspan class="fg-bright-blue bold">230</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not(Op(1)&lt;Op(1)) and (Op(1)&lt;Op(2)) and not(Op(2)&lt;Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="6580px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="6598px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6616px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="6634px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6652px"><tspan class="fg-bright-blue bold">230</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op(1)</tspan><tspan class="fg-bright-red">&lt;</tspan><tspan>Op(1)</tspan><tspan class="fg-bright-red">)</tspan><tspan> and (Op(1)&lt;Op(2)) and not(Op(2)&lt;Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="6670px"><tspan class="fg-bright-blue bold">230</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(Op(1)</tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan>Op(1) and (Op(1)&lt;Op(2)) and not(Op(2)&lt;Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="6688px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6706px">
+</tspan>
+    <tspan x="10px" y="6724px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="6742px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:230:49</tspan>
+</tspan>
+    <tspan x="10px" y="6760px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6778px"><tspan class="fg-bright-blue bold">230</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not(Op(1)&lt;Op(1)) and (Op(1)&lt;Op(2)) and not(Op(2)&lt;Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="6796px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                                 </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="6814px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6832px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="6850px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6868px"><tspan class="fg-bright-blue bold">230</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(not(Op(1)&lt;Op(1)) and (Op(1)&lt;Op(2)) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op(2)</tspan><tspan class="fg-bright-red">&lt;</tspan><tspan>Op(1)</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="6886px"><tspan class="fg-bright-blue bold">230</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(not(Op(1)&lt;Op(1)) and (Op(1)&lt;Op(2)) and Op(2)</tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan>Op(1))</tspan>
+</tspan>
+    <tspan x="10px" y="6904px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6922px">
+</tspan>
+    <tspan x="10px" y="6940px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="6958px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:231:10</tspan>
+</tspan>
+    <tspan x="10px" y="6976px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6994px"><tspan class="fg-bright-blue bold">231</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not(1 &lt; Op(1)) and (Op(1) &lt; 2) and not(2 &lt; Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="7012px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>   </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="7030px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7048px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="7066px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7084px"><tspan class="fg-bright-blue bold">231</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not(</tspan><tspan>1 </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> Op(1)</tspan><tspan class="fg-bright-red">)</tspan><tspan> and (Op(1) &lt; 2) and not(2 &lt; Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="7102px"><tspan class="fg-bright-blue bold">231</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(1 </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> Op(1) and (Op(1) &lt; 2) and not(2 &lt; Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="7120px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7138px">
+</tspan>
+    <tspan x="10px" y="7156px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="7174px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:231:45</tspan>
+</tspan>
+    <tspan x="10px" y="7192px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7210px"><tspan class="fg-bright-blue bold">231</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not(1 &lt; Op(1)) and (Op(1) &lt; 2) and not(2 &lt; Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="7228px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                             </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>   </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="7246px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7264px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="7282px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7300px"><tspan class="fg-bright-blue bold">231</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(not(1 &lt; Op(1)) and (Op(1) &lt; 2) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>2 </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> Op(1)</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="7318px"><tspan class="fg-bright-blue bold">231</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(not(1 &lt; Op(1)) and (Op(1) &lt; 2) and 2 </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> Op(1))</tspan>
+</tspan>
+    <tspan x="10px" y="7336px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7354px">
+</tspan>
+    <tspan x="10px" y="7372px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="7390px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:232:10</tspan>
+</tspan>
+    <tspan x="10px" y="7408px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7426px"><tspan class="fg-bright-blue bold">232</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not(Op('a')&lt;Op('a')) and (Op('a')&lt;Op('b')) and not(Op('b')&lt;Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="7444px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="7462px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7480px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="7498px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7516px"><tspan class="fg-bright-blue bold">232</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op('a')</tspan><tspan class="fg-bright-red">&lt;</tspan><tspan>Op('a')</tspan><tspan class="fg-bright-red">)</tspan><tspan> and (Op('a')&lt;Op('b')) and not(Op('b')&lt;Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="7534px"><tspan class="fg-bright-blue bold">232</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(Op('a')</tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan>Op('a') and (Op('a')&lt;Op('b')) and not(Op('b')&lt;Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="7552px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7570px">
+</tspan>
+    <tspan x="10px" y="7588px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="7606px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:232:57</tspan>
+</tspan>
+    <tspan x="10px" y="7624px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7642px"><tspan class="fg-bright-blue bold">232</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not(Op('a')&lt;Op('a')) and (Op('a')&lt;Op('b')) and not(Op('b')&lt;Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="7660px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                                         </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="7678px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7696px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="7714px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7732px"><tspan class="fg-bright-blue bold">232</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(not(Op('a')&lt;Op('a')) and (Op('a')&lt;Op('b')) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op('b')</tspan><tspan class="fg-bright-red">&lt;</tspan><tspan>Op('a')</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="7750px"><tspan class="fg-bright-blue bold">232</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(not(Op('a')&lt;Op('a')) and (Op('a')&lt;Op('b')) and Op('b')</tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan>Op('a'))</tspan>
+</tspan>
+    <tspan x="10px" y="7768px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7786px">
+</tspan>
+    <tspan x="10px" y="7804px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="7822px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:233:10</tspan>
+</tspan>
+    <tspan x="10px" y="7840px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7858px"><tspan class="fg-bright-blue bold">233</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not('a' &lt; Op('a')) and (Op('a') &lt; 'b') and not(Op('b') &lt; Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="7876px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>     </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="7894px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7912px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="7930px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="7948px"><tspan class="fg-bright-blue bold">233</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not(</tspan><tspan>'a' </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> Op('a')</tspan><tspan class="fg-bright-red">)</tspan><tspan> and (Op('a') &lt; 'b') and not(Op('b') &lt; Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="7966px"><tspan class="fg-bright-blue bold">233</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert('a' </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> Op('a') and (Op('a') &lt; 'b') and not(Op('b') &lt; Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="7984px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8002px">
+</tspan>
+    <tspan x="10px" y="8020px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="8038px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:233:53</tspan>
+</tspan>
+    <tspan x="10px" y="8056px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8074px"><tspan class="fg-bright-blue bold">233</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not('a' &lt; Op('a')) and (Op('a') &lt; 'b') and not(Op('b') &lt; Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="8092px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                                     </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>         </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="8110px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8128px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="8146px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8164px"><tspan class="fg-bright-blue bold">233</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(not('a' &lt; Op('a')) and (Op('a') &lt; 'b') and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op('b') </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> Op('a')</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="8182px"><tspan class="fg-bright-blue bold">233</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(not('a' &lt; Op('a')) and (Op('a') &lt; 'b') and Op('b') </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> Op('a'))</tspan>
+</tspan>
+    <tspan x="10px" y="8200px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8218px">
+</tspan>
+    <tspan x="10px" y="8236px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="8254px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:234:48</tspan>
+</tspan>
+    <tspan x="10px" y="8272px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8290px"><tspan class="fg-bright-blue bold">234</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert((Op(1)&lt;=Op(1)) and (Op(1)&lt;=Op(2)) and not(Op(2)&lt;=Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="8308px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                                </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="8326px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8344px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="8362px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8380px"><tspan class="fg-bright-blue bold">234</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert((Op(1)&lt;=Op(1)) and (Op(1)&lt;=Op(2)) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op(2)</tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan>Op(1)</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="8398px"><tspan class="fg-bright-blue bold">234</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert((Op(1)&lt;=Op(1)) and (Op(1)&lt;=Op(2)) and Op(2)</tspan><tspan class="fg-bright-green">&gt;</tspan><tspan>Op(1))</tspan>
+</tspan>
+    <tspan x="10px" y="8416px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8434px">
+</tspan>
+    <tspan x="10px" y="8452px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="8470px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:235:56</tspan>
+</tspan>
+    <tspan x="10px" y="8488px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8506px"><tspan class="fg-bright-blue bold">235</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert((Op('a')&lt;=Op('a')) and (Op('a')&lt;=Op('b')) and not(Op('b')&lt;=Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="8524px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                                        </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="8542px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8560px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="8578px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8596px"><tspan class="fg-bright-blue bold">235</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert((Op('a')&lt;=Op('a')) and (Op('a')&lt;=Op('b')) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op('b')</tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan>Op('a')</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="8614px"><tspan class="fg-bright-blue bold">235</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert((Op('a')&lt;=Op('a')) and (Op('a')&lt;=Op('b')) and Op('b')</tspan><tspan class="fg-bright-green">&gt;</tspan><tspan>Op('a'))</tspan>
+</tspan>
+    <tspan x="10px" y="8632px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8650px">
+</tspan>
+    <tspan x="10px" y="8668px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="8686px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:236:10</tspan>
+</tspan>
+    <tspan x="10px" y="8704px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8722px"><tspan class="fg-bright-blue bold">236</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not(Op(1)&gt;Op(1)) and not(Op(1)&gt;Op(2)) and (Op(2)&gt;Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="8740px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="8758px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8776px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="8794px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8812px"><tspan class="fg-bright-blue bold">236</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op(1)</tspan><tspan class="fg-bright-red">&gt;</tspan><tspan>Op(1)</tspan><tspan class="fg-bright-red">)</tspan><tspan> and not(Op(1)&gt;Op(2)) and (Op(2)&gt;Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="8830px"><tspan class="fg-bright-blue bold">236</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(Op(1)</tspan><tspan class="fg-bright-green">&lt;=</tspan><tspan>Op(1) and not(Op(1)&gt;Op(2)) and (Op(2)&gt;Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="8848px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8866px">
+</tspan>
+    <tspan x="10px" y="8884px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="8902px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:236:31</tspan>
+</tspan>
+    <tspan x="10px" y="8920px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8938px"><tspan class="fg-bright-blue bold">236</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not(Op(1)&gt;Op(1)) and not(Op(1)&gt;Op(2)) and (Op(2)&gt;Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="8956px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                               </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="8974px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="8992px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="9010px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9028px"><tspan class="fg-bright-blue bold">236</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(not(Op(1)&gt;Op(1)) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op(1)</tspan><tspan class="fg-bright-red">&gt;</tspan><tspan>Op(2)</tspan><tspan class="fg-bright-red">)</tspan><tspan> and (Op(2)&gt;Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="9046px"><tspan class="fg-bright-blue bold">236</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(not(Op(1)&gt;Op(1)) and Op(1)</tspan><tspan class="fg-bright-green">&lt;=</tspan><tspan>Op(2) and (Op(2)&gt;Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="9064px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9082px">
+</tspan>
+    <tspan x="10px" y="9100px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="9118px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:237:10</tspan>
+</tspan>
+    <tspan x="10px" y="9136px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9154px"><tspan class="fg-bright-blue bold">237</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not(Op('a')&gt;Op('a')) and not(Op('a')&gt;Op('b')) and (Op('b')&gt;Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="9172px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="9190px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9208px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="9226px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9244px"><tspan class="fg-bright-blue bold">237</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op('a')</tspan><tspan class="fg-bright-red">&gt;</tspan><tspan>Op('a')</tspan><tspan class="fg-bright-red">)</tspan><tspan> and not(Op('a')&gt;Op('b')) and (Op('b')&gt;Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="9262px"><tspan class="fg-bright-blue bold">237</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(Op('a')</tspan><tspan class="fg-bright-green">&lt;=</tspan><tspan>Op('a') and not(Op('a')&gt;Op('b')) and (Op('b')&gt;Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="9280px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9298px">
+</tspan>
+    <tspan x="10px" y="9316px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="9334px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:237:35</tspan>
+</tspan>
+    <tspan x="10px" y="9352px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9370px"><tspan class="fg-bright-blue bold">237</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not(Op('a')&gt;Op('a')) and not(Op('a')&gt;Op('b')) and (Op('b')&gt;Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="9388px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                   </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="9406px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9424px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="9442px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9460px"><tspan class="fg-bright-blue bold">237</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(not(Op('a')&gt;Op('a')) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op('a')</tspan><tspan class="fg-bright-red">&gt;</tspan><tspan>Op('b')</tspan><tspan class="fg-bright-red">)</tspan><tspan> and (Op('b')&gt;Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="9478px"><tspan class="fg-bright-blue bold">237</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(not(Op('a')&gt;Op('a')) and Op('a')</tspan><tspan class="fg-bright-green">&lt;=</tspan><tspan>Op('b') and (Op('b')&gt;Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="9496px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9514px">
+</tspan>
+    <tspan x="10px" y="9532px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="9550px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:238:29</tspan>
+</tspan>
+    <tspan x="10px" y="9568px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9586px"><tspan class="fg-bright-blue bold">238</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert((Op(1)&gt;=Op(1)) and not(Op(1)&gt;=Op(2)) and (Op(2)&gt;=Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="9604px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                             </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>      </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="9622px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9640px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="9658px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9676px"><tspan class="fg-bright-blue bold">238</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert((Op(1)&gt;=Op(1)) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op(1)</tspan><tspan class="fg-bright-red">&gt;=</tspan><tspan>Op(2)</tspan><tspan class="fg-bright-red">)</tspan><tspan> and (Op(2)&gt;=Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="9694px"><tspan class="fg-bright-blue bold">238</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert((Op(1)&gt;=Op(1)) and Op(1)</tspan><tspan class="fg-bright-green">&lt;</tspan><tspan>Op(2) and (Op(2)&gt;=Op(1)))</tspan>
+</tspan>
+    <tspan x="10px" y="9712px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9730px">
+</tspan>
+    <tspan x="10px" y="9748px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="9766px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:239:27</tspan>
+</tspan>
+    <tspan x="10px" y="9784px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9802px"><tspan class="fg-bright-blue bold">239</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert((1 &gt;= Op(1)) and not(1 &gt;= Op(2)) and (Op(2) &gt;= 1))</tspan>
+</tspan>
+    <tspan x="10px" y="9820px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                           </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>   </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="9838px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9856px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="9874px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9892px"><tspan class="fg-bright-blue bold">239</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert((1 &gt;= Op(1)) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>1 </tspan><tspan class="fg-bright-red">&gt;=</tspan><tspan> Op(2)</tspan><tspan class="fg-bright-red">)</tspan><tspan> and (Op(2) &gt;= 1))</tspan>
+</tspan>
+    <tspan x="10px" y="9910px"><tspan class="fg-bright-blue bold">239</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert((1 &gt;= Op(1)) and 1 </tspan><tspan class="fg-bright-green">&lt;</tspan><tspan> Op(2) and (Op(2) &gt;= 1))</tspan>
+</tspan>
+    <tspan x="10px" y="9928px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="9946px">
+</tspan>
+    <tspan x="10px" y="9964px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="9982px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:240:33</tspan>
+</tspan>
+    <tspan x="10px" y="10000px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10018px"><tspan class="fg-bright-blue bold">240</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert((Op('a')&gt;=Op('a')) and not(Op('a')&gt;=Op('b')) and (Op('b')&gt;=Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="10036px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                 </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="10054px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10072px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="10090px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10108px"><tspan class="fg-bright-blue bold">240</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert((Op('a')&gt;=Op('a')) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op('a')</tspan><tspan class="fg-bright-red">&gt;=</tspan><tspan>Op('b')</tspan><tspan class="fg-bright-red">)</tspan><tspan> and (Op('b')&gt;=Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="10126px"><tspan class="fg-bright-blue bold">240</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert((Op('a')&gt;=Op('a')) and Op('a')</tspan><tspan class="fg-bright-green">&lt;</tspan><tspan>Op('b') and (Op('b')&gt;=Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="10144px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10162px">
+</tspan>
+    <tspan x="10px" y="10180px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="10198px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:241:31</tspan>
+</tspan>
+    <tspan x="10px" y="10216px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10234px"><tspan class="fg-bright-blue bold">241</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(('a' &gt;= Op('a')) and not(Op('a') &gt;= 'b') and (Op('b') &gt;= Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="10252px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                               </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>         </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="10270px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10288px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="10306px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10324px"><tspan class="fg-bright-blue bold">241</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(('a' &gt;= Op('a')) and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>Op('a') </tspan><tspan class="fg-bright-red">&gt;=</tspan><tspan> 'b'</tspan><tspan class="fg-bright-red">)</tspan><tspan> and (Op('b') &gt;= Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="10342px"><tspan class="fg-bright-blue bold">241</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(('a' &gt;= Op('a')) and Op('a') </tspan><tspan class="fg-bright-green">&lt;</tspan><tspan> 'b' and (Op('b') &gt;= Op('a')))</tspan>
+</tspan>
+    <tspan x="10px" y="10360px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10378px">
+</tspan>
+    <tspan x="10px" y="10396px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="10414px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:255:10</tspan>
+</tspan>
+    <tspan x="10px" y="10432px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10450px"><tspan class="fg-bright-blue bold">255</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   assert(not (x == {20}))</tspan>
+</tspan>
+    <tspan x="10px" y="10468px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>    </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="10486px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10504px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="10522px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10540px"><tspan class="fg-bright-blue bold">255</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>x </tspan><tspan class="fg-bright-red">==</tspan><tspan> {20}</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="10558px"><tspan class="fg-bright-blue bold">255</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>  assert(x </tspan><tspan class="fg-bright-green">~=</tspan><tspan> {20})</tspan>
+</tspan>
+    <tspan x="10px" y="10576px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10594px">
+</tspan>
+    <tspan x="10px" y="10612px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="10630px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:275:12</tspan>
+</tspan>
+    <tspan x="10px" y="10648px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10666px"><tspan class="fg-bright-blue bold">275</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     b[k] = undef</tspan>
+</tspan>
+    <tspan x="10px" y="10684px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="10702px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10720px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="10738px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="10756px">
+</tspan>
+    <tspan x="10px" y="10774px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="10792px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:288:8</tspan>
+</tspan>
+    <tspan x="10px" y="10810px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10828px"><tspan class="fg-bright-blue bold">288</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not(Set{1,2,3,4} &lt; Set{1,2,3,4}))</tspan>
+</tspan>
+    <tspan x="10px" y="10846px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>              </tspan><tspan class="fg-bright-blue bold">-</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="10864px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10882px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="10900px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10918px"><tspan class="fg-bright-blue bold">288</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(</tspan><tspan class="fg-bright-red">not(</tspan><tspan>Set{1,2,3,4} </tspan><tspan class="fg-bright-red">&lt;</tspan><tspan> Set{1,2,3,4}</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="10936px"><tspan class="fg-bright-blue bold">288</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(Set{1,2,3,4} </tspan><tspan class="fg-bright-green">&gt;=</tspan><tspan> Set{1,2,3,4})</tspan>
+</tspan>
+    <tspan x="10px" y="10954px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="10972px">
+</tspan>
+    <tspan x="10px" y="10990px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="11008px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:291:8</tspan>
+</tspan>
+    <tspan x="10px" y="11026px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11044px"><tspan class="fg-bright-blue bold">291</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not (Set{1,3} &lt;= Set{3,5}))</tspan>
+</tspan>
+    <tspan x="10px" y="11062px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>           </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="11080px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11098px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="11116px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11134px"><tspan class="fg-bright-blue bold">291</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(</tspan><tspan class="fg-bright-red">not (</tspan><tspan>Set{1,3} </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> Set{3,5}</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="11152px"><tspan class="fg-bright-blue bold">291</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(Set{1,3} </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> Set{3,5})</tspan>
+</tspan>
+    <tspan x="10px" y="11170px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11188px">
+</tspan>
+    <tspan x="10px" y="11206px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="11224px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:292:8</tspan>
+</tspan>
+    <tspan x="10px" y="11242px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11260px"><tspan class="fg-bright-blue bold">292</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not(Set{1,3} &lt;= Set{3,5}))</tspan>
+</tspan>
+    <tspan x="10px" y="11278px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>          </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="11296px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11314px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="11332px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11350px"><tspan class="fg-bright-blue bold">292</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(</tspan><tspan class="fg-bright-red">not(</tspan><tspan>Set{1,3} </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> Set{3,5}</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="11368px"><tspan class="fg-bright-blue bold">292</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(Set{1,3} </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> Set{3,5})</tspan>
+</tspan>
+    <tspan x="10px" y="11386px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11404px">
+</tspan>
+    <tspan x="10px" y="11422px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="11440px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:293:8</tspan>
+</tspan>
+    <tspan x="10px" y="11458px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11476px"><tspan class="fg-bright-blue bold">293</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not(Set{1,3} &gt;= Set{3,5}))</tspan>
+</tspan>
+    <tspan x="10px" y="11494px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>          </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="11512px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11530px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="11548px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11566px"><tspan class="fg-bright-blue bold">293</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(</tspan><tspan class="fg-bright-red">not(</tspan><tspan>Set{1,3} </tspan><tspan class="fg-bright-red">&gt;=</tspan><tspan> Set{3,5}</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="11584px"><tspan class="fg-bright-blue bold">293</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(Set{1,3} </tspan><tspan class="fg-bright-green">&lt;</tspan><tspan> Set{3,5})</tspan>
+</tspan>
+    <tspan x="10px" y="11602px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11620px">
+</tspan>
+    <tspan x="10px" y="11638px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="11656px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:299:12</tspan>
+</tspan>
+    <tspan x="10px" y="11674px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11692px"><tspan class="fg-bright-blue bold">299</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     b[k] = undef</tspan>
+</tspan>
+    <tspan x="10px" y="11710px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="11728px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11746px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="11764px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="11782px">
+</tspan>
+    <tspan x="10px" y="11800px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="11818px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:314:25</tspan>
+</tspan>
+    <tspan x="10px" y="11836px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11854px"><tspan class="fg-bright-blue bold">314</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(t[Set{1,3,5}] == undef)</tspan>
+</tspan>
+    <tspan x="10px" y="11872px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                         </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="11890px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="11908px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="11926px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="11944px">
+</tspan>
+    <tspan x="10px" y="11962px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="11980px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:342:44</tspan>
+</tspan>
+    <tspan x="10px" y="11998px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12016px"><tspan class="fg-bright-blue bold">342</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   debug.setmetatable(u2, {__eq = function (a, b)</tspan>
+</tspan>
+    <tspan x="10px" y="12034px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                            </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="12052px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12070px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="12088px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12106px"><tspan class="fg-bright-blue bold">342</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  debug.setmetatable(u2, {__eq = function (</tspan><tspan class="fg-bright-green">_</tspan><tspan>a, b)</tspan>
+</tspan>
+    <tspan x="10px" y="12124px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                            </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="12142px">
+</tspan>
+    <tspan x="10px" y="12160px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unused-parameter">unused-parameter</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unused parameter</tspan>
+</tspan>
+    <tspan x="10px" y="12178px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:342:47</tspan>
+</tspan>
+    <tspan x="10px" y="12196px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12214px"><tspan class="fg-bright-blue bold">342</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   debug.setmetatable(u2, {__eq = function (a, b)</tspan>
+</tspan>
+    <tspan x="10px" y="12232px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                               </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="12250px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12268px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use an underscore prefix to suppress this warning</tspan>
+</tspan>
+    <tspan x="10px" y="12286px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12304px"><tspan class="fg-bright-blue bold">342</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>  debug.setmetatable(u2, {__eq = function (a, </tspan><tspan class="fg-bright-green">_</tspan><tspan>b)</tspan>
+</tspan>
+    <tspan x="10px" y="12322px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                               </tspan><tspan class="fg-bright-green">+</tspan>
+</tspan>
+    <tspan x="10px" y="12340px">
+</tspan>
+    <tspan x="10px" y="12358px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="12376px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:368:1</tspan>
+</tspan>
+    <tspan x="10px" y="12394px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12412px"><tspan class="fg-bright-blue bold">368</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> d = {val="d"}; setmetatable(d, t)</tspan>
+</tspan>
+    <tspan x="10px" y="12430px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="12448px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12466px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="12484px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="12502px">
+</tspan>
+    <tspan x="10px" y="12520px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="12538px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:368:29</tspan>
+</tspan>
+    <tspan x="10px" y="12556px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12574px"><tspan class="fg-bright-blue bold">368</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> d = {val="d"}; setmetatable(d, t)</tspan>
+</tspan>
+    <tspan x="10px" y="12592px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                             </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="12610px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12628px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="12646px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="12664px">
+</tspan>
+    <tspan x="10px" y="12682px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="12700px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:371:11</tspan>
+</tspan>
+    <tspan x="10px" y="12718px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12736px"><tspan class="fg-bright-blue bold">371</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(c..d == 'cd')</tspan>
+</tspan>
+    <tspan x="10px" y="12754px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>           </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="12772px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12790px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="12808px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="12826px">
+</tspan>
+    <tspan x="10px" y="12844px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="12862px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:372:25</tspan>
+</tspan>
+    <tspan x="10px" y="12880px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12898px"><tspan class="fg-bright-blue bold">372</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(0 .."a".."b"..c..d.."e".."f"..(5+3).."g" == "0abcdef8g")</tspan>
+</tspan>
+    <tspan x="10px" y="12916px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                         </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="12934px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="12952px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="12970px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="12988px">
+</tspan>
+    <tspan x="10px" y="13006px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="13024px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:375:12</tspan>
+</tspan>
+    <tspan x="10px" y="13042px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13060px"><tspan class="fg-bright-blue bold">375</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((c..d..c..d).val == 'cdcd')</tspan>
+</tspan>
+    <tspan x="10px" y="13078px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>            </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="13096px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13114px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="13132px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="13150px">
+</tspan>
+    <tspan x="10px" y="13168px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="13186px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:375:18</tspan>
+</tspan>
+    <tspan x="10px" y="13204px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13222px"><tspan class="fg-bright-blue bold">375</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((c..d..c..d).val == 'cdcd')</tspan>
+</tspan>
+    <tspan x="10px" y="13240px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                  </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="13258px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13276px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="13294px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="13312px">
+</tspan>
+    <tspan x="10px" y="13330px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="13348px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:376:8</tspan>
+</tspan>
+    <tspan x="10px" y="13366px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13384px"><tspan class="fg-bright-blue bold">376</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> x = c..d</tspan>
+</tspan>
+    <tspan x="10px" y="13402px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="13420px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13438px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="13456px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="13474px">
+</tspan>
+    <tspan x="10px" y="13492px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="13510px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:376:1</tspan>
+</tspan>
+    <tspan x="10px" y="13528px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13546px"><tspan class="fg-bright-blue bold">376</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> x = c..d</tspan>
+</tspan>
+    <tspan x="10px" y="13564px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="13582px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13600px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="13618px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="13636px">
+</tspan>
+    <tspan x="10px" y="13654px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="13672px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:377:21</tspan>
+</tspan>
+    <tspan x="10px" y="13690px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13708px"><tspan class="fg-bright-blue bold">377</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(getmetatable(x) == t and x.val == 'cd')</tspan>
+</tspan>
+    <tspan x="10px" y="13726px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                     </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="13744px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13762px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="13780px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="13798px">
+</tspan>
+    <tspan x="10px" y="13816px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="13834px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:377:33</tspan>
+</tspan>
+    <tspan x="10px" y="13852px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13870px"><tspan class="fg-bright-blue bold">377</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(getmetatable(x) == t and x.val == 'cd')</tspan>
+</tspan>
+    <tspan x="10px" y="13888px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                 </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="13906px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="13924px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="13942px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="13960px">
+</tspan>
+    <tspan x="10px" y="13978px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="13996px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:378:22</tspan>
+</tspan>
+    <tspan x="10px" y="14014px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14032px"><tspan class="fg-bright-blue bold">378</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> x = 0 .."a".."b"..c..d.."e".."f".."g"</tspan>
+</tspan>
+    <tspan x="10px" y="14050px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                      </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="14068px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14086px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="14104px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="14122px">
+</tspan>
+    <tspan x="10px" y="14140px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="14158px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:378:1</tspan>
+</tspan>
+    <tspan x="10px" y="14176px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14194px"><tspan class="fg-bright-blue bold">378</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> x = 0 .."a".."b"..c..d.."e".."f".."g"</tspan>
+</tspan>
+    <tspan x="10px" y="14212px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="14230px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14248px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="14266px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="14284px">
+</tspan>
+    <tspan x="10px" y="14302px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="14320px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:379:8</tspan>
+</tspan>
+    <tspan x="10px" y="14338px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14356px"><tspan class="fg-bright-blue bold">379</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(x.val == "0abcdefg")</tspan>
+</tspan>
+    <tspan x="10px" y="14374px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="14392px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14410px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="14428px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="14446px">
+</tspan>
+    <tspan x="10px" y="14464px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="14482px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:412:29</tspan>
+</tspan>
+    <tspan x="10px" y="14500px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14518px"><tspan class="fg-bright-blue bold">412</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(c == d and c &lt; d and not(d &lt;= c))</tspan>
+</tspan>
+    <tspan x="10px" y="14536px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                             </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>   </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="14554px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14572px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="14590px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14608px"><tspan class="fg-bright-blue bold">412</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(c == d and c &lt; d and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>d </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> c</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="14626px"><tspan class="fg-bright-blue bold">412</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(c == d and c &lt; d and d </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> c)</tspan>
+</tspan>
+    <tspan x="10px" y="14644px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14662px">
+</tspan>
+    <tspan x="10px" y="14680px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unnecessary-negation">unnecessary-negation</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: negation of relational expression can be simplified</tspan>
+</tspan>
+    <tspan x="10px" y="14698px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:417:29</tspan>
+</tspan>
+    <tspan x="10px" y="14716px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14734px"><tspan class="fg-bright-blue bold">417</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(c == d and c &lt; d and not(d &lt;= c))</tspan>
+</tspan>
+    <tspan x="10px" y="14752px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                             </tspan><tspan class="fg-bright-yellow">^^^</tspan><tspan>   </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">for this relational operator</tspan>
+</tspan>
+    <tspan x="10px" y="14770px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14788px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: use the inverse relational operator instead</tspan>
+</tspan>
+    <tspan x="10px" y="14806px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14824px"><tspan class="fg-bright-blue bold">417</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>assert(c == d and c &lt; d and </tspan><tspan class="fg-bright-red">not(</tspan><tspan>d </tspan><tspan class="fg-bright-red">&lt;=</tspan><tspan> c</tspan><tspan class="fg-bright-red">)</tspan><tspan>)</tspan>
+</tspan>
+    <tspan x="10px" y="14842px"><tspan class="fg-bright-blue bold">417</tspan><tspan> </tspan><tspan class="fg-bright-green">+ </tspan><tspan>assert(c == d and c &lt; d and d </tspan><tspan class="fg-bright-green">&gt;</tspan><tspan> c)</tspan>
+</tspan>
+    <tspan x="10px" y="14860px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14878px">
+</tspan>
+    <tspan x="10px" y="14896px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unbalanced-assignment">unbalanced-assignment</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unexpected number of expressions on right side of assignment</tspan>
+</tspan>
+    <tspan x="10px" y="14914px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:443:12</tspan>
+</tspan>
+    <tspan x="10px" y="14932px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="14950px"><tspan class="fg-bright-blue bold">443</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> _G.X, _G.B = nil</tspan>
+</tspan>
+    <tspan x="10px" y="14968px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">----------</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">---</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 1 expression</tspan>
+</tspan>
+    <tspan x="10px" y="14986px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="15004px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 2 expressions</tspan>
+</tspan>
+    <tspan x="10px" y="15022px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="15040px"><tspan class="fg-bright-green bold">note</tspan><tspan>: extra left-hand side value will be assigned `nil`</tspan>
+</tspan>
+    <tspan x="10px" y="15058px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:443:7</tspan>
+</tspan>
+    <tspan x="10px" y="15076px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="15094px"><tspan class="fg-bright-blue bold">443</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> _G.X, _G.B = nil</tspan>
+</tspan>
+    <tspan x="10px" y="15112px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-green bold">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="15130px">
+</tspan>
+    <tspan x="10px" y="15148px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#used-despite-unused-hint">used-despite-unused-hint</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: used declaration with unused hint</tspan>
+</tspan>
+    <tspan x="10px" y="15166px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:449:56</tspan>
+</tspan>
+    <tspan x="10px" y="15184px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="15202px"><tspan class="fg-bright-blue bold">448</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local _g = _G</tspan>
+</tspan>
+    <tspan x="10px" y="15220px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">--</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">declared here</tspan>
+</tspan>
+    <tspan x="10px" y="15238px"><tspan class="fg-bright-blue bold">449</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> _ENV = setmetatable({}, {__index=function (_,k) return _g[k] end})</tspan>
+</tspan>
+    <tspan x="10px" y="15256px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                                        </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="15274px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="15292px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the underscore prefix in the name</tspan>
+</tspan>
+    <tspan x="10px" y="15310px">
+</tspan>
+    <tspan x="10px" y="15328px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="15346px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:459:1</tspan>
+</tspan>
+    <tspan x="10px" y="15364px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="15382px"><tspan class="fg-bright-blue bold">459</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> mt = {__index = function (a,b) return a+b end,</tspan>
+</tspan>
+    <tspan x="10px" y="15400px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="15418px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="15436px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="15454px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="15472px">
+</tspan>
+    <tspan x="10px" y="15490px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="15508px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:461:24</tspan>
+</tspan>
+    <tspan x="10px" y="15526px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="15544px"><tspan class="fg-bright-blue bold">461</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> debug.setmetatable(10, mt)</tspan>
+</tspan>
+    <tspan x="10px" y="15562px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                        </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="15580px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="15598px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="15616px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="15634px">
+</tspan>
+    <tspan x="10px" y="15652px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="15670px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:462:28</tspan>
+</tspan>
+    <tspan x="10px" y="15688px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="15706px"><tspan class="fg-bright-blue bold">462</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(getmetatable(-2) == mt)</tspan>
+</tspan>
+    <tspan x="10px" y="15724px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                            </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="15742px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="15760px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="15778px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="15796px">
+</tspan>
+    <tspan x="10px" y="15814px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="15832px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:469:26</tspan>
+</tspan>
+    <tspan x="10px" y="15850px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="15868px"><tspan class="fg-bright-blue bold">469</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> debug.setmetatable(true, mt)</tspan>
+</tspan>
+    <tspan x="10px" y="15886px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                          </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="15904px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="15922px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="15940px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="15958px">
+</tspan>
+    <tspan x="10px" y="15976px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="15994px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:470:31</tspan>
+</tspan>
+    <tspan x="10px" y="16012px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16030px"><tspan class="fg-bright-blue bold">470</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(getmetatable(false) == mt)</tspan>
+</tspan>
+    <tspan x="10px" y="16048px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                               </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="16066px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16084px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="16102px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="16120px">
+</tspan>
+    <tspan x="10px" y="16138px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="16156px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:471:1</tspan>
+</tspan>
+    <tspan x="10px" y="16174px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16192px"><tspan class="fg-bright-blue bold">471</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> mt.__index = function (a,b) return a or b end</tspan>
+</tspan>
+    <tspan x="10px" y="16210px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="16228px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16246px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="16264px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="16282px">
+</tspan>
+    <tspan x="10px" y="16300px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="16318px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:477:25</tspan>
+</tspan>
+    <tspan x="10px" y="16336px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16354px"><tspan class="fg-bright-blue bold">477</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> debug.setmetatable(nil, mt)</tspan>
+</tspan>
+    <tspan x="10px" y="16372px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                         </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="16390px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16408px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="16426px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="16444px">
+</tspan>
+    <tspan x="10px" y="16462px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="16480px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:478:29</tspan>
+</tspan>
+    <tspan x="10px" y="16498px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16516px"><tspan class="fg-bright-blue bold">478</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(getmetatable(nil) == mt)</tspan>
+</tspan>
+    <tspan x="10px" y="16534px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                             </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="16552px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16570px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="16588px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="16606px">
+</tspan>
+    <tspan x="10px" y="16624px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="16642px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:479:1</tspan>
+</tspan>
+    <tspan x="10px" y="16660px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16678px"><tspan class="fg-bright-blue bold">479</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> mt.__add = function (a,b) return (a or 1) + (b or 2) end</tspan>
+</tspan>
+    <tspan x="10px" y="16696px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="16714px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16732px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="16750px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="16768px">
+</tspan>
+    <tspan x="10px" y="16786px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unbalanced-initialization">unbalanced-initialization</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unexpected number of expressions on right side of initialization</tspan>
+</tspan>
+    <tspan x="10px" y="16804px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:495:15</tspan>
+</tspan>
+    <tspan x="10px" y="16822px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16840px"><tspan class="fg-bright-blue bold">495</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local T, K, V = nil</tspan>
+</tspan>
+    <tspan x="10px" y="16858px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">-------</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">---</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">found 1 expression</tspan>
+</tspan>
+    <tspan x="10px" y="16876px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16894px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>       </tspan><tspan class="fg-bright-blue bold">found 3 names</tspan>
+</tspan>
+    <tspan x="10px" y="16912px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16930px"><tspan class="fg-bright-green bold">note</tspan><tspan>: extra left-hand side variables will be assigned `nil`</tspan>
+</tspan>
+    <tspan x="10px" y="16948px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:495:10</tspan>
+</tspan>
+    <tspan x="10px" y="16966px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="16984px"><tspan class="fg-bright-blue bold">495</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local T, K, V = nil</tspan>
+</tspan>
+    <tspan x="10px" y="17002px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>          </tspan><tspan class="fg-bright-green bold">^</tspan><tspan>  </tspan><tspan class="fg-bright-green bold">^</tspan>
+</tspan>
+    <tspan x="10px" y="17020px">
+</tspan>
+    <tspan x="10px" y="17038px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="17056px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:496:1</tspan>
+</tspan>
+    <tspan x="10px" y="17074px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="17092px"><tspan class="fg-bright-blue bold">496</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> grandparent = {}</tspan>
+</tspan>
+    <tspan x="10px" y="17110px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="17128px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="17146px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="17164px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="17182px">
+</tspan>
+    <tspan x="10px" y="17200px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="17218px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:497:1</tspan>
+</tspan>
+    <tspan x="10px" y="17236px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="17254px"><tspan class="fg-bright-blue bold">497</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> grandparent.__newindex = function(t,k,v) T=t; K=k; V=v end</tspan>
+</tspan>
+    <tspan x="10px" y="17272px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="17290px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="17308px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="17326px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="17344px">
+</tspan>
+    <tspan x="10px" y="17362px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="17380px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:499:1</tspan>
+</tspan>
+    <tspan x="10px" y="17398px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="17416px"><tspan class="fg-bright-blue bold">499</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> parent = {}</tspan>
+</tspan>
+    <tspan x="10px" y="17434px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="17452px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="17470px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="17488px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="17506px">
+</tspan>
+    <tspan x="10px" y="17524px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="17542px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:500:21</tspan>
+</tspan>
+    <tspan x="10px" y="17560px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="17578px"><tspan class="fg-bright-blue bold">500</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> parent.__newindex = parent</tspan>
+</tspan>
+    <tspan x="10px" y="17596px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                     </tspan><tspan class="fg-bright-yellow">^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="17614px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="17632px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="17650px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="17668px">
+</tspan>
+    <tspan x="10px" y="17686px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="17704px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:500:1</tspan>
+</tspan>
+    <tspan x="10px" y="17722px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="17740px"><tspan class="fg-bright-blue bold">500</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> parent.__newindex = parent</tspan>
+</tspan>
+    <tspan x="10px" y="17758px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="17776px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="17794px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="17812px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="17830px">
+</tspan>
+    <tspan x="10px" y="17848px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="17866px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:501:14</tspan>
+</tspan>
+    <tspan x="10px" y="17884px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="17902px"><tspan class="fg-bright-blue bold">501</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> setmetatable(parent, grandparent)</tspan>
+</tspan>
+    <tspan x="10px" y="17920px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-yellow">^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="17938px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="17956px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="17974px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="17992px">
+</tspan>
+    <tspan x="10px" y="18010px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="18028px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:501:22</tspan>
+</tspan>
+    <tspan x="10px" y="18046px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="18064px"><tspan class="fg-bright-blue bold">501</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> setmetatable(parent, grandparent)</tspan>
+</tspan>
+    <tspan x="10px" y="18082px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                      </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="18100px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="18118px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="18136px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="18154px">
+</tspan>
+    <tspan x="10px" y="18172px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="18190px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:503:26</tspan>
+</tspan>
+    <tspan x="10px" y="18208px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="18226px"><tspan class="fg-bright-blue bold">503</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> child = setmetatable({}, parent)</tspan>
+</tspan>
+    <tspan x="10px" y="18244px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                          </tspan><tspan class="fg-bright-yellow">^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="18262px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="18280px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="18298px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="18316px">
+</tspan>
+    <tspan x="10px" y="18334px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="18352px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:503:1</tspan>
+</tspan>
+    <tspan x="10px" y="18370px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="18388px"><tspan class="fg-bright-blue bold">503</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> child = setmetatable({}, parent)</tspan>
+</tspan>
+    <tspan x="10px" y="18406px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^</tspan><tspan> </tspan><tspan class="fg-bright-yellow">did you miss a `local` or misspell it?</tspan>
+</tspan>
+    <tspan x="10px" y="18424px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="18442px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="18460px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="18478px">
+</tspan>
+    <tspan x="10px" y="18496px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="18514px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:504:1</tspan>
+</tspan>
+    <tspan x="10px" y="18532px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="18550px"><tspan class="fg-bright-blue bold">504</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> child.foo = 10      --&gt; CRASH (on some machines)</tspan>
+</tspan>
+    <tspan x="10px" y="18568px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="18586px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="18604px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="18622px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="18640px">
+</tspan>
+    <tspan x="10px" y="18658px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#lower-case-global">lower-case-global</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: global variable in lower-case initial</tspan>
+</tspan>
+    <tspan x="10px" y="18676px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/events.lua:505:13</tspan>
+</tspan>
+    <tspan x="10px" y="18694px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="18712px"><tspan class="fg-bright-blue bold">505</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(T == parent and K == "foo" and V == 10)</tspan>
+</tspan>
+    <tspan x="10px" y="18730px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>             </tspan><tspan class="fg-bright-yellow">^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="18748px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="18766px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: start name with upper-case letter</tspan>
+</tspan>
+    <tspan x="10px" y="18784px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: mark variable as global in yutu.toml</tspan>
+</tspan>
+    <tspan x="10px" y="18802px">
+</tspan>
+    <tspan x="10px" y="18820px">
+</tspan>
+  </text>
+
+</svg>
