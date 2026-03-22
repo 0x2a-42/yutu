@@ -20,9 +20,8 @@ logos = "0.16"
 annotate-snippets = "0.12"
 rustc-hash = "2.1"
 smallvec = "1.15"
-typed-arena = "2.0"
 indoc = "2.0"
-anstream = "0.6"
+anstream = "1.0"
 clap = "4.5"
 toml = "1.0"
 rayon = "1.11"
@@ -34,4 +33,4 @@ lelwel = "0.10"
 
 [dev-dependencies]
 annotate-snippets = { version = "0.12", features = ["testing-colors"] }
-snapbox = { version = "0.6.0", features = ["diff", "term-svg", "cmd", "examples"] }
+snapbox = { version = "1.1.0", features = ["diff", "term-svg", "cmd", "examples"] }
