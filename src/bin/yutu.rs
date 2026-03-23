@@ -169,11 +169,15 @@ fn main() {
                 std::process::exit(1);
             }
         }
-        Some(("init", _sub_matches)) => {
-            if !std::fs::exists("yutu.toml").unwrap() {
-                std::fs::write("yutu.toml", Config::default().to_string()).unwrap();
+        Some(("init", _sub_matches)) => match std::fs::exists("yutu.toml") {
+            Ok(false) => {
+                if let Err(err) = std::fs::write("yutu.toml", Config::default().to_string()) {
+                    fatal_error(err.to_string())
+                }
             }
-        }
+            Ok(true) => {}
+            Err(err) => fatal_error(err.to_string()),
+        },
         Some(("list", _sub_matches)) => {
             println!("# Lints\n");
             let mut sorted_infos = INFOS;
