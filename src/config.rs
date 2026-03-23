@@ -167,6 +167,30 @@ impl Config {
         }
     }
 
+    fn read_usize(sec: &toml::Value, name: &str, value: &mut usize) -> Result<(), String> {
+        if let Some(val) = sec.get(name) {
+            if let Some(val) = val.as_integer()
+                && val >= 0
+            {
+                *value = val as usize;
+            } else {
+                return Err(format!("expected positive integer value for `{name}`"));
+            }
+        }
+        Ok(())
+    }
+
+    fn read_bool(sec: &toml::Value, name: &str, value: &mut bool) -> Result<(), String> {
+        if let Some(val) = sec.get(name) {
+            if let Some(val) = val.as_bool() {
+                *value = val;
+            } else {
+                return Err(format!("expected boolean value for `{name}`"));
+            }
+        }
+        Ok(())
+    }
+
     pub fn new(lua_minor_version: Option<usize>) -> Result<Config, String> {
         let mut config = Config::default();
         if let Some(lua_minor_version) = lua_minor_version {
@@ -223,82 +247,41 @@ impl Config {
                 }
             }
             if let Some(config_sec) = options.get("config") {
-                if let Some(val) = config_sec.get("parameter_threshold") {
-                    if let Some(val) = val.as_integer()
-                        && val >= 0
-                    {
-                        config.parameter_threshold = val as usize;
-                    } else {
-                        return Err(
-                            "expected positive integer value for `parameter_threshold`".to_string()
-                        );
-                    }
-                }
-                if let Some(val) = config_sec.get("function_line_threshold") {
-                    if let Some(val) = val.as_integer()
-                        && val >= 0
-                    {
-                        config.function_line_threshold = val as usize;
-                    } else {
-                        return Err(
-                            "expected positive integer value for `function_line_threshold`"
-                                .to_string(),
-                        );
-                    }
-                }
-                if let Some(val) = config_sec.get("nesting_threshold") {
-                    if let Some(val) = val.as_integer()
-                        && val >= 0
-                    {
-                        config.nesting_threshold = val as usize;
-                    } else {
-                        return Err(
-                            "expected positive integer value for `nesting_threshold`".to_string()
-                        );
-                    }
-                }
-                if let Some(val) = config_sec.get("cyclomatic_complexity_threshold") {
-                    if let Some(val) = val.as_integer()
-                        && val >= 0
-                    {
-                        config.cyclomatic_complexity_threshold = val as usize;
-                    } else {
-                        return Err(
-                            "expected positive integer value for `cyclomatic_complexity_threshold`"
-                                .to_string(),
-                        );
-                    }
-                }
-                if let Some(val) = config_sec.get("line_length_threshold") {
-                    if let Some(val) = val.as_integer()
-                        && val >= 0
-                    {
-                        config.line_length_threshold = val as usize;
-                    } else {
-                        return Err(
-                            "expected positive integer value for `line_length_threshold`"
-                                .to_string(),
-                        );
-                    }
-                }
-                if let Some(val) = config_sec.get("allow_local_unused_hint") {
-                    if let Some(val) = val.as_bool() {
-                        config.allow_local_unused_hint = val;
-                    } else {
-                        return Err(
-                            "expected boolean value for `allow_local_unused_hint`".to_string()
-                        );
-                    }
-                }
-                if let Some(val) = config_sec.get("allow_loopvar_unused_hint") {
-                    if let Some(val) = val.as_bool() {
-                        config.allow_loopvar_unused_hint = val;
-                    } else {
-                        return Err(
-                            "expected boolean value for `allow_loopvar_unused_hint`".to_string()
-                        );
-                    }
-                }
+                Self::read_usize(
+                    config_sec,
+                    "parameter_threshold",
+                    &mut config.parameter_threshold,
+                )?;
+                Self::read_usize(
+                    config_sec,
+                    "function_line_threshold",
+                    &mut config.function_line_threshold,
+                )?;
+                Self::read_usize(
+                    config_sec,
+                    "nesting_threshold",
+                    &mut config.nesting_threshold,
+                )?;
+                Self::read_usize(
+                    config_sec,
+                    "cyclomatic_complexity_threshold",
+                    &mut config.cyclomatic_complexity_threshold,
+                )?;
+                Self::read_usize(
+                    config_sec,
+                    "line_length_threshold",
+                    &mut config.line_length_threshold,
+                )?;
+                Self::read_bool(
+                    config_sec,
+                    "allow_local_unused_hint",
+                    &mut config.allow_local_unused_hint,
+                )?;
+                Self::read_bool(
+                    config_sec,
+                    "allow_loopvar_unused_hint",
+                    &mut config.allow_loopvar_unused_hint,
+                )?;
             }
         }
         Ok(config)
