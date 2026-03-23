@@ -45,6 +45,27 @@ pub struct Info {
 }
 
 impl Info {
+    pub fn to_markdown_table_line(&self) -> String {
+        let mut val = String::new();
+        val.push_str("| [`");
+        val.push_str(self.code);
+        val.push_str("`](#");
+        val.push_str(self.code);
+        val.push_str(") | ");
+        val.push_str(match self.level {
+            Severity::Allow => "✅ `",
+            Severity::Warn => "⚠️ `",
+            Severity::Deny => "❌ `",
+            Severity::Hint => "ℹ️ `",
+        });
+        val.push_str(&self.level.to_string());
+        val.push_str("` | `");
+        val.push_str(&self.category.to_string());
+        val.push_str("` | ");
+        val.push_str(self.message);
+        val.push_str(" |");
+        val
+    }
     pub fn to_markdown(&self) -> String {
         let mut val = String::new();
         val.push_str("## ");
@@ -922,7 +943,7 @@ lints! {
         "},
     },
     LineTooLong {
-        message: "",
+        message: "line is too long",
         code: "line-too-long",
         level: Severity::Warn,
         category: Category::Restriction,

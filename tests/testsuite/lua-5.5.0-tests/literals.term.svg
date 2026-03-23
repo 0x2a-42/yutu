@@ -54,7 +54,7 @@
 </tspan>
     <tspan x="10px" y="298px">
 </tspan>
-    <tspan x="10px" y="316px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#line-too-long">line-too-long</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: </tspan>
+    <tspan x="10px" y="316px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#line-too-long">line-too-long</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: line is too long</tspan>
 </tspan>
     <tspan x="10px" y="334px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/literals.lua:156:1</tspan>
 </tspan>
@@ -70,7 +70,7 @@
 </tspan>
     <tspan x="10px" y="442px">
 </tspan>
-    <tspan x="10px" y="460px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#line-too-long">line-too-long</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: </tspan>
+    <tspan x="10px" y="460px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#line-too-long">line-too-long</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: line is too long</tspan>
 </tspan>
     <tspan x="10px" y="478px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/literals.lua:172:1</tspan>
 </tspan>

@@ -179,6 +179,12 @@ fn main() {
             let mut sorted_infos = INFOS;
             sorted_infos.sort_by(|a, b| a.code.cmp(b.code));
 
+            println!("| code | default level | category | message |");
+            println!("|---|---|---|---|");
+            for info in sorted_infos.iter() {
+                println!("{}", info.to_markdown_table_line());
+            }
+            println!();
             for info in sorted_infos {
                 println!("{}", info.to_markdown());
             }

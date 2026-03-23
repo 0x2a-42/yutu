@@ -1,5 +1,46 @@
 # Lints
 
+| code | default level | category | message |
+|---|---|---|---|
+| [`almost-swap`](#almost-swap) | ❌ `deny` | `correctness` | code sequence almost implements a swap |
+| [`approx-pi`](#approx-pi) | ⚠️ `warn` | `correctness` | numeric literal is approximatly pi |
+| [`bool-compare`](#bool-compare) | ⚠️ `warn` | `complexity` | comparison with bool constant can be simplfied |
+| [`cyclomatic-complexity`](#cyclomatic-complexity) | ⚠️ `warn` | `restriction` | cyclomatic complexity of function is too high |
+| [`empty-block`](#empty-block) | ⚠️ `warn` | `suspicious` | empty block in control flow statement |
+| [`empty-statement`](#empty-statement) | ⚠️ `warn` | `style` | empty statement |
+| [`error-prone-negation`](#error-prone-negation) | ⚠️ `warn` | `suspicious` | negation is executed before relational operator |
+| [`hex-int-overflow`](#hex-int-overflow) | ⚠️ `warn` | `complexity` | overflow in integer literal |
+| [`inconsistent-indentation`](#inconsistent-indentation) | ⚠️ `warn` | `restriction` | indentation contains tabs after spaces |
+| [`inexact-hex-float`](#inexact-hex-float) | ⚠️ `warn` | `correctness` | cannot exactly represent hexadecimal float in 64 bit |
+| [`invisible-characters`](#invisible-characters) | ❌ `deny` | `suspicious` | code contains invisible Unicode characters |
+| [`line-too-long`](#line-too-long) | ⚠️ `warn` | `restriction` | line is too long |
+| [`lower-case-global`](#lower-case-global) | ⚠️ `warn` | `suspicious` | global variable in lower-case initial |
+| [`next-line-args`](#next-line-args) | ⚠️ `warn` | `suspicious` | arguments of called function start in next line |
+| [`non-ascii-literal`](#non-ascii-literal) | ✅ `allow` | `restriction` | string literal contains non-ASCII character |
+| [`octal-confusion`](#octal-confusion) | ⚠️ `warn` | `complexity` | zero prefixed integer can be confused as octal number |
+| [`only-whitespace`](#only-whitespace) | ℹ️ `hint` | `style` | line contains only whitespace |
+| [`redefined-local`](#redefined-local) | ✅ `allow` | `pedantic` | redefined local |
+| [`redundant-local`](#redundant-local) | ⚠️ `warn` | `suspicious` | redundant redefinition of a local |
+| [`redundant-parentheses`](#redundant-parentheses) | ⚠️ `warn` | `complexity` | expression contains redundant parentheses |
+| [`rounds-int-part`](#rounds-int-part) | ⚠️ `warn` | `correctness` | integral part of numeric literal will be rounded |
+| [`rounds-to-inf`](#rounds-to-inf) | ⚠️ `warn` | `correctness` | numeric literal rounds to infinity |
+| [`shadowing-local`](#shadowing-local) | ✅ `allow` | `pedantic` | shadowing local |
+| [`too-many-lines`](#too-many-lines) | ⚠️ `warn` | `complexity` | function contains too many lines |
+| [`too-many-parameters`](#too-many-parameters) | ⚠️ `warn` | `complexity` | function has too many parameters |
+| [`trailing-whitespace`](#trailing-whitespace) | ℹ️ `hint` | `style` | line contains trailing whitespace |
+| [`unbalanced-assignment`](#unbalanced-assignment) | ⚠️ `warn` | `suspicious` | unexpected number of expressions on right side of assignment |
+| [`unbalanced-initialization`](#unbalanced-initialization) | ⚠️ `warn` | `suspicious` | unexpected number of expressions on right side of initialization |
+| [`unicode-code-point-is-surrogate`](#unicode-code-point-is-surrogate) | ⚠️ `warn` | `correctness` | Unicode code point is a surrogate |
+| [`unicode-code-point-too-large`](#unicode-code-point-too-large) | ⚠️ `warn` | `correctness` | Unicode code point is too large |
+| [`unnecessary-negation`](#unnecessary-negation) | ⚠️ `warn` | `complexity` | negation of relational expression can be simplified |
+| [`unreachable-code`](#unreachable-code) | ⚠️ `warn` | `suspicious` | unreachable code |
+| [`unused-label`](#unused-label) | ⚠️ `warn` | `suspicious` | unused label |
+| [`unused-local`](#unused-local) | ⚠️ `warn` | `suspicious` | unused local |
+| [`unused-loopvar`](#unused-loopvar) | ⚠️ `warn` | `suspicious` | unused loop variable |
+| [`unused-parameter`](#unused-parameter) | ⚠️ `warn` | `suspicious` | unused parameter |
+| [`unused-vararg`](#unused-vararg) | ⚠️ `warn` | `suspicious` | unused variable length argument |
+| [`used-despite-unused-hint`](#used-despite-unused-hint) | ⚠️ `warn` | `suspicious` | used declaration with unused hint |
+
 ## almost-swap
 ❌ `deny` - `correctness`
 ### What it does
