@@ -1634,7 +1634,7 @@ impl<'a> OctalConfusion<'a, '_> {
                         .annotation(AnnotationKind::Primary.span(span.clone())),
                 ),
                 Group::with_title(
-                    Level::NOTE.secondary_title("Lua doesn't have the octal numbers syntax from C"),
+                    Level::NOTE.secondary_title("Lua doesn't have the octal number syntax from C"),
                 ),
                 Group::with_title(Level::HELP.secondary_title("remove the prefix")).element(
                     Snippet::source(self.0.source)
