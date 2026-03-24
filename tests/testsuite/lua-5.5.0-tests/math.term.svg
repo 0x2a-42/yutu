@@ -46,7 +46,7 @@
 </tspan>
     <tspan x="10px" y="226px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="244px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua doesn't have the octal numbers syntax from C</tspan>
+    <tspan x="10px" y="244px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua doesn't have the octal number syntax from C</tspan>
 </tspan>
     <tspan x="10px" y="262px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the prefix</tspan>
 </tspan>
@@ -884,7 +884,7 @@
 </tspan>
     <tspan x="10px" y="7768px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="7786px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua doesn't have the octal numbers syntax from C</tspan>
+    <tspan x="10px" y="7786px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua doesn't have the octal number syntax from C</tspan>
 </tspan>
     <tspan x="10px" y="7804px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the prefix</tspan>
 </tspan>
@@ -910,7 +910,7 @@
 </tspan>
     <tspan x="10px" y="8002px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="8020px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua doesn't have the octal numbers syntax from C</tspan>
+    <tspan x="10px" y="8020px"><tspan class="fg-bright-green bold">note</tspan><tspan>: Lua doesn't have the octal number syntax from C</tspan>
 </tspan>
     <tspan x="10px" y="8038px"><tspan class="fg-bright-cyan bold">help</tspan><tspan>: remove the prefix</tspan>
 </tspan>
