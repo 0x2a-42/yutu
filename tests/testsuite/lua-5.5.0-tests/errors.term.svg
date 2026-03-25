@@ -1,10 +1,11 @@
-<svg width="793px" height="3944px" xmlns="http://www.w3.org/2000/svg">
+<svg width="793px" height="4232px" xmlns="http://www.w3.org/2000/svg">
   <style>
     .fg { fill: #AAAAAA }
     .bg { fill: #000000 }
     .fg-bright-blue { fill: #5555FF }
     .fg-bright-cyan { fill: #55FFFF }
     .fg-bright-green { fill: #55FF55 }
+    .fg-bright-red { fill: #FF5555 }
     .fg-bright-yellow { fill: #FFFF55 }
     .container {
       padding: 0 10px;
@@ -455,7 +456,39 @@
 </tspan>
     <tspan x="10px" y="3916px">
 </tspan>
-    <tspan x="10px" y="3934px">
+    <tspan x="10px" y="3934px"><tspan class="fg-bright-red bold">error[</tspan><tspan class="fg-bright-red bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unconditional-recursion">unconditional-recursion</a></tspan><tspan class="fg-bright-red bold">]</tspan><tspan class="bold">: unconditional recursion in function</tspan>
+</tspan>
+    <tspan x="10px" y="3952px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:544:3</tspan>
+</tspan>
+    <tspan x="10px" y="3970px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="3988px"><tspan class="fg-bright-blue bold">544</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local function auxy () C=C+1; auxy() end     -- produce a stack overflow</tspan>
+</tspan>
+    <tspan x="10px" y="4006px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-red bold">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan><tspan class="fg-bright-blue bold">------</tspan><tspan class="fg-bright-red bold">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="4024px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                 </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4042px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                 </tspan><tspan class="fg-bright-blue bold">recursion</tspan>
+</tspan>
+    <tspan x="10px" y="4060px">
+</tspan>
+    <tspan x="10px" y="4078px"><tspan class="fg-bright-red bold">error[</tspan><tspan class="fg-bright-red bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unconditional-recursion">unconditional-recursion</a></tspan><tspan class="fg-bright-red bold">]</tspan><tspan class="bold">: unconditional recursion in function</tspan>
+</tspan>
+    <tspan x="10px" y="4096px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/errors.lua:602:3</tspan>
+</tspan>
+    <tspan x="10px" y="4114px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4132px"><tspan class="fg-bright-blue bold">602</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local function loop (x,y,z) return 1 + loop(x, y, z) end</tspan>
+</tspan>
+    <tspan x="10px" y="4150px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-red bold">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan><tspan class="fg-bright-blue bold">-------------</tspan><tspan class="fg-bright-red bold">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="4168px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                          </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="4186px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                          </tspan><tspan class="fg-bright-blue bold">recursion</tspan>
+</tspan>
+    <tspan x="10px" y="4204px">
+</tspan>
+    <tspan x="10px" y="4222px">
 </tspan>
   </text>
 

@@ -30,6 +30,7 @@
 | [`trailing-whitespace`](#trailing-whitespace) | ℹ️ `hint` | `style` | line contains trailing whitespace |
 | [`unbalanced-assignment`](#unbalanced-assignment) | ⚠️ `warn` | `suspicious` | unexpected number of expressions on right side of assignment |
 | [`unbalanced-initialization`](#unbalanced-initialization) | ⚠️ `warn` | `suspicious` | unexpected number of expressions on right side of initialization |
+| [`unconditional-recursion`](#unconditional-recursion) | ❌ `deny` | `correctness` | unconditional recursion in function |
 | [`unicode-code-point-is-surrogate`](#unicode-code-point-is-surrogate) | ⚠️ `warn` | `correctness` | Unicode code point is a surrogate |
 | [`unicode-code-point-too-large`](#unicode-code-point-too-large) | ⚠️ `warn` | `correctness` | Unicode code point is too large |
 | [`unnecessary-negation`](#unnecessary-negation) | ⚠️ `warn` | `complexity` | negation of relational expression can be simplified |
@@ -470,6 +471,22 @@ Extra left-hand side values will be assigned `nil` which might be unintended. Ex
 ```lua
 local a, b = 42 -- b is assigned nil
 local c, d = 1, 2, 3 -- 3 is ignored
+```
+
+## unconditional-recursion
+❌ `deny` - `correctness`
+### What it does
+Checks for functions that are unconditionally recursive.
+
+### Why restrict this?
+Such functions will never return and may overflow the stack, which is most likely unintended.
+
+### Example
+```lua
+local function foo()
+    foo()
+end
+foo()
 ```
 
 ## unicode-code-point-is-surrogate

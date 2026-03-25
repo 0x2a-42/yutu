@@ -1,10 +1,11 @@
-<svg width="740px" height="2126px" xmlns="http://www.w3.org/2000/svg">
+<svg width="740px" height="2378px" xmlns="http://www.w3.org/2000/svg">
   <style>
     .fg { fill: #AAAAAA }
     .bg { fill: #000000 }
     .fg-bright-blue { fill: #5555FF }
     .fg-bright-cyan { fill: #55FFFF }
     .fg-bright-green { fill: #55FF55 }
+    .fg-bright-red { fill: #FF5555 }
     .fg-bright-yellow { fill: #FFFF55 }
     .container {
       padding: 0 10px;
@@ -251,9 +252,37 @@
 </tspan>
     <tspan x="10px" y="2080px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                       </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^</tspan>
 </tspan>
-    <tspan x="10px" y="2098px">
+    <tspan x="10px" y="2098px"><tspan class="fg-bright-blue bold">95</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   else err_on_n (n-1); exit(1);</tspan>
 </tspan>
-    <tspan x="10px" y="2116px">
+    <tspan x="10px" y="2116px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                      </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2134px">
+</tspan>
+    <tspan x="10px" y="2152px"><tspan class="fg-bright-red bold">error[</tspan><tspan class="fg-bright-red bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unconditional-recursion">unconditional-recursion</a></tspan><tspan class="fg-bright-red bold">]</tspan><tspan class="bold">: unconditional recursion in function</tspan>
+</tspan>
+    <tspan x="10px" y="2170px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/calls.lua:93:1</tspan>
+</tspan>
+    <tspan x="10px" y="2188px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="2206px"><tspan class="fg-bright-blue bold">93</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">/</tspan><tspan> local function err_on_n (n)</tspan>
+</tspan>
+    <tspan x="10px" y="2224px"><tspan class="fg-bright-blue bold">94</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">|</tspan><tspan>   if n==0 then error(); exit(1);</tspan>
+</tspan>
+    <tspan x="10px" y="2242px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-blue bold">-------</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">termination</tspan>
+</tspan>
+    <tspan x="10px" y="2260px"><tspan class="fg-bright-blue bold">95</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">|</tspan><tspan>   else err_on_n (n-1); exit(1);</tspan>
+</tspan>
+    <tspan x="10px" y="2278px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">|</tspan><tspan>        </tspan><tspan class="fg-bright-blue bold">--------------</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">recursion</tspan>
+</tspan>
+    <tspan x="10px" y="2296px"><tspan class="fg-bright-blue bold">96</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">|</tspan><tspan>   end</tspan>
+</tspan>
+    <tspan x="10px" y="2314px"><tspan class="fg-bright-blue bold">97</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">|</tspan><tspan> end</tspan>
+</tspan>
+    <tspan x="10px" y="2332px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">|___^</tspan>
+</tspan>
+    <tspan x="10px" y="2350px">
+</tspan>
+    <tspan x="10px" y="2368px">
 </tspan>
   </text>
 

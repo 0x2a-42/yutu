@@ -1,4 +1,4 @@
-<svg width="860px" height="4898px" xmlns="http://www.w3.org/2000/svg">
+<svg width="860px" height="5024px" xmlns="http://www.w3.org/2000/svg">
   <style>
     .fg { fill: #AAAAAA }
     .bg { fill: #000000 }
@@ -530,39 +530,53 @@
 </tspan>
     <tspan x="10px" y="4582px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
 </tspan>
-    <tspan x="10px" y="4600px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/constructs.lua:21:15</tspan>
+    <tspan x="10px" y="4600px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/constructs.lua:21:15</tspan>
 </tspan>
-    <tspan x="10px" y="4618px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+    <tspan x="10px" y="4618px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="4636px"><tspan class="fg-bright-blue bold">21</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> if false then a = 3 // 0; a = 0 % 0 end</tspan>
+    <tspan x="10px" y="4636px"><tspan class="fg-bright-blue bold"> 21</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> if false then a = 3 // 0; a = 0 % 0 end</tspan>
 </tspan>
-    <tspan x="10px" y="4654px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^</tspan>
+    <tspan x="10px" y="4654px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^</tspan>
 </tspan>
     <tspan x="10px" y="4672px"><tspan class="fg-bright-blue bold">...</tspan>
 </tspan>
-    <tspan x="10px" y="4690px"><tspan class="fg-bright-blue bold">45</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(      true or false  and nil)</tspan>
+    <tspan x="10px" y="4690px"><tspan class="fg-bright-blue bold"> 44</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not ((true or false) and nil))</tspan>
 </tspan>
-    <tspan x="10px" y="4708px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                      </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^</tspan>
+    <tspan x="10px" y="4708px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                      </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
 </tspan>
-    <tspan x="10px" y="4726px"><tspan class="fg-bright-blue bold">...</tspan>
+    <tspan x="10px" y="4726px"><tspan class="fg-bright-blue bold"> 45</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(      true or false  and nil)</tspan>
 </tspan>
-    <tspan x="10px" y="4744px"><tspan class="fg-bright-blue bold">48</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((((1 or false) and true) or false) == true)</tspan>
+    <tspan x="10px" y="4744px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                      </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^</tspan>
 </tspan>
-    <tspan x="10px" y="4762px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^^</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
+    <tspan x="10px" y="4762px"><tspan class="fg-bright-blue bold">...</tspan>
 </tspan>
-    <tspan x="10px" y="4780px"><tspan class="fg-bright-blue bold">49</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((((nil and true) or false) and true) == false)</tspan>
+    <tspan x="10px" y="4780px"><tspan class="fg-bright-blue bold"> 48</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((((1 or false) and true) or false) == true)</tspan>
 </tspan>
-    <tspan x="10px" y="4798px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                   </tspan><tspan class="fg-bright-yellow">^^^^</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+    <tspan x="10px" y="4798px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^^</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^^^^^</tspan>
 </tspan>
-    <tspan x="10px" y="4816px"><tspan class="fg-bright-blue bold">...</tspan>
+    <tspan x="10px" y="4816px"><tspan class="fg-bright-blue bold"> 49</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((((nil and true) or false) and true) == false)</tspan>
 </tspan>
-    <tspan x="10px" y="4834px"><tspan class="fg-bright-blue bold">52</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(-(1 or 2) == -1 and (1 and 2)+(-1.25 or -4) == 0.75);</tspan>
+    <tspan x="10px" y="4834px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                   </tspan><tspan class="fg-bright-yellow">^^^^</tspan><tspan>                </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
 </tspan>
-    <tspan x="10px" y="4852px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^</tspan><tspan>                                </tspan><tspan class="fg-bright-yellow">^^</tspan>
+    <tspan x="10px" y="4852px"><tspan class="fg-bright-blue bold">...</tspan>
 </tspan>
-    <tspan x="10px" y="4870px">
+    <tspan x="10px" y="4870px"><tspan class="fg-bright-blue bold"> 52</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(-(1 or 2) == -1 and (1 and 2)+(-1.25 or -4) == 0.75);</tspan>
 </tspan>
-    <tspan x="10px" y="4888px">
+    <tspan x="10px" y="4888px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^</tspan><tspan>                                </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="4906px"><tspan class="fg-bright-blue bold"> 53</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local x = ((b or a)+1 == 2 and (10 or a)+1 == 11); assert(x);</tspan>
+</tspan>
+    <tspan x="10px" y="4924px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                       </tspan><tspan class="fg-bright-yellow">^</tspan>
+</tspan>
+    <tspan x="10px" y="4942px"><tspan class="fg-bright-blue bold">...</tspan>
+</tspan>
+    <tspan x="10px" y="4960px"><tspan class="fg-bright-blue bold">301</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local a; if nil then a=1; else a=2; end;    -- this nil comes as PUSHNIL 2</tspan>
+</tspan>
+    <tspan x="10px" y="4978px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                        </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="4996px">
+</tspan>
+    <tspan x="10px" y="5014px">
 </tspan>
   </text>
 

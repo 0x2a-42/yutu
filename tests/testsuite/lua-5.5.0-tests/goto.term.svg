@@ -1,4 +1,4 @@
-<svg width="860px" height="2828px" xmlns="http://www.w3.org/2000/svg">
+<svg width="860px" height="3026px" xmlns="http://www.w3.org/2000/svg">
   <style>
     .fg { fill: #AAAAAA }
     .bg { fill: #000000 }
@@ -295,43 +295,65 @@
 </tspan>
     <tspan x="10px" y="2476px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
 </tspan>
-    <tspan x="10px" y="2494px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/goto.lua:91:3</tspan>
+    <tspan x="10px" y="2494px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/goto.lua:84:3</tspan>
 </tspan>
     <tspan x="10px" y="2512px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="2530px"><tspan class="fg-bright-blue bold"> 91</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   goto l1  -- ok to jump over local dec. to end of block</tspan>
+    <tspan x="10px" y="2530px"><tspan class="fg-bright-blue bold"> 84</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan>   local a = 23</tspan>
 </tspan>
-    <tspan x="10px" y="2548px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^</tspan>
+    <tspan x="10px" y="2548px"><tspan class="fg-bright-blue bold"> 85</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   x = a</tspan>
 </tspan>
-    <tspan x="10px" y="2566px"><tspan class="fg-bright-blue bold"> 92</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   goto l1  -- multiple uses of same label</tspan>
+    <tspan x="10px" y="2566px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|_______^</tspan>
 </tspan>
-    <tspan x="10px" y="2584px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^</tspan>
+    <tspan x="10px" y="2584px"><tspan class="fg-bright-blue bold">...</tspan>
 </tspan>
-    <tspan x="10px" y="2602px"><tspan class="fg-bright-blue bold"> 93</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local x = 45</tspan>
+    <tspan x="10px" y="2602px"><tspan class="fg-bright-blue bold"> 91</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     goto l1  -- ok to jump over local dec. to end of block</tspan>
 </tspan>
-    <tspan x="10px" y="2620px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^</tspan>
+    <tspan x="10px" y="2620px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^</tspan>
 </tspan>
-    <tspan x="10px" y="2638px"><tspan class="fg-bright-blue bold"> 94</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   ::l1:: ;;;</tspan>
+    <tspan x="10px" y="2638px"><tspan class="fg-bright-blue bold"> 92</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     goto l1  -- multiple uses of same label</tspan>
 </tspan>
-    <tspan x="10px" y="2656px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^</tspan>
+    <tspan x="10px" y="2656px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^</tspan>
 </tspan>
-    <tspan x="10px" y="2674px"><tspan class="fg-bright-blue bold">...</tspan>
+    <tspan x="10px" y="2674px"><tspan class="fg-bright-blue bold"> 93</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local x = 45</tspan>
 </tspan>
-    <tspan x="10px" y="2692px"><tspan class="fg-bright-blue bold">100</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   error("should not be here")</tspan>
+    <tspan x="10px" y="2692px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^</tspan>
 </tspan>
-    <tspan x="10px" y="2710px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+    <tspan x="10px" y="2710px"><tspan class="fg-bright-blue bold"> 94</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     ::l1:: ;;;</tspan>
 </tspan>
-    <tspan x="10px" y="2728px"><tspan class="fg-bright-blue bold">101</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   goto l2   -- ok to jump over local dec. to end of block</tspan>
+    <tspan x="10px" y="2728px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^</tspan>
 </tspan>
-    <tspan x="10px" y="2746px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^</tspan>
+    <tspan x="10px" y="2746px"><tspan class="fg-bright-blue bold">...</tspan>
 </tspan>
-    <tspan x="10px" y="2764px"><tspan class="fg-bright-blue bold">102</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local x</tspan>
+    <tspan x="10px" y="2764px"><tspan class="fg-bright-blue bold">100</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     error("should not be here")</tspan>
 </tspan>
-    <tspan x="10px" y="2782px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^</tspan>
+    <tspan x="10px" y="2782px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
 </tspan>
-    <tspan x="10px" y="2800px">
+    <tspan x="10px" y="2800px"><tspan class="fg-bright-blue bold">101</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     goto l2   -- ok to jump over local dec. to end of block</tspan>
 </tspan>
-    <tspan x="10px" y="2818px">
+    <tspan x="10px" y="2818px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2836px"><tspan class="fg-bright-blue bold">102</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     local x</tspan>
+</tspan>
+    <tspan x="10px" y="2854px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2872px"><tspan class="fg-bright-blue bold">...</tspan>
+</tspan>
+    <tspan x="10px" y="2890px"><tspan class="fg-bright-blue bold">158</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     ::a:: goto a</tspan>
+</tspan>
+    <tspan x="10px" y="2908px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2926px"><tspan class="fg-bright-blue bold">159</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     ::b:: goto c</tspan>
+</tspan>
+    <tspan x="10px" y="2944px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2962px"><tspan class="fg-bright-blue bold">160</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     ::c:: goto b</tspan>
+</tspan>
+    <tspan x="10px" y="2980px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="2998px">
+</tspan>
+    <tspan x="10px" y="3016px">
 </tspan>
   </text>
 

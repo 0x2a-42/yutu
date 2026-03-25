@@ -1,4 +1,4 @@
-<svg width="928px" height="6644px" xmlns="http://www.w3.org/2000/svg">
+<svg width="928px" height="6986px" xmlns="http://www.w3.org/2000/svg">
   <style>
     .fg { fill: #AAAAAA }
     .bg { fill: #000000 }
@@ -756,7 +756,45 @@
 </tspan>
     <tspan x="10px" y="6616px">
 </tspan>
-    <tspan x="10px" y="6634px">
+    <tspan x="10px" y="6634px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
+</tspan>
+    <tspan x="10px" y="6652px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/code.lua:427:11</tspan>
+</tspan>
+    <tspan x="10px" y="6670px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6688px"><tspan class="fg-bright-blue bold">427</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan>           local x &lt;close&gt; = nil</tspan>
+</tspan>
+    <tspan x="10px" y="6706px"><tspan class="fg-bright-blue bold">428</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>           goto exit   -- must close</tspan>
+</tspan>
+    <tspan x="10px" y="6724px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|___________________^</tspan>
+</tspan>
+    <tspan x="10px" y="6742px">
+</tspan>
+    <tspan x="10px" y="6760px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
+</tspan>
+    <tspan x="10px" y="6778px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/code.lua:434:36</tspan>
+</tspan>
+    <tspan x="10px" y="6796px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6814px"><tspan class="fg-bright-blue bold">434</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> checkequal(function () return 6 or true or nil end,</tspan>
+</tspan>
+    <tspan x="10px" y="6832px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                    </tspan><tspan class="fg-bright-yellow">^^^^</tspan><tspan>    </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6850px">
+</tspan>
+    <tspan x="10px" y="6868px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
+</tspan>
+    <tspan x="10px" y="6886px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/code.lua:437:45</tspan>
+</tspan>
+    <tspan x="10px" y="6904px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6922px"><tspan class="fg-bright-blue bold">437</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> checkequal(function () return 6 and true or nil end,</tspan>
+</tspan>
+    <tspan x="10px" y="6940px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                             </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6958px">
+</tspan>
+    <tspan x="10px" y="6976px">
 </tspan>
   </text>
 

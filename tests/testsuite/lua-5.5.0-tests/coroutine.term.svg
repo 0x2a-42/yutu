@@ -1,4 +1,4 @@
-<svg width="793px" height="6536px" xmlns="http://www.w3.org/2000/svg">
+<svg width="793px" height="6680px" xmlns="http://www.w3.org/2000/svg">
   <style>
     .fg { fill: #AAAAAA }
     .bg { fill: #000000 }
@@ -744,7 +744,23 @@
 </tspan>
     <tspan x="10px" y="6508px">
 </tspan>
-    <tspan x="10px" y="6526px">
+    <tspan x="10px" y="6526px"><tspan class="fg-bright-red bold">error[</tspan><tspan class="fg-bright-red bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unconditional-recursion">unconditional-recursion</a></tspan><tspan class="fg-bright-red bold">]</tspan><tspan class="bold">: unconditional recursion in function</tspan>
+</tspan>
+    <tspan x="10px" y="6544px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/coroutine.lua:131:3</tspan>
+</tspan>
+    <tspan x="10px" y="6562px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6580px"><tspan class="fg-bright-blue bold">131</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   local function foo () foo () end    -- just create a stack overflow</tspan>
+</tspan>
+    <tspan x="10px" y="6598px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-red bold">^^^^^^^^^^^^^^^^^^^^^^</tspan><tspan class="fg-bright-blue bold">------</tspan><tspan class="fg-bright-red bold">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6616px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                         </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="6634px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                         </tspan><tspan class="fg-bright-blue bold">recursion</tspan>
+</tspan>
+    <tspan x="10px" y="6652px">
+</tspan>
+    <tspan x="10px" y="6670px">
 </tspan>
   </text>
 

@@ -1,4 +1,4 @@
-<svg width="740px" height="1892px" xmlns="http://www.w3.org/2000/svg">
+<svg width="740px" height="1676px" xmlns="http://www.w3.org/2000/svg">
   <style>
     .fg { fill: #AAAAAA }
     .bg { fill: #000000 }
@@ -27,7 +27,7 @@
 </tspan>
     <tspan x="10px" y="64px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">1</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> if true then</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">1</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> if false then</tspan>
 </tspan>
     <tspan x="10px" y="100px"><tspan class="fg-bright-blue bold">2</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> elseif true then</tspan>
 </tspan>
@@ -39,9 +39,9 @@
 </tspan>
     <tspan x="10px" y="172px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="190px"><tspan class="fg-bright-blue bold">1</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>if true then</tspan><tspan class="fg-bright-green"> --[[ TODO: explain why this block is empty ]] </tspan><tspan>elseif true then</tspan>
+    <tspan x="10px" y="190px"><tspan class="fg-bright-blue bold">1</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>if false then</tspan><tspan class="fg-bright-green"> --[[ TODO: explain why this block is empty ]] </tspan><tspan>elseif true then</tspan>
 </tspan>
-    <tspan x="10px" y="208px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>              </tspan><tspan class="fg-bright-green">+++++++++++++++++++++++++++++++++++++++++++++</tspan>
+    <tspan x="10px" y="208px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-green">+++++++++++++++++++++++++++++++++++++++++++++</tspan>
 </tspan>
     <tspan x="10px" y="226px">
 </tspan>
@@ -143,9 +143,9 @@
 </tspan>
     <tspan x="10px" y="1108px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="1126px"><tspan class="fg-bright-blue bold">8</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> while true do end</tspan>
+    <tspan x="10px" y="1126px"><tspan class="fg-bright-blue bold">8</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> while false do end</tspan>
 </tspan>
-    <tspan x="10px" y="1144px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^</tspan>
+    <tspan x="10px" y="1144px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^</tspan>
 </tspan>
     <tspan x="10px" y="1162px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
@@ -153,9 +153,9 @@
 </tspan>
     <tspan x="10px" y="1198px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="1216px"><tspan class="fg-bright-blue bold">8</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>while true do </tspan><tspan class="fg-bright-green">--[[ TODO: explain why this block is empty ]] </tspan><tspan>end</tspan>
+    <tspan x="10px" y="1216px"><tspan class="fg-bright-blue bold">8</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">| </tspan><tspan>while false do </tspan><tspan class="fg-bright-green">--[[ TODO: explain why this block is empty ]] </tspan><tspan>end</tspan>
 </tspan>
-    <tspan x="10px" y="1234px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-green">+++++++++++++++++++++++++++++++++++++++++++++</tspan>
+    <tspan x="10px" y="1234px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-green">+++++++++++++++++++++++++++++++++++++++++++++</tspan>
 </tspan>
     <tspan x="10px" y="1252px">
 </tspan>
@@ -203,31 +203,7 @@
 </tspan>
     <tspan x="10px" y="1648px">
 </tspan>
-    <tspan x="10px" y="1666px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
-</tspan>
-    <tspan x="10px" y="1684px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/diagnostics/empty_block.lua:9:1</tspan>
-</tspan>
-    <tspan x="10px" y="1702px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
-</tspan>
-    <tspan x="10px" y="1720px"><tspan class="fg-bright-blue bold"> 9</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> do end</tspan>
-</tspan>
-    <tspan x="10px" y="1738px"><tspan class="fg-bright-blue bold">10</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> repeat until true</tspan>
-</tspan>
-    <tspan x="10px" y="1756px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|_________________^</tspan>
-</tspan>
-    <tspan x="10px" y="1774px"><tspan class="fg-bright-blue bold">11</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan>
-</tspan>
-    <tspan x="10px" y="1792px"><tspan class="fg-bright-blue bold">12</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> for _=0, 10, 1 do</tspan>
-</tspan>
-    <tspan x="10px" y="1810px"><tspan class="fg-bright-blue bold">13</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   -- comment prevents warning</tspan>
-</tspan>
-    <tspan x="10px" y="1828px"><tspan class="fg-bright-blue bold">14</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> end</tspan>
-</tspan>
-    <tspan x="10px" y="1846px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|___^</tspan>
-</tspan>
-    <tspan x="10px" y="1864px">
-</tspan>
-    <tspan x="10px" y="1882px">
+    <tspan x="10px" y="1666px">
 </tspan>
   </text>
 

@@ -93,3 +93,4 @@ test!(redundant_parentheses);
 test!(inexact_hex_float);
 test!(cyclomatic_complexity);
 test!(inconsistent_indentation);
+test!(unconditional_recursion);

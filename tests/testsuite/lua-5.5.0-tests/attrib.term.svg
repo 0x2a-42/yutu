@@ -1,4 +1,4 @@
-<svg width="860px" height="6590px" xmlns="http://www.w3.org/2000/svg">
+<svg width="860px" height="6806px" xmlns="http://www.w3.org/2000/svg">
   <style>
     .fg { fill: #AAAAAA }
     .bg { fill: #000000 }
@@ -722,35 +722,59 @@
 </tspan>
     <tspan x="10px" y="6310px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
 </tspan>
-    <tspan x="10px" y="6328px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/attrib.lua:396:15</tspan>
+    <tspan x="10px" y="6328px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/attrib.lua:385:36</tspan>
 </tspan>
     <tspan x="10px" y="6346px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="6364px"><tspan class="fg-bright-blue bold">396</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((10 or 2) == 10)</tspan>
+    <tspan x="10px" y="6364px"><tspan class="fg-bright-blue bold">385</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local a, b, c, d = 1 and nil, 1 or nil, (1 and (nil or 1)), 6</tspan>
 </tspan>
-    <tspan x="10px" y="6382px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^</tspan>
+    <tspan x="10px" y="6382px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                                    </tspan><tspan class="fg-bright-yellow">^^^</tspan>
 </tspan>
-    <tspan x="10px" y="6400px"><tspan class="fg-bright-blue bold">397</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((10 or assert(nil)) == 10)</tspan>
+    <tspan x="10px" y="6400px"><tspan class="fg-bright-blue bold">...</tspan>
 </tspan>
-    <tspan x="10px" y="6418px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^</tspan>
+    <tspan x="10px" y="6418px"><tspan class="fg-bright-blue bold">396</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((10 or 2) == 10)</tspan>
 </tspan>
-    <tspan x="10px" y="6436px"><tspan class="fg-bright-blue bold">...</tspan>
+    <tspan x="10px" y="6436px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^</tspan>
 </tspan>
-    <tspan x="10px" y="6454px"><tspan class="fg-bright-blue bold">400</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((nil and 10) == nil)</tspan>
+    <tspan x="10px" y="6454px"><tspan class="fg-bright-blue bold">397</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((10 or assert(nil)) == 10)</tspan>
 </tspan>
-    <tspan x="10px" y="6472px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                 </tspan><tspan class="fg-bright-yellow">^^</tspan>
+    <tspan x="10px" y="6472px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>               </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^</tspan>
 </tspan>
-    <tspan x="10px" y="6490px"><tspan class="fg-bright-blue bold">401</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((false and 10) == false)</tspan>
+    <tspan x="10px" y="6490px"><tspan class="fg-bright-blue bold">398</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not (nil and assert(nil)))</tspan>
 </tspan>
-    <tspan x="10px" y="6508px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                   </tspan><tspan class="fg-bright-yellow">^^</tspan>
+    <tspan x="10px" y="6508px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^</tspan>
 </tspan>
-    <tspan x="10px" y="6526px"><tspan class="fg-bright-blue bold">402</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((true or 10) == true)</tspan>
+    <tspan x="10px" y="6526px"><tspan class="fg-bright-blue bold">399</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((nil or "alo") == "alo")</tspan>
 </tspan>
-    <tspan x="10px" y="6544px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                 </tspan><tspan class="fg-bright-yellow">^^</tspan>
+    <tspan x="10px" y="6544px"><tspan class="fg-bright-blue bold">400</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((nil and 10) == nil)</tspan>
 </tspan>
-    <tspan x="10px" y="6562px">
+    <tspan x="10px" y="6562px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                 </tspan><tspan class="fg-bright-yellow">^^</tspan>
 </tspan>
-    <tspan x="10px" y="6580px">
+    <tspan x="10px" y="6580px"><tspan class="fg-bright-blue bold">401</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((false and 10) == false)</tspan>
+</tspan>
+    <tspan x="10px" y="6598px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                   </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="6616px"><tspan class="fg-bright-blue bold">402</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert((true or 10) == true)</tspan>
+</tspan>
+    <tspan x="10px" y="6634px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                 </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="6652px"><tspan class="fg-bright-blue bold">...</tspan>
+</tspan>
+    <tspan x="10px" y="6670px"><tspan class="fg-bright-blue bold">410</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not not (6 or nil) == true)</tspan>
+</tspan>
+    <tspan x="10px" y="6688px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                      </tspan><tspan class="fg-bright-yellow">^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6706px"><tspan class="fg-bright-blue bold">411</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not not (nil and 56) == false)</tspan>
+</tspan>
+    <tspan x="10px" y="6724px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                         </tspan><tspan class="fg-bright-yellow">^^</tspan>
+</tspan>
+    <tspan x="10px" y="6742px"><tspan class="fg-bright-blue bold">412</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> assert(not not (nil and true) == false)</tspan>
+</tspan>
+    <tspan x="10px" y="6760px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>                         </tspan><tspan class="fg-bright-yellow">^^^^</tspan>
+</tspan>
+    <tspan x="10px" y="6778px">
+</tspan>
+    <tspan x="10px" y="6796px">
 </tspan>
   </text>
 

@@ -379,9 +379,10 @@ impl<'a> Checks<'a> {
         };
         checks.check_block(cst, diags, &mut sema, block, None, |_| {});
 
-        let mut cfgs = CfgBuilder::build(cst, &sema, block, None);
+        let mut cfgs = CfgBuilder::build(cst, &sema, NodeRef::ROOT, block, None);
         checks.check_unreachable(cst, diags, &sema, &mut cfgs);
         checks.check_cyclomatic_complexity(diags, &cfgs);
+        checks.check_unconditional_recursion(diags, &cfgs);
     }
 
     fn check_block(
@@ -1419,6 +1420,11 @@ impl<'a> Checks<'a> {
                     bb.reachable = true;
                     match bb.successor {
                         Successor::None => {}
+                        Successor::Interproc(ref succs) => {
+                            for succ in succs {
+                                todo.push(*succ);
+                            }
+                        }
                         Successor::Uncond(succ) => {
                             todo.push(succ);
                         }
@@ -1480,10 +1486,40 @@ impl<'a> Checks<'a> {
         if let Some(cyclomatic_complexity) = self.diag_ctx.active::<CyclomaticComplexity>() {
             for cfg in cfgs {
                 if let Some(span) = &cfg.span {
-                    let cc = cfg.edges + cfg.exits + 1 - cfg.bbs.len();
+                    let cc = cfg.edges + cfg.terminators - cfg.bbs.len() + 1;
                     if cc >= self.diag_ctx.config.cyclomatic_complexity_threshold {
                         diags.push(cyclomatic_complexity.build(span.clone(), cc));
                     }
+                }
+            }
+        }
+    }
+
+    fn check_unconditional_recursion(
+        &self,
+        diags: &mut Vec<Diagnostic<'a>>,
+        cfgs: &[ControlFlowGraph],
+    ) {
+        if let Some(uncoditional_recursion) = self.diag_ctx.active::<UnconditionalRecursion>() {
+            'cfg: for cfg in cfgs {
+                let mut rec_exits = vec![];
+                let mut term_exits = vec![];
+                for bb in cfg.bbs.iter() {
+                    if bb.reachable {
+                        if bb.returning.is_some() || bb.yielding.is_some() {
+                            continue 'cfg;
+                        }
+                        if let Some(ref recursive) = bb.recursive {
+                            rec_exits.push(recursive.clone());
+                        } else if let Some(ref terminate) = bb.terminate {
+                            term_exits.push(terminate.clone());
+                        }
+                    }
+                }
+                if !rec_exits.is_empty()
+                    && let Some(span) = &cfg.span
+                {
+                    diags.push(uncoditional_recursion.build(span.clone(), &rec_exits, &term_exits));
                 }
             }
         }

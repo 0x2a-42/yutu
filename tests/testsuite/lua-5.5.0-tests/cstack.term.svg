@@ -1,10 +1,11 @@
-<svg width="740px" height="632px" xmlns="http://www.w3.org/2000/svg">
+<svg width="740px" height="812px" xmlns="http://www.w3.org/2000/svg">
   <style>
     .fg { fill: #AAAAAA }
     .bg { fill: #000000 }
     .fg-bright-blue { fill: #5555FF }
     .fg-bright-cyan { fill: #55FFFF }
     .fg-bright-green { fill: #55FF55 }
+    .fg-bright-red { fill: #FF5555 }
     .fg-bright-yellow { fill: #FFFF55 }
     .container {
       padding: 0 10px;
@@ -87,7 +88,27 @@
 </tspan>
     <tspan x="10px" y="604px">
 </tspan>
-    <tspan x="10px" y="622px">
+    <tspan x="10px" y="622px"><tspan class="fg-bright-red bold">error[</tspan><tspan class="fg-bright-red bold"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unconditional-recursion">unconditional-recursion</a></tspan><tspan class="fg-bright-red bold">]</tspan><tspan class="bold">: unconditional recursion in function</tspan>
+</tspan>
+    <tspan x="10px" y="640px"><tspan>  </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/cstack.lua:22:3</tspan>
+</tspan>
+    <tspan x="10px" y="658px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
+</tspan>
+    <tspan x="10px" y="676px"><tspan class="fg-bright-blue bold">22</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">/</tspan><tspan>   local function loop (x, y, z)</tspan>
+</tspan>
+    <tspan x="10px" y="694px"><tspan class="fg-bright-blue bold">23</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">|</tspan><tspan>     count = count + 1</tspan>
+</tspan>
+    <tspan x="10px" y="712px"><tspan class="fg-bright-blue bold">24</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">|</tspan><tspan>     return 1 + loop(x, y, z)</tspan>
+</tspan>
+    <tspan x="10px" y="730px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">|</tspan><tspan>                </tspan><tspan class="fg-bright-blue bold">-------------</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">recursion</tspan>
+</tspan>
+    <tspan x="10px" y="748px"><tspan class="fg-bright-blue bold">25</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">|</tspan><tspan>   end</tspan>
+</tspan>
+    <tspan x="10px" y="766px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-red bold">|_____^</tspan>
+</tspan>
+    <tspan x="10px" y="784px">
+</tspan>
+    <tspan x="10px" y="802px">
 </tspan>
   </text>
 

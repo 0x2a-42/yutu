@@ -9,11 +9,13 @@ pub struct BasicBlockRef(usize);
 
 impl BasicBlockRef {
     pub const ENTRY: BasicBlockRef = BasicBlockRef(0);
+    pub const EXIT: BasicBlockRef = BasicBlockRef(1);
 }
 
 #[derive(Debug)]
 pub enum Successor {
     None,
+    Interproc(Vec<BasicBlockRef>),
     Uncond(BasicBlockRef),
     Cond {
         exp: Option<Exp>,
@@ -27,6 +29,10 @@ pub struct BasicBlock {
     pub span: Span,
     pub successor: Successor,
     pub reachable: bool,
+    pub recursive: Option<Span>,
+    pub returning: Option<Span>,
+    pub terminate: Option<Span>,
+    pub yielding: Option<Span>,
 }
 
 impl BasicBlock {
@@ -35,6 +41,10 @@ impl BasicBlock {
             span: 0..0,
             successor: Successor::None,
             reachable: false,
+            recursive: None,
+            returning: None,
+            terminate: None,
+            yielding: None,
         }
     }
     fn append(&mut self, span: Span) {
@@ -48,20 +58,27 @@ impl BasicBlock {
 
 #[derive(Debug)]
 pub struct ControlFlowGraph {
+    pub func: NodeRef,
     pub span: Option<Span>,
     pub bbs: Vec<BasicBlock>,
     pub edges: usize,
-    pub exits: usize,
+    pub terminators: usize,
 }
 
 impl ControlFlowGraph {
-    fn new(span: Option<Span>) -> Self {
+    fn new(func: NodeRef, span: Option<Span>) -> Self {
+        let mut exit = BasicBlock::new();
+        exit.successor = Successor::Interproc(vec![]);
         Self {
+            func,
             span,
-            bbs: vec![BasicBlock::new()],
+            bbs: vec![BasicBlock::new(), exit],
             edges: 0,
-            exits: 0,
+            terminators: 0,
         }
+    }
+    pub fn bb(&mut self, bb_ref: BasicBlockRef) -> &BasicBlock {
+        &self.bbs[bb_ref.0]
     }
     pub fn bb_mut(&mut self, bb_ref: BasicBlockRef) -> &mut BasicBlock {
         &mut self.bbs[bb_ref.0]
@@ -77,6 +94,13 @@ impl ControlFlowGraph {
             _ => 1,
         };
         self.bbs[from.0].successor = to;
+    }
+    fn insert_interproc_edge(&mut self, to: BasicBlockRef) {
+        if let Successor::Interproc(succs) = &mut self.bbs[BasicBlockRef::EXIT.0].successor {
+            succs.push(to);
+        } else {
+            unreachable!()
+        }
     }
 }
 
@@ -101,24 +125,41 @@ impl CfgBuilder {
     pub fn build(
         cst: &Cst<'_>,
         sema: &SemanticData,
+        func: NodeRef,
         block: Block,
         span: Option<Span>,
     ) -> Vec<ControlFlowGraph> {
         let mut builder = Self {
-            cfg: ControlFlowGraph::new(span),
-            cur_bb: BasicBlockRef(0),
+            cfg: ControlFlowGraph::new(func, span),
+            cur_bb: BasicBlockRef::ENTRY,
             label_bbs: FxHashMap::default(),
             break_bbs: Vec::new(),
             inner_cfgs: Vec::new(),
         };
         builder.visit_block(cst, sema, block);
+        if block.retstat(cst).is_none() {
+            builder.cfg.bb_mut(builder.cur_bb).returning = func.end_span(cst);
+            builder
+                .cfg
+                .insert_edge(builder.cur_bb, Successor::Uncond(BasicBlockRef::EXIT));
+        } else {
+            // remove unreachable BB added by last return statement
+            builder.cfg.bbs.pop();
+        }
         // TODO: reorder blocks to be in reverse postorder, so forward analysis is faster
         builder.inner_cfgs.push(builder.cfg);
         builder.inner_cfgs
     }
 
-    fn visit_func(&mut self, cst: &Cst<'_>, sema: &SemanticData, block: Block, span: Option<Span>) {
-        let cfgs = CfgBuilder::build(cst, sema, block, span);
+    fn visit_func(
+        &mut self,
+        cst: &Cst<'_>,
+        sema: &SemanticData,
+        func: NodeRef,
+        block: Block,
+        span: Option<Span>,
+    ) {
+        let cfgs = CfgBuilder::build(cst, sema, func, block, span);
         self.inner_cfgs.extend(cfgs);
     }
     fn visit_block(&mut self, cst: &Cst<'_>, sema: &SemanticData, block: Block) {
@@ -136,23 +177,32 @@ impl CfgBuilder {
                 if let Some(exp) = expstat.exp(cst) {
                     self.visit_exp(cst, sema, exp, Jumps::None);
                 }
-                if let Some(Exp::Callexp(callexp)) = expstat.exp(cst)
-                    && let Some(Exp::Nameexp(nameexp)) = callexp.base(cst)
-                    && let Some((name, _)) = nameexp.name(cst)
-                    && let Some(args) = callexp.args(cst)
-                {
-                    // TODO: check for redefined std methods like assert, error
-                    let terminator = match name {
-                        "assert" => matches!(
-                            args.expressions(cst).next(),
-                            Some(Exp::Falseexp(_) | Exp::Nilexp(_))
-                        ),
-                        "error" => true,
-                        _ => false,
-                    };
-                    if terminator {
-                        self.cur_bb = self.cfg.insert_bb();
-                        self.cfg.exits += 1;
+                if let Some(Exp::Callexp(callexp)) = expstat.exp(cst) {
+                    if let Some(Exp::Nameexp(nameexp)) = callexp.base(cst)
+                        && let Some((name, _)) = nameexp.name(cst)
+                        && let Some(args) = callexp.args(cst)
+                    {
+                        // TODO: check for redefined std methods like assert, error
+                        let terminator = match name {
+                            "assert" => matches!(
+                                args.expressions(cst).next(),
+                                Some(Exp::Falseexp(_) | Exp::Nilexp(_))
+                            ),
+                            "error" => true,
+                            "exit" => true,
+                            _ => false,
+                        };
+                        if terminator {
+                            self.cfg.bb_mut(self.cur_bb).terminate = Some(callexp.span(cst));
+                            self.cur_bb = self.cfg.insert_bb();
+                            self.cfg.terminators += 1;
+                        }
+                    } else if let Some(Exp::Fieldexp(fieldexp)) = callexp.base(cst)
+                        && let Some(Exp::Nameexp(nameexp)) = fieldexp.base(cst)
+                        && let Some(("coroutine", _)) = nameexp.name(cst)
+                        && let Some(("yield", _)) = fieldexp.field(cst)
+                    {
+                        self.cfg.bb_mut(self.cur_bb).yielding = Some(callexp.span(cst));
                     }
                 }
             }
@@ -200,6 +250,9 @@ impl CfgBuilder {
             }
             Stat::Dostat(dostat) => {
                 self.cfg.bb_mut(self.cur_bb).append(dostat.span(cst));
+                if let Some(block) = dostat.block(cst) {
+                    self.visit_block(cst, sema, block);
+                }
             }
             Stat::Whilestat(whilestat) => {
                 self.cfg.bb_mut(self.cur_bb).append(whilestat.span(cst));
@@ -336,8 +389,14 @@ impl CfgBuilder {
                     self.visit_exp(cst, sema, stride, Jumps::None);
                 }
 
-                self.cfg
-                    .insert_edge(self.cur_bb, Successor::Uncond(block_bb));
+                self.cfg.insert_edge(
+                    self.cur_bb,
+                    Successor::Cond {
+                        exp: None,
+                        true_bb: block_bb,
+                        false_bb: merge_bb,
+                    },
+                );
                 if let Some(block) = forstat.block(cst) {
                     self.cur_bb = block_bb;
                     self.break_bbs.push(merge_bb);
@@ -391,27 +450,51 @@ impl CfgBuilder {
             Stat::Funcstat(funcstat) => {
                 self.cfg.bb_mut(self.cur_bb).append(funcstat.span(cst));
                 if let Some(block) = funcstat.block(cst) {
-                    self.visit_func(cst, sema, block, Some(funcstat.span(cst)));
+                    self.visit_func(
+                        cst,
+                        sema,
+                        funcstat.syntax(),
+                        block,
+                        Some(funcstat.span(cst)),
+                    );
                 }
             }
             Stat::Localvarstat(localvarstat) => {
                 self.cfg.bb_mut(self.cur_bb).append(localvarstat.span(cst));
+                for exp in localvarstat.rhs_exps(cst) {
+                    self.visit_exp(cst, sema, exp, Jumps::None);
+                }
             }
             Stat::Localfuncstat(localfuncstat) => {
                 self.cfg.bb_mut(self.cur_bb).append(localfuncstat.span(cst));
                 if let Some(block) = localfuncstat.block(cst) {
-                    self.visit_func(cst, sema, block, Some(localfuncstat.span(cst)));
+                    self.visit_func(
+                        cst,
+                        sema,
+                        localfuncstat.syntax(),
+                        block,
+                        Some(localfuncstat.span(cst)),
+                    );
                 }
             }
             Stat::Globalvarstat(globalvarstat) => {
                 self.cfg.bb_mut(self.cur_bb).append(globalvarstat.span(cst));
+                for exp in globalvarstat.rhs_exps(cst) {
+                    self.visit_exp(cst, sema, exp, Jumps::None);
+                }
             }
             Stat::Globalfuncstat(globalfuncstat) => {
                 self.cfg
                     .bb_mut(self.cur_bb)
                     .append(globalfuncstat.span(cst));
                 if let Some(block) = globalfuncstat.block(cst) {
-                    self.visit_func(cst, sema, block, Some(globalfuncstat.span(cst)));
+                    self.visit_func(
+                        cst,
+                        sema,
+                        globalfuncstat.syntax(),
+                        block,
+                        Some(globalfuncstat.span(cst)),
+                    );
                 }
             }
             Stat::CollectiveGlobalvarstat(collective_globalvarstat) => {
@@ -421,9 +504,14 @@ impl CfgBuilder {
             }
             Stat::Retstat(retstat) => {
                 let span = retstat.span(cst);
-                self.cfg.bb_mut(self.cur_bb).append(span);
+                self.cfg.bb_mut(self.cur_bb).append(span.clone());
+                for exp in retstat.exps(cst) {
+                    self.visit_exp(cst, sema, exp, Jumps::None);
+                }
+                self.cfg.bb_mut(self.cur_bb).returning = Some(span);
+                self.cfg
+                    .insert_edge(self.cur_bb, Successor::Uncond(BasicBlockRef::EXIT));
                 self.cur_bb = self.cfg.insert_bb();
-                self.cfg.exits += 1;
             }
         }
     }
@@ -433,7 +521,7 @@ impl CfgBuilder {
                 cfg.insert_edge(cur_bb, Successor::Uncond(true_bb));
             }
         };
-        let undecided = |cur_bb, cfg: &mut ControlFlowGraph| {
+        let undecided = |cur_bb, cfg: &mut ControlFlowGraph, jumps| {
             if let Jumps::Some { false_bb, true_bb } = jumps {
                 cfg.insert_edge(
                     cur_bb,
@@ -445,6 +533,7 @@ impl CfgBuilder {
                 );
             }
         };
+        self.cfg.bb_mut(self.cur_bb).append(exp.span(cst));
         match exp {
             Exp::Binexp(binexp) => {
                 let mut ops = binexp.operands(cst);
@@ -470,7 +559,6 @@ impl CfgBuilder {
                     if let Jumps::Some { false_bb, true_bb } = jumps {
                         if is_and {
                             let rhs_bb = self.cfg.insert_bb();
-                            self.cfg.bb_mut(self.cur_bb).append(lhs.span(cst));
                             self.visit_exp(
                                 cst,
                                 sema,
@@ -481,11 +569,9 @@ impl CfgBuilder {
                                 },
                             );
                             self.cur_bb = rhs_bb;
-                            self.cfg.bb_mut(self.cur_bb).append(rhs.span(cst));
                             self.visit_exp(cst, sema, rhs, Jumps::Some { false_bb, true_bb });
                         } else if is_or {
                             let rhs_bb = self.cfg.insert_bb();
-                            self.cfg.bb_mut(self.cur_bb).append(lhs.span(cst));
                             self.visit_exp(
                                 cst,
                                 sema,
@@ -496,12 +582,11 @@ impl CfgBuilder {
                                 },
                             );
                             self.cur_bb = rhs_bb;
-                            self.cfg.bb_mut(self.cur_bb).append(rhs.span(cst));
                             self.visit_exp(cst, sema, rhs, Jumps::Some { false_bb, true_bb });
                         } else {
                             self.visit_exp(cst, sema, lhs, Jumps::None);
                             self.visit_exp(cst, sema, rhs, Jumps::None);
-                            undecided(self.cur_bb, &mut self.cfg);
+                            undecided(self.cur_bb, &mut self.cfg, jumps.clone());
                         }
                     } else {
                         self.visit_exp(cst, sema, lhs, Jumps::None);
@@ -529,18 +614,20 @@ impl CfgBuilder {
                                     true_bb: false_bb,
                                 },
                             );
+                        } else {
+                            self.visit_exp(cst, sema, operand, Jumps::None);
                         }
                     } else {
                         self.visit_exp(cst, sema, operand, jumps);
                     }
                 }
             }
-            Exp::Nameexp(_) | Exp::Varargexp(_) => undecided(self.cur_bb, &mut self.cfg),
+            Exp::Nameexp(_) | Exp::Varargexp(_) => undecided(self.cur_bb, &mut self.cfg, jumps),
             Exp::Fieldexp(fieldexp) => {
                 if let Some(base) = fieldexp.base(cst) {
                     self.visit_exp(cst, sema, base, Jumps::None);
                 }
-                undecided(self.cur_bb, &mut self.cfg);
+                undecided(self.cur_bb, &mut self.cfg, jumps);
             }
             Exp::Indexexp(indexexp) => {
                 let (base, index) = indexexp.base_and_index(cst);
@@ -550,18 +637,27 @@ impl CfgBuilder {
                 if let Some(index) = index {
                     self.visit_exp(cst, sema, index, Jumps::None);
                 }
-                undecided(self.cur_bb, &mut self.cfg);
+                undecided(self.cur_bb, &mut self.cfg, jumps);
             }
             Exp::Callexp(callexp) => {
+                let mut recursive = false;
                 if let Some(base) = callexp.base(cst) {
                     self.visit_exp(cst, sema, base, Jumps::None);
+                    recursive = sema.decl_bindings.get(&base.syntax()) == Some(&self.cfg.func);
                 }
                 if let Some(args) = callexp.args(cst) {
                     for argexp in args.expressions(cst) {
                         self.visit_exp(cst, sema, argexp, Jumps::None);
                     }
                 }
-                undecided(self.cur_bb, &mut self.cfg);
+                if recursive {
+                    self.cfg.bb_mut(self.cur_bb).recursive = Some(callexp.span(cst));
+                    self.cfg
+                        .insert_edge(self.cur_bb, Successor::Uncond(BasicBlockRef::ENTRY));
+                    self.cur_bb = self.cfg.insert_bb();
+                    self.cfg.insert_interproc_edge(self.cur_bb);
+                }
+                undecided(self.cur_bb, &mut self.cfg, jumps);
             }
             Exp::Tableconstructor(tableconstructor) => {
                 for field in tableconstructor.fields(cst) {
@@ -593,7 +689,13 @@ impl CfgBuilder {
             }
             Exp::Functiondef(functiondef) => {
                 if let Some(block) = functiondef.block(cst) {
-                    self.visit_func(cst, sema, block, Some(functiondef.span(cst)));
+                    self.visit_func(
+                        cst,
+                        sema,
+                        functiondef.syntax(),
+                        block,
+                        Some(functiondef.span(cst)),
+                    );
                 }
                 truthy(self.cur_bb, &mut self.cfg);
             }

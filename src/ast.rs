@@ -198,6 +198,12 @@ impl<'a> Cst<'a> {
     }
 }
 
+impl NodeRef {
+    pub fn end_span(self, cst: &Cst<'_>) -> Option<Span> {
+        cst.child_token(self, Token::End).map(|(_, span)| span)
+    }
+}
+
 impl Chunk {
     pub fn block(&self, cst: &Cst<'_>) -> Option<Block> {
         cst.child_node(self.syntax)

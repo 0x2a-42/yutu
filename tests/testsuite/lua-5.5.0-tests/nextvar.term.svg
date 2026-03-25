@@ -1,4 +1,4 @@
-<svg width="793px" height="9092px" xmlns="http://www.w3.org/2000/svg">
+<svg width="793px" height="8480px" xmlns="http://www.w3.org/2000/svg">
   <style>
     .fg { fill: #AAAAAA }
     .bg { fill: #000000 }
@@ -960,75 +960,7 @@
 </tspan>
     <tspan x="10px" y="8452px">
 </tspan>
-    <tspan x="10px" y="8470px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#unreachable-code">unreachable-code</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: unreachable code</tspan>
-</tspan>
-    <tspan x="10px" y="8488px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/nextvar.lua:713:1</tspan>
-</tspan>
-    <tspan x="10px" y="8506px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
-</tspan>
-    <tspan x="10px" y="8524px"><tspan class="fg-bright-blue bold">713</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   for i=0,1,-1 do error'not here' end</tspan>
-</tspan>
-    <tspan x="10px" y="8542px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
-</tspan>
-    <tspan x="10px" y="8560px"><tspan class="fg-bright-blue bold">714</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> a = nil; for i=1,1 do assert(not a); a=1 end; assert(a)</tspan>
-</tspan>
-    <tspan x="10px" y="8578px"><tspan class="fg-bright-blue bold">715</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> a = nil; for i=1,1,-1 do assert(not a); a=1 end; assert(a)</tspan>
-</tspan>
-    <tspan x="10px" y="8596px"><tspan class="fg-bright-blue bold">716</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan>
-</tspan>
-    <tspan x="10px" y="8614px"><tspan class="fg-bright-blue bold">717</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> do</tspan>
-</tspan>
-    <tspan x="10px" y="8632px"><tspan class="fg-bright-blue bold">...</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">|</tspan>
-</tspan>
-    <tspan x="10px" y="8650px"><tspan class="fg-bright-blue bold">884</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   assert(a == 10 and b == 20 and c == 30 and d == nil)</tspan>
-</tspan>
-    <tspan x="10px" y="8668px"><tspan class="fg-bright-blue bold">885</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> end</tspan>
-</tspan>
-    <tspan x="10px" y="8686px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|___^</tspan>
-</tspan>
-    <tspan x="10px" y="8704px"><tspan class="fg-bright-blue bold">886</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> assert(x == 5)</tspan>
-</tspan>
-    <tspan x="10px" y="8722px"><tspan class="fg-bright-blue bold">...</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">|</tspan>
-</tspan>
-    <tspan x="10px" y="8740px"><tspan class="fg-bright-blue bold">917</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   assert(k == i and v == k+1)</tspan>
-</tspan>
-    <tspan x="10px" y="8758px"><tspan class="fg-bright-blue bold">918</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> end</tspan>
-</tspan>
-    <tspan x="10px" y="8776px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|___^</tspan>
-</tspan>
-    <tspan x="10px" y="8794px"><tspan class="fg-bright-blue bold">919</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> assert(closed)   -- 'tbc' has been closed</tspan>
-</tspan>
-    <tspan x="10px" y="8812px"><tspan class="fg-bright-blue bold">920</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan>
-</tspan>
-    <tspan x="10px" y="8830px"><tspan class="fg-bright-blue bold">921</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> a.n = 5</tspan>
-</tspan>
-    <tspan x="10px" y="8848px"><tspan class="fg-bright-blue bold">922</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> a[3] = 30</tspan>
-</tspan>
-    <tspan x="10px" y="8866px"><tspan class="fg-bright-blue bold">...</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">|</tspan>
-</tspan>
-    <tspan x="10px" y="8884px"><tspan class="fg-bright-blue bold">932</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan>   assert(k == i and v == i * 10)</tspan>
-</tspan>
-    <tspan x="10px" y="8902px"><tspan class="fg-bright-blue bold">933</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> end</tspan>
-</tspan>
-    <tspan x="10px" y="8920px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|___^</tspan>
-</tspan>
-    <tspan x="10px" y="8938px"><tspan class="fg-bright-blue bold">934</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">/</tspan><tspan> assert(i == a.n)</tspan>
-</tspan>
-    <tspan x="10px" y="8956px"><tspan class="fg-bright-blue bold">935</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan>
-</tspan>
-    <tspan x="10px" y="8974px"><tspan class="fg-bright-blue bold">936</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan>
-</tspan>
-    <tspan x="10px" y="8992px"><tspan class="fg-bright-blue bold">937</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> -- testing yield inside __pairs</tspan>
-</tspan>
-    <tspan x="10px" y="9010px"><tspan class="fg-bright-blue bold">...</tspan><tspan>   </tspan><tspan class="fg-bright-yellow">|</tspan>
-</tspan>
-    <tspan x="10px" y="9028px"><tspan class="fg-bright-blue bold">957</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|</tspan><tspan> print"OK"</tspan>
-</tspan>
-    <tspan x="10px" y="9046px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">|_________^</tspan>
-</tspan>
-    <tspan x="10px" y="9064px">
-</tspan>
-    <tspan x="10px" y="9082px">
+    <tspan x="10px" y="8470px">
 </tspan>
   </text>
 

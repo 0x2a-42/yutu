@@ -969,6 +969,27 @@ lints! {
         "},
         doc_issues: "",
         doc_example: "",
+    },
+    UnconditionalRecursion {
+        message: "unconditional recursion in function",
+        code: "unconditional-recursion",
+        level: Severity::Deny,
+        category: Category::Correctness,
+        doc_what: indoc! {"
+            Checks for functions that are unconditionally recursive.
+        "},
+        doc_why: indoc! {"
+            Such functions will never return and may overflow the stack, which is most likely unintended.
+        "},
+        doc_issues: "",
+        doc_example: indoc! {"
+            ```lua
+            local function foo()
+                foo()
+            end
+            foo()
+            ```
+        "},
     }
 }
 
@@ -1940,6 +1961,36 @@ impl<'a> InconsistentIndentation<'a, '_> {
                     Snippet::source(self.0.source)
                         .path(self.0.path)
                         .annotations(tab_annotations.chain(space_annotations)),
+                ),
+            ],
+        }
+    }
+}
+
+impl<'a> UnconditionalRecursion<'a, '_> {
+    pub fn build(&self, span: Span, rec_spans: &[Span], term_spans: &[Span]) -> Diagnostic<'a> {
+        let mut annotations = vec![AnnotationKind::Primary.span(span.clone())];
+        for rec_span in rec_spans {
+            annotations.push(
+                AnnotationKind::Context
+                    .span(rec_span.clone())
+                    .label("recursion"),
+            );
+        }
+        for term_span in term_spans {
+            annotations.push(
+                AnnotationKind::Context
+                    .span(term_span.clone())
+                    .label("termination"),
+            );
+        }
+        Diagnostic {
+            error: self.0.is_error(Self::INFO_INDEX),
+            groups: vec![
+                self.0.main_group(Self::INFO_INDEX).element(
+                    Snippet::source(self.0.source)
+                        .path(self.0.path)
+                        .annotations(annotations),
                 ),
             ],
         }
