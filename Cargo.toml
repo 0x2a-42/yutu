@@ -1,6 +1,6 @@
 [package]
 name = "yutu"
-version = "0.1.0"
+version = "0.1.1"
 description = "Modern Lua linter"
 repository = "https://github.com/0x2a-42/yutu"
 readme = "README.md"
