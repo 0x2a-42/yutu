@@ -28,9 +28,9 @@
 </tspan>
     <tspan x="10px" y="64px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">3</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> C = 1000000000000000000000000000000000000</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan>0000000000000000000000000000000000000000000000000</tspan>
+    <tspan x="10px" y="82px"><tspan class="fg-bright-blue bold">3</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> C = 10000000000000000000000000000000000000000</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan>000000000000000000000000000000000000000000000</tspan>
 </tspan>
-    <tspan x="10px" y="100px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+    <tspan x="10px" y="100px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
 </tspan>
     <tspan x="10px" y="118px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
@@ -92,9 +92,9 @@
 </tspan>
     <tspan x="10px" y="640px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="658px"><tspan class="fg-bright-blue bold">3</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> C = 10000000000000000000000000000000000000000</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan>0000000000000000000000000000000000000000000000000</tspan>
+    <tspan x="10px" y="658px"><tspan class="fg-bright-blue bold">3</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> C = 100000000000000000000000000000000000000000000</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan>000000000000000000000000000000000000000000000</tspan>
 </tspan>
-    <tspan x="10px" y="676px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+    <tspan x="10px" y="676px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan>     </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
 </tspan>
     <tspan x="10px" y="694px"><tspan>  </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>

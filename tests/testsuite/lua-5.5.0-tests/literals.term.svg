@@ -60,9 +60,9 @@
 </tspan>
     <tspan x="10px" y="352px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="370px"><tspan class="fg-bright-blue bold">156</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local b = "001234567890123456789012345</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan>0123456789123456789012345678901234567890123456789"</tspan>
+    <tspan x="10px" y="370px"><tspan class="fg-bright-blue bold">156</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local b = "001234567890123456789012345678901</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan>6789123456789012345678901234567890123456789"</tspan>
 </tspan>
-    <tspan x="10px" y="388px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+    <tspan x="10px" y="388px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
 </tspan>
     <tspan x="10px" y="406px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
@@ -76,9 +76,9 @@
 </tspan>
     <tspan x="10px" y="496px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="514px"><tspan class="fg-bright-blue bold">172</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local b = "001234567890123456789012345</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan>0123456789123456789012345678901234567890123456789"</tspan>
+    <tspan x="10px" y="514px"><tspan class="fg-bright-blue bold">172</tspan><tspan> </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> local b = "001234567890123456789012345678901</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan>6789123456789012345678901234567890123456789"</tspan>
 </tspan>
-    <tspan x="10px" y="532px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
+    <tspan x="10px" y="532px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan><tspan> </tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan><tspan class="fg-bright-blue bold">...</tspan><tspan class="fg-bright-yellow">^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</tspan>
 </tspan>
     <tspan x="10px" y="550px"><tspan>    </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
