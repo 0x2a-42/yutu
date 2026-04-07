@@ -303,20 +303,21 @@ impl<'a> Scopes<'a> {
             .unwrap_or_default()
     }
 
-    fn get_varargs(&mut self) -> Option<Varargpar> {
+    fn has_varargs(&mut self) -> bool {
         for scope in self.scopes.iter_mut().rev() {
             if scope.func
-                && let Some((vararg, used)) = &mut scope.varargs
+                && let Some((_, used)) = &mut scope.varargs
             {
                 *used = true;
-                return Some(*vararg);
+                return true;
             }
             if scope.func {
                 // varargs are not visible across function scopes
-                break;
+                return false;
             }
         }
-        None
+        // chunk is treated like an anonymous variadic function
+        true
     }
 
     fn use_named_vararg(&mut self, vararg: Varargpar) {
@@ -1279,7 +1280,7 @@ impl<'a> Checks<'a> {
                 return TypeSet::TABLE;
             }
             Exp::Varargexp(varargexp) => {
-                if self.scopes.get_varargs().is_none() {
+                if !self.scopes.has_varargs() {
                     diags.push(self.diag_ctx.invalid_vararg(varargexp.span(cst)));
                 }
             }

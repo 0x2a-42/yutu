@@ -6,3 +6,5 @@ local function foo(...)
   bar()
 end
 foo()
+
+local _a, _b = ... -- OK
