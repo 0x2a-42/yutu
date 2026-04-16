@@ -1487,7 +1487,7 @@ impl<'a> Checks<'a> {
         if let Some(cyclomatic_complexity) = self.diag_ctx.active::<CyclomaticComplexity>() {
             for cfg in cfgs {
                 if let Some(span) = &cfg.span {
-                    let cc = cfg.edges + cfg.terminators - cfg.bbs.len() + 1;
+                    let cc = cfg.edges + cfg.terminators + 1 - cfg.bbs.len();
                     if cc >= self.diag_ctx.config.cyclomatic_complexity_threshold {
                         diags.push(cyclomatic_complexity.build(span.clone(), cc));
                     }
