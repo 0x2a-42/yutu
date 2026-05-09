@@ -126,11 +126,11 @@
 </tspan>
     <tspan x="10px" y="946px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
-    <tspan x="10px" y="964px"><tspan class="fg-bright-blue bold">32</tspan><tspan> </tspan><tspan class="fg-bright-red">-   local function f (a)</tspan>
+    <tspan x="10px" y="964px"><tspan class="fg-bright-blue bold">32</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  </tspan><tspan class="fg-bright-red">local function f (a)</tspan>
 </tspan>
-    <tspan x="10px" y="982px"><tspan class="fg-bright-blue bold">33</tspan><tspan> </tspan><tspan class="fg-bright-red">-   for</tspan><tspan> k,v,w in a do end</tspan>
+    <tspan x="10px" y="982px"><tspan class="fg-bright-blue bold">33</tspan><tspan> </tspan><tspan class="fg-bright-red">-   for k,v,w in a do end</tspan>
 </tspan>
-    <tspan x="10px" y="1000px"><tspan class="fg-bright-blue bold">34</tspan><tspan> </tspan><tspan class="fg-bright-red">- </tspan><tspan>  end</tspan>
+    <tspan x="10px" y="1000px"><tspan class="fg-bright-blue bold">34</tspan><tspan> </tspan><tspan class="fg-bright-red">-   end</tspan>
 </tspan>
     <tspan x="10px" y="1018px"><tspan>   </tspan><tspan class="fg-bright-blue bold">|</tspan>
 </tspan>
