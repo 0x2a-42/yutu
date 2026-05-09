@@ -617,7 +617,7 @@ checksum = "2ee1708bef14716a11bae175f579062d4554d95be2c6829f518df847b7b3fdd0"
 
 [[package]]
 name = "yutu"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "annotate-snippets",
  "anstream",
