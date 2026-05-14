@@ -3,8 +3,8 @@
 | code | default level | category | message |
 |---|---|---|---|
 | [`almost-swap`](#almost-swap) | ❌ `deny` | `correctness` | code sequence almost implements a swap |
-| [`approx-pi`](#approx-pi) | ⚠️ `warn` | `correctness` | numeric literal is approximatly pi |
-| [`bool-compare`](#bool-compare) | ⚠️ `warn` | `complexity` | comparison with bool constant can be simplfied |
+| [`approx-pi`](#approx-pi) | ⚠️ `warn` | `correctness` | numeric literal is approximately pi |
+| [`bool-compare`](#bool-compare) | ⚠️ `warn` | `complexity` | comparison with bool constant can be simplified |
 | [`cyclomatic-complexity`](#cyclomatic-complexity) | ⚠️ `warn` | `restriction` | cyclomatic complexity of function is too high |
 | [`empty-block`](#empty-block) | ⚠️ `warn` | `suspicious` | empty block in control flow statement |
 | [`empty-statement`](#empty-statement) | ⚠️ `warn` | `style` | empty statement |
