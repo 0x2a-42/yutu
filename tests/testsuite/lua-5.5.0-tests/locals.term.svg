@@ -132,7 +132,7 @@
 </tspan>
     <tspan x="10px" y="1000px">
 </tspan>
-    <tspan x="10px" y="1018px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplfied</tspan>
+    <tspan x="10px" y="1018px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplified</tspan>
 </tspan>
     <tspan x="10px" y="1036px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:281:50</tspan>
 </tspan>
@@ -178,7 +178,7 @@
 </tspan>
     <tspan x="10px" y="1414px">
 </tspan>
-    <tspan x="10px" y="1432px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplfied</tspan>
+    <tspan x="10px" y="1432px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplified</tspan>
 </tspan>
     <tspan x="10px" y="1450px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:296:26</tspan>
 </tspan>
@@ -202,7 +202,7 @@
 </tspan>
     <tspan x="10px" y="1630px">
 </tspan>
-    <tspan x="10px" y="1648px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplfied</tspan>
+    <tspan x="10px" y="1648px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplified</tspan>
 </tspan>
     <tspan x="10px" y="1666px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:304:34</tspan>
 </tspan>
@@ -226,7 +226,7 @@
 </tspan>
     <tspan x="10px" y="1846px">
 </tspan>
-    <tspan x="10px" y="1864px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplfied</tspan>
+    <tspan x="10px" y="1864px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplified</tspan>
 </tspan>
     <tspan x="10px" y="1882px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:340:34</tspan>
 </tspan>
@@ -294,7 +294,7 @@
 </tspan>
     <tspan x="10px" y="2458px">
 </tspan>
-    <tspan x="10px" y="2476px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplfied</tspan>
+    <tspan x="10px" y="2476px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplified</tspan>
 </tspan>
     <tspan x="10px" y="2494px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:353:35</tspan>
 </tspan>
@@ -450,7 +450,7 @@
 </tspan>
     <tspan x="10px" y="3862px">
 </tspan>
-    <tspan x="10px" y="3880px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplfied</tspan>
+    <tspan x="10px" y="3880px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplified</tspan>
 </tspan>
     <tspan x="10px" y="3898px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/locals.lua:412:10</tspan>
 </tspan>

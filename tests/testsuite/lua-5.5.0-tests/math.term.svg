@@ -1236,7 +1236,7 @@
 </tspan>
     <tspan x="10px" y="10936px">
 </tspan>
-    <tspan x="10px" y="10954px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#approx-pi">approx-pi</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: numeric literal is approximatly pi</tspan>
+    <tspan x="10px" y="10954px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#approx-pi">approx-pi</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: numeric literal is approximately pi</tspan>
 </tspan>
     <tspan x="10px" y="10972px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/math.lua:576:37</tspan>
 </tspan>

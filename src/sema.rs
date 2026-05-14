@@ -1501,7 +1501,7 @@ impl<'a> Checks<'a> {
         diags: &mut Vec<Diagnostic<'a>>,
         cfgs: &[ControlFlowGraph],
     ) {
-        if let Some(uncoditional_recursion) = self.diag_ctx.active::<UnconditionalRecursion>() {
+        if let Some(unconditional_recursion) = self.diag_ctx.active::<UnconditionalRecursion>() {
             'cfg: for cfg in cfgs {
                 let mut rec_exits = vec![];
                 let mut term_exits = vec![];
@@ -1520,7 +1520,11 @@ impl<'a> Checks<'a> {
                 if !rec_exits.is_empty()
                     && let Some(span) = &cfg.span
                 {
-                    diags.push(uncoditional_recursion.build(span.clone(), &rec_exits, &term_exits));
+                    diags.push(unconditional_recursion.build(
+                        span.clone(),
+                        &rec_exits,
+                        &term_exits,
+                    ));
                 }
             }
         }

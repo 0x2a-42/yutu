@@ -629,7 +629,7 @@ lints! {
         "},
     },
     ApproxPi {
-        message: "numeric literal is approximatly pi",
+        message: "numeric literal is approximately pi",
         code: "approx-pi",
         level: Severity::Warn,
         category: Category::Correctness,
@@ -750,7 +750,7 @@ lints! {
         "},
     },
     BoolCompare {
-        message: "comparison with bool constant can be simplfied",
+        message: "comparison with bool constant can be simplified",
         code: "bool-compare",
         level: Severity::Warn,
         category: Category::Complexity,
@@ -1024,7 +1024,7 @@ impl<'a> OnlyWhitespace<'a, '_> {
 }
 
 impl<'a> LowerCaseGlobal<'a, '_> {
-    pub fn build(&self, span: Span, sub_exp: bool, explict: bool) -> Diagnostic<'a> {
+    pub fn build(&self, span: Span, sub_exp: bool, explicit: bool) -> Diagnostic<'a> {
         let mut groups = vec![
             self.0.main_group(Self::INFO_INDEX).element(
                 Snippet::source(self.0.source).path(self.0.path).annotation(
@@ -1039,7 +1039,7 @@ impl<'a> LowerCaseGlobal<'a, '_> {
             ),
             Group::with_title(Level::HELP.secondary_title("start name with upper-case letter")),
         ];
-        if !explict {
+        if !explicit {
             groups.push(Group::with_title(
                 Level::HELP.secondary_title("mark variable as global in yutu.toml"),
             ));

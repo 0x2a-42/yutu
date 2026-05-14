@@ -422,7 +422,7 @@
 </tspan>
     <tspan x="10px" y="3610px">
 </tspan>
-    <tspan x="10px" y="3628px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplfied</tspan>
+    <tspan x="10px" y="3628px"><tspan class="fg-bright-yellow">warning[</tspan><tspan class="fg-bright-yellow"><a href="https://github.com/0x2a-42/yutu/blob/main/lints.md#bool-compare">bool-compare</a></tspan><tspan class="fg-bright-yellow">]</tspan><tspan class="bold">: comparison with bool constant can be simplified</tspan>
 </tspan>
     <tspan x="10px" y="3646px"><tspan>   </tspan><tspan class="fg-bright-blue bold">--&gt; </tspan><tspan>tests/testsuite/lua-5.5.0-tests/coroutine.lua:518:60</tspan>
 </tspan>
